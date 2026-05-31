@@ -112,20 +112,20 @@ Every future `git push` to the main branch redeploys automatically.
 
 ## 🗺️ Content roadmap
 
-The site currently ships with **24 published articles** across all four pillars. Here are the next SEO topics to write using the template above:
+The site currently ships with **48 published articles** across all four pillars. Here are the next SEO topics to write using the template above:
 
-1. Best Cozy Games of 2026 (New Releases to Watch)
-2. Cozy Games Like Animal Crossing
-3. Best Cozy Games on Xbox Game Pass
-4. Best Cozy Games on PS5
-5. Stardew Valley: Best Crops for Each Season
-6. Stardew Valley: Complete Community Center Bundle Guide
-7. Coral Island: How to Romance and Marry
-8. Best Relaxing Games to Play After a Long Day
-9. Best Farming Games for Beginners
-10. Palia Beginner's Guide
-11. Cottagecore Games: The Ultimate List
-12. Best Cozy Games for Kids
+1. Best Cozy Games for Mac
+2. Best Cozy Horror Games (Spooky but Gentle)
+3. Best Cozy Games to Play in Autumn
+4. Best Cozy Games for Winter & the Holidays
+5. Stardew Valley: Complete Year 1 Checklist
+6. Stardew Valley: How to Unlock the Greenhouse
+7. Animal Crossing: Best Island Layout Ideas
+8. Coral Island: Best Crops by Season
+9. Fae Farm Beginner Tips
+10. WEBFISHING Beginner Guide
+11. Best Cozy Game Soundtracks to Relax or Study To
+12. Best Plushies & Merch for Cozy Gamers
 
 Aim for 2–3 new articles per week, and revisit your best performers in Search Console to expand them.
 
