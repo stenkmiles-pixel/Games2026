@@ -16,7 +16,10 @@ interface Props {
 }
 const { slot = '', label = 'Advertisement', class: className = '' } = Astro.props;
 const { enabled, adsenseClientId } = MONETIZATION.ads;
-const live = enabled && adsenseClientId;
+// A manual ad unit needs a real ad-slot ID (created in the AdSense dashboard).
+// Until you add one, placement is handled by AdSense Auto ads (the loader
+// script in BaseLayout), so we avoid rendering empty/broken <ins> units.
+const live = enabled && !!adsenseClientId && slot !== '';
 ---
 
 {
@@ -39,7 +42,7 @@ const live = enabled && adsenseClientId;
 }
 
 {
-  !enabled && import.meta.env.DEV && (
+  !live && import.meta.env.DEV && (
     <div
       class:list={[
         'my-8 flex h-28 items-center justify-center rounded-xl border-2 border-dashed border-line text-[10px] uppercase tracking-widest text-ink-muted',

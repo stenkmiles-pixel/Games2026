@@ -32,7 +32,7 @@ export const SITE = {
    * Console, choose the "HTML tag" method and paste ONLY the content value
    * here (the long string inside content="..."). Then redeploy and click Verify.
    */
-  googleSiteVerification: '',
+  googleSiteVerification: 'y35Xbe5vRfkxLUQpQ-HB5oKYPWpo04UwvHszVzXCrRY',
 } as const;
 
 /** Primary navigation links (header + footer). */
@@ -97,10 +97,10 @@ export const SOCIAL: { label: string; href: string }[] = [
  */
 export const MONETIZATION = {
   ads: {
-    /** Set true after your Google AdSense account is approved. */
-    enabled: false,
-    /** e.g. 'ca-pub-XXXXXXXXXXXXXXXX' */
-    adsenseClientId: '',
+    /** Loads the AdSense script (in BaseLayout) for verification + Auto ads. */
+    enabled: true,
+    /** Your AdSense publisher id, e.g. 'ca-pub-XXXXXXXXXXXXXXXX'. */
+    adsenseClientId: 'ca-pub-3299003349230089',
   },
   affiliates: {
     /** Show the affiliate disclosure banner on monetized pages. */
