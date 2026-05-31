@@ -27,6 +27,12 @@ export const SITE = {
   locale: 'en',
   /** OpenGraph locale tag. */
   ogLocale: 'en_US',
+  /**
+   * Google Search Console verification. After adding your site in Search
+   * Console, choose the "HTML tag" method and paste ONLY the content value
+   * here (the long string inside content="..."). Then redeploy and click Verify.
+   */
+  googleSiteVerification: '',
 } as const;
 
 /** Primary navigation links (header + footer). */
@@ -118,6 +124,6 @@ export const MONETIZATION = {
   download: {
     enabled: true,
     label: 'Free Stardew Valley Gift Cheat Sheet (PDF)',
-    href: '#',
+    href: '/downloads/stardew-valley-gift-cheat-sheet.pdf',
   },
 } as const;
