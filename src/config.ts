@@ -43,6 +43,7 @@ export const NAV: { label: string; href: string }[] = [
   { label: 'Reviews', href: '/category/reviews' },
   { label: 'Guides', href: '/category/guides' },
   { label: 'Resources', href: '/category/resources' },
+  { label: 'Mindful Gaming', href: '/category/mindful-gaming' },
   { label: 'About', href: '/about' },
 ];
 
@@ -74,6 +75,12 @@ export const CATEGORIES = {
     label: 'Resources',
     emoji: '🎁',
     blurb: 'Mods, gift guides, and cozy gear round-ups to make your gaming time even nicer.',
+  },
+  'Mindful Gaming': {
+    slug: 'mindful-gaming',
+    label: 'Mindful Gaming',
+    emoji: '🍵',
+    blurb: 'The calm, restorative side of cozy games — relaxing rituals, gentle reflections, and playing for your wellbeing.',
   },
 } as const;
 

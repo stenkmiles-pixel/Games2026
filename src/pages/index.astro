@@ -41,7 +41,7 @@ const categories = Object.values(CATEGORIES);
 
     <section class="mt-16">
       <h2 class="font-display text-2xl font-semibold text-ink">Browse by type</h2>
-      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
         {
           categories.map((c) => (
             <a href={`/category/${c.slug}`} class="card group p-6 transition-shadow hover:shadow-md">

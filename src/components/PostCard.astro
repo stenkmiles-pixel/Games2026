@@ -1,15 +1,14 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import { CATEGORIES } from '../config';
 import CategoryPill from './CategoryPill.astro';
 import FormattedDate from './FormattedDate.astro';
+import SceneHero from './SceneHero.astro';
 
 interface Props {
   post: CollectionEntry<'blog'>;
   featured?: boolean;
 }
 const { post, featured = false } = Astro.props;
-const c = CATEGORIES[post.data.category];
 const href = `/blog/${post.id}/`;
 ---
 <article
@@ -23,11 +22,25 @@ const href = `/blog/${post.id}/`;
     tabindex="-1"
     aria-hidden="true"
     class:list={[
-      'flex items-center justify-center bg-gradient-to-br from-accent-soft to-surface-2 text-5xl sm:text-6xl',
+      'block overflow-hidden bg-surface-2',
       featured ? 'aspect-video sm:aspect-auto sm:w-2/5' : 'aspect-[16/9]',
     ]}
   >
-    <span class="transition-transform duration-300 group-hover:scale-110">{c.emoji}</span>
+    {
+      post.data.heroImage ? (
+        <img
+          src={post.data.heroImage}
+          alt={post.data.heroImageAlt ?? post.data.title}
+          loading="lazy"
+          decoding="async"
+          class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+      ) : (
+        <div class="h-full w-full transition-transform duration-300 group-hover:scale-105">
+          <SceneHero seed={post.id} />
+        </div>
+      )
+    }
   </a>
   <div class="flex flex-1 flex-col p-5">
     <CategoryPill category={post.data.category} class="self-start" />

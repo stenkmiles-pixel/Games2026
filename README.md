@@ -33,8 +33,11 @@ title: 'Your SEO Title — Put the Keyword Near the Front'
 description: 'A 1–2 sentence summary for Google search results (aim for 120–155 characters).'
 pubDate: 2026-06-01
 # updatedDate: 2026-07-15   # optional — shows an "Updated" date
-category: 'Recommendations' # one of: Recommendations | Reviews | Guides | Resources
+category: 'Recommendations' # Recommendations | Reviews | Guides | Resources | Mindful Gaming
 tags: ['cozy games', 'switch']
+# heroImage: '/images/posts/my-photo.jpg'  # optional real photo (see "Adding images")
+# heroImageAlt: 'Describe the photo for accessibility and SEO'
+# heroCredit: 'Photo: Name / Unsplash'     # optional attribution
 # featured: true             # optional — pins it to the homepage "Editor's pick"
 # draft: true                # optional — hides it from the site
 ---
@@ -54,6 +57,19 @@ Link to other articles like this: [beginner's guide](/blog/stardew-valley-beginn
 
 ### Using affiliate / gear components inside an article
 Plain `.md` files can't use components. If you want inline buy buttons or a gear box, name the file `.mdx` instead and import them — see [`src/content/blog/cozy-gamer-gift-guide.mdx`](src/content/blog/cozy-gamer-gift-guide.mdx) for a working example.
+
+### Adding images to an article
+Every article automatically gets an original, copyright-free **"scene" illustration** as its header (generated from the post's slug — no work required). To use a **real photo** instead:
+
+1. Put a license-safe image in **`public/images/posts/`** (create the folder if needed).
+2. In the frontmatter, set `heroImage: '/images/posts/your-file.jpg'`.
+3. Always add `heroImageAlt` (a short description — helps accessibility and SEO), plus `heroCredit` if the source requires attribution.
+
+**Where to get license-safe images:**
+- **Ambient / "vibe" shots** (a mug, blanket, autumn leaves, a controller): free stock sites like **Unsplash, Pexels, Pixabay** — check each image's license.
+- **Game screenshots / art**: use the game's **official press kit**, **Steam press assets**, or **your own screenshots**. Don't grab random images from Google — most are copyrighted, which is risky for a monetized site.
+
+Tip: resize photos to ~**1200px wide** and save as `.jpg` or `.webp` to keep pages fast.
 
 ---
 
@@ -112,7 +128,7 @@ Every future `git push` to the main branch redeploys automatically.
 
 ## 🗺️ Content roadmap
 
-The site currently ships with **48 published articles** across all four pillars. Here are the next SEO topics to write using the template above:
+The site currently ships with **53 published articles** across five content pillars (Recommendations, Reviews, Guides, Resources, Mindful Gaming). Here are the next SEO topics to write using the template above:
 
 1. Best Cozy Games for Mac
 2. Best Cozy Horror Games (Spooky but Gentle)

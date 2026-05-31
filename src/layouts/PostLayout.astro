@@ -12,6 +12,7 @@ import DownloadCTA from '../components/DownloadCTA.astro';
 import NewsletterCTA from '../components/NewsletterCTA.astro';
 import AdSlot from '../components/AdSlot.astro';
 import PostCard from '../components/PostCard.astro';
+import SceneHero from '../components/SceneHero.astro';
 
 interface Props {
   post: CollectionEntry<'blog'>;
@@ -19,7 +20,7 @@ interface Props {
   related: CollectionEntry<'blog'>[];
 }
 const { post, headings, related } = Astro.props;
-const { title, description, pubDate, updatedDate, category, author, tags } = post.data;
+const { title, description, pubDate, updatedDate, category, author, tags, heroImage, heroImageAlt, heroCredit } = post.data;
 const c = CATEGORIES[category];
 const canonicalUrl = new URL(`/blog/${post.id}/`, SITE.url).href;
 
@@ -76,6 +77,19 @@ const articleJsonLd = {
             }
           </div>
         </header>
+
+        <figure class="mt-6 overflow-hidden rounded-2xl border border-line bg-surface-2">
+          <div class="aspect-[16/9] w-full">
+            {
+              heroImage ? (
+                <img src={heroImage} alt={heroImageAlt ?? title} class="h-full w-full object-cover" />
+              ) : (
+                <SceneHero seed={post.id} />
+              )
+            }
+          </div>
+          {heroCredit && <figcaption class="px-4 py-2 text-xs text-ink-muted">{heroCredit}</figcaption>}
+        </figure>
 
         <AdSlot />
 

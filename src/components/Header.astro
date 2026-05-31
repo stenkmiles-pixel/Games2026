@@ -15,7 +15,7 @@ const isActive = (href: string) => {
       <span class="font-display">{SITE.name}</span>
     </a>
 
-    <nav aria-label="Primary" class="hidden items-center gap-1 md:flex">
+    <nav aria-label="Primary" class="hidden items-center gap-1 lg:flex">
       {
         NAV.map((item) => (
           <a
@@ -48,7 +48,7 @@ const isActive = (href: string) => {
         aria-label="Open menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
-        class="rounded-full p-2 text-ink-muted transition-colors hover:bg-surface-2 hover:text-ink md:hidden"
+        class="rounded-full p-2 text-ink-muted transition-colors hover:bg-surface-2 hover:text-ink lg:hidden"
       >
         <span aria-hidden="true">☰</span>
       </button>
@@ -59,7 +59,7 @@ const isActive = (href: string) => {
     id="mobile-menu"
     aria-label="Mobile"
     hidden
-    class="border-t border-line px-4 pb-4 pt-2 md:hidden"
+    class="border-t border-line px-4 pb-4 pt-2 lg:hidden"
   >
     {
       NAV.map((item) => (

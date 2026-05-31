@@ -1,0 +1,70 @@
+---
+/**
+ * Original, copyright-free "scene" illustration used as an article hero when no
+ * real photo is set. Picks one of several cozy palettes deterministically from
+ * the post's slug, so cards get visual variety while staying on-brand. Pure SVG
+ * = tiny, scalable, no performance cost.
+ */
+interface Variant {
+  skyTop: string;
+  skyBottom: string;
+  body: { x: number; y: number; r: number; fill: string };
+  moon: boolean;
+  hills: string[];
+}
+
+interface Props {
+  seed: string;
+  class?: string;
+}
+const { seed, class: className = '' } = Astro.props;
+
+const variants: Variant[] = [
+  // dawn
+  { skyTop: '#fbe3d0', skyBottom: '#f7d9c4', body: { x: 930, y: 175, r: 70, fill: '#f0a868' }, moon: false, hills: ['#8fb39e', '#6f8f7d', '#5f8470'] },
+  // clear day
+  { skyTop: '#d9e8ee', skyBottom: '#f5efe6', body: { x: 935, y: 150, r: 62, fill: '#f4c879' }, moon: false, hills: ['#9ec3ab', '#6f8f7d', '#4c6c5a'] },
+  // dusk
+  { skyTop: '#ecc8c0', skyBottom: '#f3e2d6', body: { x: 280, y: 360, r: 58, fill: '#d98e73' }, moon: false, hills: ['#7a9a88', '#5f8470', '#46624f'] },
+  // starry night
+  { skyTop: '#2b3440', skyBottom: '#3c4a48', body: { x: 920, y: 170, r: 52, fill: '#f1ead6' }, moon: true, hills: ['#314c40', '#274034', '#1f3329'] },
+  // green afternoon
+  { skyTop: '#e7efe6', skyBottom: '#f7f2e9', body: { x: 935, y: 150, r: 56, fill: '#f4c879' }, moon: false, hills: ['#a9ccb6', '#6f8f7d', '#46624f'] },
+  // soft meadow
+  { skyTop: '#eef0e4', skyBottom: '#f7f2e9', body: { x: 250, y: 160, r: 60, fill: '#f0c473' }, moon: false, hills: ['#b3d2bd', '#82a98f', '#5f8470'] },
+];
+
+let h = 0;
+for (let i = 0; i < seed.length; i++) h = (h * 31 + seed.charCodeAt(i)) >>> 0;
+const v = variants[h % variants.length];
+const gid = `sky${h % 100000}`;
+
+const stars = v.moon
+  ? Array.from({ length: 16 }, (_, i) => ({
+      x: ((i * 79 + (h >> (i % 7))) % 1180) + 10,
+      y: ((i * 43 + (h >> (i % 5))) % 280) + 14,
+      r: (i % 3) * 0.5 + 0.8,
+    }))
+  : [];
+---
+<svg
+  class:list={['h-full w-full', className]}
+  viewBox="0 0 1200 675"
+  preserveAspectRatio="xMidYMid slice"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-hidden="true"
+>
+  <defs>
+    <linearGradient id={gid} x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color={v.skyTop} />
+      <stop offset="1" stop-color={v.skyBottom} />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill={`url(#${gid})`} />
+  {stars.map((s) => <circle cx={s.x} cy={s.y} r={s.r} fill="#fbf7f0" opacity="0.85" />)}
+  <circle cx={v.body.x} cy={v.body.y} r={v.body.r} fill={v.body.fill} opacity="0.92" />
+  <path d="M0,430 Q300,360 620,418 T1200,402 L1200,675 L0,675 Z" fill={v.hills[0]} opacity="0.92" />
+  <path d="M0,500 Q360,446 700,500 T1200,486 L1200,675 L0,675 Z" fill={v.hills[1]} />
+  <path d="M0,576 Q300,538 640,574 T1200,560 L1200,675 L0,675 Z" fill={v.hills[2]} />
+</svg>

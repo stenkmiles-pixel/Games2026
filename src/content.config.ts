@@ -14,8 +14,13 @@ const blog = defineCollection({
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     // Must match a key in CATEGORIES (src/config.ts).
-    category: z.enum(['Recommendations', 'Reviews', 'Guides', 'Resources']),
+    category: z.enum(['Recommendations', 'Reviews', 'Guides', 'Resources', 'Mindful Gaming']),
     tags: z.array(z.string()).default([]),
+    // Optional hero image — a path under /public (e.g. /images/posts/foo.jpg).
+    // If omitted, an original generated "scene" illustration is shown instead.
+    heroImage: z.string().optional(),
+    heroImageAlt: z.string().optional(),
+    heroCredit: z.string().optional(),
     author: z.string().default('The Cozy Game Guide Team'),
     /** Surface this post in the homepage "featured" strip. */
     featured: z.boolean().default(false),
