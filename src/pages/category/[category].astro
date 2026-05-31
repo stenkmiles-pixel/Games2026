@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostGrid from '../../components/PostGrid.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { SITE, CATEGORIES } from '../../config';
+import { getPublishedPosts } from '../../utils/posts';
+
+export async function getStaticPaths() {
+  return Object.entries(CATEGORIES).map(([key, def]) => ({
+    params: { category: def.slug },
+    props: { categoryKey: key, def },
+  }));
+}
+
+const { categoryKey, def } = Astro.props;
+const posts = (await getPublishedPosts()).filter((p) => p.data.category === categoryKey);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: `${def.label} — ${SITE.name}`,
+  description: def.blurb,
+  url: new URL(`/category/${def.slug}/`, SITE.url).href,
+};
+---
+<BaseLayout title={def.label} description={def.blurb} jsonLd={jsonLd}>
+  <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: def.label }]} />
+    <div class="mt-6 flex items-center gap-4">
+      <span aria-hidden="true" class="text-4xl sm:text-5xl">{def.emoji}</span>
+      <div>
+        <h1 class="font-display text-3xl font-bold text-ink sm:text-4xl">{def.label}</h1>
+        <p class="mt-1 max-w-2xl text-ink-muted">{def.blurb}</p>
+      </div>
+    </div>
+    {
+      posts.length > 0 ? (
+        <PostGrid posts={posts} class="mt-8" />
+      ) : (
+        <p class="mt-8 text-ink-muted">No articles here yet — check back soon!</p>
+      )
+    }
+  </div>
+</BaseLayout>

@@ -1,0 +1,59 @@
+---
+/**
+ * "Recommended gear" block — a monetization surface for affiliate gear links.
+ * Pass your own `items`, or leave it empty to show a default cozy-gaming set.
+ * Links route through Amazon search with your Associates tag when one is set;
+ * otherwise they are inert placeholders.
+ */
+import { MONETIZATION } from '../config';
+
+interface GearItem {
+  name: string;
+  note?: string;
+  href?: string;
+}
+interface Props {
+  title?: string;
+  items?: GearItem[];
+  class?: string;
+}
+
+const tag = MONETIZATION.affiliates.amazonTag;
+const amazon = (query: string) =>
+  tag ? `https://www.amazon.com/s?k=${encodeURIComponent(query)}&tag=${tag}` : '#';
+
+const defaults: GearItem[] = [
+  { name: 'Switch Pro Controller', note: 'Comfier for long farming sessions' },
+  { name: 'Warm LED desk lamp', note: 'Set the cozy mood' },
+  { name: 'Blue-light glasses', note: 'Easier on late-night eyes' },
+  { name: 'Soft gaming blanket', note: 'Non-negotiable, honestly' },
+];
+
+const { title = 'Cozy gaming gear we love', items = defaults, class: className = '' } = Astro.props;
+const list = items.map((i) => ({ ...i, href: i.href ?? amazon(i.name) }));
+---
+<aside class:list={['card p-5', className]} aria-label={title}>
+  <h2 class="flex items-center gap-2 font-display text-base font-semibold text-ink">
+    <span aria-hidden="true">🛋️</span>{title}
+  </h2>
+  <ul class="mt-3 space-y-3 text-sm">
+    {
+      list.map((item) => (
+        <li>
+          <a
+            href={item.href}
+            target="_blank"
+            rel="sponsored nofollow noopener"
+            class="font-semibold text-primary hover:underline"
+          >
+            {item.name}
+          </a>
+          {item.note && <p class="text-ink-muted">{item.note}</p>}
+        </li>
+      ))
+    }
+  </ul>
+  <p class="mt-4 text-[11px] leading-relaxed text-ink-muted">
+    Affiliate links — we may earn a commission at no extra cost to you.
+  </p>
+</aside>

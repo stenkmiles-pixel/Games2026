@@ -1,0 +1,13 @@
+---
+import type { Post } from '../utils/posts';
+import PostCard from './PostCard.astro';
+
+interface Props {
+  posts: Post[];
+  class?: string;
+}
+const { posts, class: className = '' } = Astro.props;
+---
+<div class:list={['grid gap-6 sm:grid-cols-2 lg:grid-cols-3', className]}>
+  {posts.map((p) => <PostCard post={p} />)}
+</div>

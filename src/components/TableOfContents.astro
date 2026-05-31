@@ -1,0 +1,28 @@
+---
+import type { MarkdownHeading } from 'astro';
+
+interface Props {
+  headings: MarkdownHeading[];
+}
+const { headings } = Astro.props;
+// Only top-level (##) headings keep the ToC tidy.
+const toc = headings.filter((h) => h.depth === 2);
+---
+{
+  toc.length > 2 && (
+    <nav class="card p-5" aria-label="Table of contents">
+      <h2 class="font-display text-xs font-bold uppercase tracking-wider text-ink-muted">
+        On this page
+      </h2>
+      <ul class="mt-3 space-y-2 text-sm">
+        {toc.map((h) => (
+          <li>
+            <a href={`#${h.slug}`} class="text-ink-muted transition-colors hover:text-primary">
+              {h.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )
+}

@@ -1,0 +1,32 @@
+---
+/**
+ * Lead-magnet / resource download entry. Point `MONETIZATION.download.href` at a
+ * real file (or an email-gated link) to turn this into a list-building tool.
+ */
+import { MONETIZATION } from '../config';
+
+interface Props {
+  class?: string;
+}
+const { class: className = '' } = Astro.props;
+const { enabled, label, href } = MONETIZATION.download;
+---
+{
+  enabled && (
+    <aside
+      class:list={['card flex flex-col gap-3 p-5 sm:flex-row sm:items-center sm:justify-between', className]}
+      aria-label="Free download"
+    >
+      <div class="flex items-center gap-3">
+        <span aria-hidden="true" class="text-3xl">📥</span>
+        <div>
+          <p class="font-semibold text-ink">Free resource</p>
+          <p class="text-sm text-ink-muted">{label}</p>
+        </div>
+      </div>
+      <a href={href} class="btn btn-secondary shrink-0 no-underline" download>
+        Download
+      </a>
+    </aside>
+  )
+}

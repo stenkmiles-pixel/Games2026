@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import NewsletterCTA from '../components/NewsletterCTA.astro';
+import { SITE } from '../config';
+---
+<BaseLayout
+  title="About"
+  description={`What ${SITE.name} is, who writes it, and the promise behind every recommendation and guide.`}
+>
+  <div class="mx-auto max-w-3xl px-4 py-10 sm:px-6">
+    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'About' }]} />
+    <article class="prose prose-lg mt-6 max-w-none">
+      <h1>About {SITE.name}</h1>
+      <p>
+        {SITE.name} is a small, independent site about <strong>cozy and simulation games</strong> —
+        the relaxing, low-stress kind you play to unwind: farming sims, life sims, gentle
+        building and management games, and everything in the same warm, wholesome corner.
+      </p>
+      <p>
+        Cozy games are having a moment, and there are more of them than ever. That's wonderful —
+        and a little overwhelming. Our job is to help you cut through the noise: to find a game
+        worth your evening, decide whether it's worth your money, and get unstuck when you need a hand.
+      </p>
+
+      <h2>What you'll find here</h2>
+      <ul>
+        <li><strong>Recommendations</strong> — curated lists by platform, mood, and budget ("games like Stardew Valley," "best cozy games on Switch").</li>
+        <li><strong>Reviews</strong> — honest, spoiler-light takes on whether a game is worth it.</li>
+        <li><strong>Guides</strong> — beginner-friendly tips so you spend less time stuck and more time relaxing.</li>
+        <li><strong>Resources</strong> — mods, gift guides, and cozy gear round-ups.</li>
+      </ul>
+
+      <h2>Who's behind it</h2>
+      <p>
+        {SITE.name} is written by people who genuinely love this genre and have spent an
+        embarrassing number of hours in these little towns and valleys. We play the games we
+        write about and aim to give the kind of practical, friendly advice we'd give a friend.
+      </p>
+
+      <h2>Our promise</h2>
+      <p>
+        Recommendations are based on the actual experience of playing — never on who pays the most.
+        Some links on this site are affiliate links, which means we may earn a small commission if
+        you buy through them, at no extra cost to you. That support helps keep the site running, but
+        it never changes our honest opinion. You can read the full
+        <a href="/disclosure">affiliate disclosure</a> any time.
+      </p>
+      <p>Spotted something out of date or have a game we should cover? <a href="/contact">Get in touch</a> — we'd love to hear from you.</p>
+    </article>
+
+    <NewsletterCTA class="mt-12" />
+  </div>
+</BaseLayout>

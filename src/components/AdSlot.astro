@@ -1,0 +1,52 @@
+---
+/**
+ * Reserved advertising slot.
+ * - Renders a real Google AdSense unit once `MONETIZATION.ads.enabled` is true
+ *   and a client id is set (the loader script lives in BaseLayout).
+ * - Shows a labelled dashed placeholder during local dev so you can see where
+ *   ads will appear — but renders NOTHING in production until enabled, which
+ *   keeps the live site free of empty boxes (and AdSense-policy friendly).
+ */
+import { MONETIZATION } from '../config';
+
+interface Props {
+  slot?: string;
+  label?: string;
+  class?: string;
+}
+const { slot = '', label = 'Advertisement', class: className = '' } = Astro.props;
+const { enabled, adsenseClientId } = MONETIZATION.ads;
+const live = enabled && adsenseClientId;
+---
+
+{
+  live && (
+    <div class:list={['my-8', className]}>
+      <p class="mb-1 text-center text-[10px] uppercase tracking-widest text-ink-muted">{label}</p>
+      <ins
+        class="adsbygoogle"
+        style="display:block"
+        data-ad-client={adsenseClientId}
+        data-ad-slot={slot}
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
+      <script is:inline>
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  )
+}
+
+{
+  !enabled && import.meta.env.DEV && (
+    <div
+      class:list={[
+        'my-8 flex h-28 items-center justify-center rounded-xl border-2 border-dashed border-line text-[10px] uppercase tracking-widest text-ink-muted',
+        className,
+      ]}
+    >
+      {label} · reserved ad slot
+    </div>
+  )
+}

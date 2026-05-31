@@ -1,0 +1,102 @@
+---
+import { SITE, NAV } from '../config';
+
+const path = Astro.url.pathname.replace(/\/+$/, '') || '/';
+const isActive = (href: string) => {
+  const h = href.replace(/\/+$/, '') || '/';
+  return h === '/' ? path === '/' : path === h || path.startsWith(h + '/');
+};
+---
+
+<header class="sticky top-0 z-40 border-b border-line bg-canvas/85 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+    <a href="/" class="flex items-center gap-2 text-lg font-semibold text-ink">
+      <span aria-hidden="true" class="text-2xl">🏡</span>
+      <span class="font-display">{SITE.name}</span>
+    </a>
+
+    <nav aria-label="Primary" class="hidden items-center gap-1 md:flex">
+      {
+        NAV.map((item) => (
+          <a
+            href={item.href}
+            aria-current={isActive(item.href) ? 'page' : undefined}
+            class:list={[
+              'rounded-full px-3 py-1.5 text-sm font-semibold transition-colors hover:text-primary',
+              isActive(item.href) ? 'bg-accent-soft text-primary' : 'text-ink-muted',
+            ]}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <div class="flex items-center gap-1">
+      <button
+        id="theme-toggle"
+        type="button"
+        aria-label="Toggle dark mode"
+        class="rounded-full p-2 text-ink-muted transition-colors hover:bg-surface-2 hover:text-ink"
+      >
+        <span class="block dark:hidden" aria-hidden="true">🌙</span>
+        <span class="hidden dark:block" aria-hidden="true">☀️</span>
+      </button>
+      <button
+        id="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        class="rounded-full p-2 text-ink-muted transition-colors hover:bg-surface-2 hover:text-ink md:hidden"
+      >
+        <span aria-hidden="true">☰</span>
+      </button>
+    </div>
+  </div>
+
+  <nav
+    id="mobile-menu"
+    aria-label="Mobile"
+    hidden
+    class="border-t border-line px-4 pb-4 pt-2 md:hidden"
+  >
+    {
+      NAV.map((item) => (
+        <a
+          href={item.href}
+          aria-current={isActive(item.href) ? 'page' : undefined}
+          class:list={[
+            'block rounded-lg px-3 py-2 text-sm font-semibold transition-colors',
+            isActive(item.href) ? 'bg-accent-soft text-primary' : 'text-ink-muted hover:bg-surface-2',
+          ]}
+        >
+          {item.label}
+        </a>
+      ))
+    }
+  </nav>
+</header>
+
+<script is:inline>
+  // Theme toggle
+  const themeBtn = document.getElementById('theme-toggle');
+  themeBtn?.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+
+  // Mobile menu
+  const menuBtn = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  menuBtn?.addEventListener('click', () => {
+    const open = menu?.hasAttribute('hidden');
+    if (open) {
+      menu?.removeAttribute('hidden');
+      menuBtn.setAttribute('aria-expanded', 'true');
+    } else {
+      menu?.setAttribute('hidden', '');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>

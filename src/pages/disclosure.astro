@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { SITE } from '../config';
+---
+<BaseLayout
+  title="Affiliate Disclosure"
+  description={`How ${SITE.name} uses affiliate links and advertising, written plainly.`}
+>
+  <div class="mx-auto max-w-3xl px-4 py-10 sm:px-6">
+    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Affiliate Disclosure' }]} />
+    <article class="prose prose-lg mt-6 max-w-none">
+      <h1>Affiliate Disclosure</h1>
+      <p><em>Last updated: May 2026</em></p>
+      <p>
+        {SITE.name} is reader-supported. To keep the lights on and the content free, some of the
+        links on this site are <strong>affiliate links</strong>. If you click one and make a
+        purchase, we may earn a small commission — at <strong>no additional cost to you</strong>.
+      </p>
+      <h2>Amazon Associates</h2>
+      <p>
+        {SITE.name} is a participant in the Amazon Services LLC Associates Program, an affiliate
+        advertising program designed to provide a means for sites to earn advertising fees by
+        advertising and linking to Amazon. As an Amazon Associate we earn from qualifying purchases.
+      </p>
+      <h2>Other partners</h2>
+      <p>
+        We may also use affiliate links to other game stores and retailers (such as Humble Bundle,
+        Fanatical, and Green Man Gaming). Affiliate links are marked with <code>rel="sponsored"</code>
+        and are clearly part of "buy" or "check price" calls to action.
+      </p>
+      <h2>Our editorial independence</h2>
+      <p>
+        Affiliate relationships <strong>never</strong> influence our opinions. We recommend games,
+        gear, and resources because we think they're genuinely good — not because of a commission.
+        If we wouldn't suggest it to a friend, it isn't going on the site.
+      </p>
+      <p>Questions about any of this? <a href="/contact">Contact us</a>.</p>
+    </article>
+  </div>
+</BaseLayout>

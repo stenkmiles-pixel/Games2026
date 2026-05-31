@@ -1,0 +1,162 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+/* Use a class on <html> to toggle dark mode instead of the OS preference. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Fonts + semantic color tokens exposed to Tailwind utilities.
+   `inline` makes utilities resolve to the CSS variables at runtime, so flipping
+   the variables under `.dark` re-themes the whole site automatically. */
+@theme inline {
+  --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
+  --font-body: 'Nunito Variable', ui-sans-serif, system-ui, sans-serif;
+
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-line: var(--line);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+}
+
+/* Light theme (default). A warm, calm palette: cream, sage and clay. */
+:root {
+  --canvas: #fbf7f0;
+  --surface: #ffffff;
+  --surface-2: #f4eee3;
+  --ink: #3c372f;
+  --ink-muted: #756d62;
+  --line: #e8e0d2;
+  --primary: #5f8470;
+  --primary-hover: #4c6c5a;
+  --accent: #cd7d57;
+  --accent-soft: #f3e2d6;
+}
+
+/* Dark theme — soft, low-contrast "lamp-lit" version of the same palette. */
+.dark {
+  --canvas: #201d19;
+  --surface: #2a2621;
+  --surface-2: #332e28;
+  --ink: #ece5d9;
+  --ink-muted: #a79e90;
+  --line: #3d362d;
+  --primary: #8fb39e;
+  --primary-hover: #a8c8b5;
+  --accent: #e0966f;
+  --accent-soft: #3a302a;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* A reusable focus ring for keyboard users (accessibility). */
+:where(a, button, input, textarea, select):focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Theme the article body (Tailwind Typography) to match the cozy palette. */
+.prose {
+  --tw-prose-body: var(--ink);
+  --tw-prose-headings: var(--ink);
+  --tw-prose-links: var(--primary);
+  --tw-prose-bold: var(--ink);
+  --tw-prose-counters: var(--ink-muted);
+  --tw-prose-bullets: var(--primary);
+  --tw-prose-quotes: var(--ink-muted);
+  --tw-prose-quote-borders: var(--accent);
+  --tw-prose-captions: var(--ink-muted);
+  --tw-prose-hr: var(--line);
+  --tw-prose-th-borders: var(--line);
+  --tw-prose-td-borders: var(--line);
+  --tw-prose-code: var(--ink);
+  --tw-prose-pre-bg: var(--surface-2);
+  --tw-prose-pre-code: var(--ink);
+}
+.prose :where(h1, h2, h3, h4) {
+  font-family: var(--font-display);
+}
+.prose :where(h2) {
+  scroll-margin-top: 6rem;
+}
+.prose a {
+  text-underline-offset: 2px;
+}
+
+/* ---- Reusable building blocks ------------------------------------------- */
+
+/* Buttons — fixed light/dark pairings so text stays readable in both themes. */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding: 0.625rem 1.25rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+.dark .btn-primary {
+  color: #1c1916;
+}
+.btn-primary:hover {
+  background: var(--primary-hover);
+}
+.btn-secondary {
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+.btn-secondary:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+/* Card surface used by post cards and callout boxes. */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+}
+
+/* Constrain images that authors drop into Markdown. */
+.prose :where(img) {
+  border-radius: 0.75rem;
+}

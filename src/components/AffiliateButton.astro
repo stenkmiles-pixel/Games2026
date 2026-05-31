@@ -1,0 +1,24 @@
+---
+/**
+ * A buy/affiliate call-to-action. Always uses rel="sponsored nofollow" so it is
+ * compliant with Google + FTC guidance. Drop your tracked URL into `href`.
+ */
+interface Props {
+  href: string;
+  store?: string;
+  price?: string;
+  class?: string;
+}
+const { href, store = 'Store', price, class: className = '' } = Astro.props;
+const placeholder = !href || href === '#';
+---
+<a
+  href={href || '#'}
+  target="_blank"
+  rel="sponsored nofollow noopener"
+  data-placeholder={placeholder ? 'true' : undefined}
+  class:list={['btn btn-primary no-underline', className]}
+>
+  <slot>Check price on {store}</slot>
+  {price && <span class="font-normal opacity-80">· {price}</span>}
+</a>
