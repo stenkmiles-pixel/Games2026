@@ -3,6 +3,8 @@ title: 'Wylde Flowers Review: Cozy Farming Meets Witchcraft'
 description: "Our Wylde Flowers review. With full voice acting and a heartfelt story, this farming-and-witchcraft sim is one of the coziest narrative games around — here's the verdict."
 pubDate: 2026-05-15
 category: 'Reviews'
+rating: 4
+gameName: 'Wylde Flowers'
 tags: ['wylde flowers', 'review', 'farming sims']
 ---
 

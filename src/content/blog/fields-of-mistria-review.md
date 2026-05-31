@@ -3,6 +3,8 @@ title: 'Fields of Mistria Review (Early Access First Impressions)'
 description: 'Our Fields of Mistria review and early-access first impressions. Is this gorgeous anime-style farming sim worth playing now, or should you wait for 1.0?'
 pubDate: 2025-12-08
 category: 'Reviews'
+rating: 4
+gameName: 'Fields of Mistria'
 tags: ['fields of mistria', 'review', 'farming sims']
 ---
 

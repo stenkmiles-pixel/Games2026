@@ -6,6 +6,7 @@ import { SITE, MONETIZATION } from '../config';
 import SEO from '../components/SEO.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { ClientRouter } from 'astro:transitions';
 
 interface Props {
   title: string;
@@ -42,6 +43,7 @@ const jsonLd = props.jsonLd
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="alternate" type="application/rss+xml" title={SITE.name} href="/rss.xml" />
     <meta name="generator" content={Astro.generator} />
+    <ClientRouter />
     {
       SITE.googleSiteVerification && (
         <meta name="google-site-verification" content={SITE.googleSiteVerification} />
@@ -54,6 +56,17 @@ const jsonLd = props.jsonLd
         stored === 'dark' ||
         (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches);
       if (prefersDark) document.documentElement.classList.add('dark');
+    </script>
+    <script>
+      // Re-apply the saved theme after each View Transitions navigation, since
+      // the swapped <html> resets to the server-rendered (light) class list.
+      document.addEventListener('astro:after-swap', () => {
+        const stored = localStorage.getItem('theme');
+        const dark =
+          stored === 'dark' ||
+          (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.classList.toggle('dark', dark);
+      });
     </script>
     <SEO {...props} jsonLd={jsonLd} />
     {

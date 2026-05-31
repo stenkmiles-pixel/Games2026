@@ -3,6 +3,8 @@ title: 'Is Disney Dreamlight Valley Worth Playing? Honest Review'
 description: "An honest look at whether Disney Dreamlight Valley is worth it. We cover the gameplay, the microtransactions, the expansion, and exactly who will love it."
 pubDate: 2026-04-22
 category: 'Reviews'
+rating: 4
+gameName: 'Disney Dreamlight Valley'
 tags: ['disney dreamlight valley', 'review', 'life sim']
 ---
 

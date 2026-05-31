@@ -13,7 +13,7 @@ const href = `/blog/${post.id}/`;
 ---
 <article
   class:list={[
-    'card group flex flex-col overflow-hidden transition-shadow hover:shadow-md',
+    'card group flex flex-col overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_36px_-12px_rgba(95,132,112,0.18)]',
     featured && 'sm:flex-row',
   ]}
 >
@@ -21,6 +21,7 @@ const href = `/blog/${post.id}/`;
     href={href}
     tabindex="-1"
     aria-hidden="true"
+    transition:name={`hero-${post.id}`}
     class:list={[
       'block overflow-hidden bg-surface-2',
       featured ? 'aspect-video sm:aspect-auto sm:w-2/5' : 'aspect-[16/9]',

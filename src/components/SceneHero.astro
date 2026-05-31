@@ -62,9 +62,47 @@ const stars = v.moon
     </linearGradient>
   </defs>
   <rect width="1200" height="675" fill={`url(#${gid})`} />
-  {stars.map((s) => <circle cx={s.x} cy={s.y} r={s.r} fill="#fbf7f0" opacity="0.85" />)}
-  <circle cx={v.body.x} cy={v.body.y} r={v.body.r} fill={v.body.fill} opacity="0.92" />
+  {stars.map((s) => <circle class="twinkle" cx={s.x} cy={s.y} r={s.r} fill="#fbf7f0" opacity="0.85" />)}
+  <circle class="drift" cx={v.body.x} cy={v.body.y} r={v.body.r} fill={v.body.fill} opacity="0.92" />
   <path d="M0,430 Q300,360 620,418 T1200,402 L1200,675 L0,675 Z" fill={v.hills[0]} opacity="0.92" />
   <path d="M0,500 Q360,446 700,500 T1200,486 L1200,675 L0,675 Z" fill={v.hills[1]} />
   <path d="M0,576 Q300,538 640,574 T1200,560 L1200,675 L0,675 Z" fill={v.hills[2]} />
 </svg>
+
+<style>
+  /* Calm, very slow motion — and only for visitors who haven't asked to reduce it. */
+  @media (prefers-reduced-motion: no-preference) {
+    .twinkle {
+      animation: twinkle 9s ease-in-out infinite;
+    }
+    .twinkle:nth-of-type(3n) {
+      animation-duration: 12s;
+      animation-delay: -4s;
+    }
+    .twinkle:nth-of-type(3n + 1) {
+      animation-duration: 7.5s;
+      animation-delay: -2s;
+    }
+    .drift {
+      animation: drift 12s ease-in-out infinite;
+    }
+    @keyframes twinkle {
+      0%,
+      100% {
+        opacity: 0.35;
+      }
+      50% {
+        opacity: 0.95;
+      }
+    }
+    @keyframes drift {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  }
+</style>

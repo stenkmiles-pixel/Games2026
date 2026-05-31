@@ -21,6 +21,11 @@ const blog = defineCollection({
     heroImage: z.string().optional(),
     heroImageAlt: z.string().optional(),
     heroCredit: z.string().optional(),
+    // Editorial review score out of 5 (e.g. 4.5). Enables the cozy score
+    // display and a Review rich snippet on Reviews-category articles.
+    rating: z.number().min(0).max(5).optional(),
+    // The game being reviewed (used for Review structured data). Falls back to title.
+    gameName: z.string().optional(),
     author: z.string().default('The Cozy Game Guide Team'),
     /** Surface this post in the homepage "featured" strip. */
     featured: z.boolean().default(false),

@@ -20,7 +20,7 @@ interface Props {
   related: CollectionEntry<'blog'>[];
 }
 const { post, headings, related } = Astro.props;
-const { title, description, pubDate, updatedDate, category, author, tags, heroImage, heroImageAlt, heroCredit } = post.data;
+const { title, description, pubDate, updatedDate, category, author, tags, heroImage, heroImageAlt, heroCredit, rating, gameName } = post.data;
 const c = CATEGORIES[category];
 const canonicalUrl = new URL(`/blog/${post.id}/`, SITE.url).href;
 
@@ -35,6 +35,25 @@ const articleJsonLd = {
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
 };
+
+// Editorial Review structured data — only for single-game reviews that set a
+// rating. Uses VideoGame (not Product/offers) to stay within Google's guidelines.
+const reviewJsonLd =
+  category === 'Reviews' && rating != null
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'Review',
+        name: title,
+        reviewBody: description,
+        datePublished: pubDate.toISOString(),
+        author: { '@type': 'Organization', name: author },
+        publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+        itemReviewed: { '@type': 'VideoGame', name: gameName ?? title },
+        reviewRating: { '@type': 'Rating', ratingValue: rating, bestRating: 5, worstRating: 1 },
+      }
+    : null;
+
+const pageJsonLd = reviewJsonLd ? [articleJsonLd, reviewJsonLd] : articleJsonLd;
 ---
 <BaseLayout
   title={title}
@@ -42,7 +61,7 @@ const articleJsonLd = {
   type="article"
   publishedTime={pubDate}
   modifiedTime={updatedDate ?? pubDate}
-  jsonLd={articleJsonLd}
+  jsonLd={pageJsonLd}
 >
   <div class="mx-auto max-w-6xl px-4 py-8 sm:px-6">
     <Breadcrumbs
@@ -76,9 +95,18 @@ const articleJsonLd = {
               )
             }
           </div>
+          {
+            rating != null && (
+              <p class="mt-4 inline-flex items-center gap-1.5 rounded-full bg-accent-soft px-3 py-1 text-sm font-bold text-primary">
+                <span aria-hidden="true">☕</span>
+                <span>{rating} / 5</span>
+                <span class="sr-only">Our cozy score: {rating} out of 5</span>
+              </p>
+            )
+          }
         </header>
 
-        <figure class="mt-6 overflow-hidden rounded-2xl border border-line bg-surface-2">
+        <figure transition:name={`hero-${post.id}`} class="mt-6 overflow-hidden rounded-2xl border border-line bg-surface-2">
           <div class="aspect-[16/9] w-full">
             {
               heroImage ? (

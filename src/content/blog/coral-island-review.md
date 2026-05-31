@@ -3,6 +3,8 @@ title: 'Coral Island Review: Is It Worth It in 2025?'
 description: 'Our honest Coral Island review. Is this tropical farming sim a worthy Stardew Valley alternative? We cover the diving, the town, the pros and cons, and who should buy it.'
 pubDate: 2026-05-20
 category: 'Reviews'
+rating: 4.5
+gameName: 'Coral Island'
 tags: ['coral island', 'review', 'farming sims']
 ---
 

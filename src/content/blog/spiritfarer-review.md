@@ -3,6 +3,8 @@ title: 'Spiritfarer Review: A Cozy Game About Letting Go'
 description: "Our Spiritfarer review. This gorgeous management game about caring for spirits is one of the most beautiful and moving cozy games ever made — here's who should play it."
 pubDate: 2026-02-22
 category: 'Reviews'
+rating: 4.5
+gameName: 'Spiritfarer'
 tags: ['spiritfarer', 'review', 'management games']
 ---
 

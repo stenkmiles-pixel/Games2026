@@ -3,6 +3,8 @@ title: 'My Time at Sandrock Review: A Cozy Crafting Adventure'
 description: 'Our My Time at Sandrock review. Is this workshop-building life sim worth it? We cover the crafting, the town, the story, the pros and cons, and who should play.'
 pubDate: 2026-01-05
 category: 'Reviews'
+rating: 4
+gameName: 'My Time at Sandrock'
 tags: ['my time at sandrock', 'review', 'life sims']
 ---
 
