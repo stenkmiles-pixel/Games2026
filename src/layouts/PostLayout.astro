@@ -13,6 +13,7 @@ import NewsletterCTA from '../components/NewsletterCTA.astro';
 import AdSlot from '../components/AdSlot.astro';
 import PostCard from '../components/PostCard.astro';
 import SceneHero from '../components/SceneHero.astro';
+import WhereToBuy from '../components/WhereToBuy.astro';
 
 interface Props {
   post: CollectionEntry<'blog'>;
@@ -124,6 +125,8 @@ const pageJsonLd = reviewJsonLd ? [articleJsonLd, reviewJsonLd] : articleJsonLd;
         <div class="prose prose-lg mt-6 max-w-none">
           <slot />
         </div>
+
+        {category === 'Reviews' && gameName && <WhereToBuy gameName={gameName} class="mt-10" />}
 
         {
           tags.length > 0 && (

@@ -1,0 +1,56 @@
+---
+/**
+ * "Where to buy" panel for review articles. Renders outbound store buttons for
+ * a given game. Works immediately with store SEARCH links (always accurate — no
+ * fragile app IDs). It auto-upgrades:
+ *   - Affiliate tags from MONETIZATION.affiliates are appended when set.
+ *   - Live prices appear here later once the ITAD price feed (Phase B) is wired.
+ * AdSense-safe: outbound links only, no third-party scripts.
+ */
+import { MONETIZATION } from '../config';
+import AffiliateButton from './AffiliateButton.astro';
+
+interface Props {
+  gameName: string;
+  class?: string;
+}
+const { gameName, class: className = '' } = Astro.props;
+const q = encodeURIComponent(gameName);
+const aff = MONETIZATION.affiliates;
+
+const stores = [
+  {
+    label: 'Steam',
+    note: 'PC',
+    href: `https://store.steampowered.com/search/?term=${q}`,
+  },
+  {
+    label: 'Nintendo eShop',
+    note: 'Switch',
+    href: `https://www.nintendo.com/us/search/?q=${q}`,
+  },
+  {
+    label: 'Humble',
+    note: 'PC keys',
+    href: `https://www.humblebundle.com/store/search?search=${q}` + (aff.humble ? `&partner=${aff.humble}` : ''),
+  },
+];
+---
+<aside class:list={['card p-5', className]} aria-label={`Where to buy ${gameName}`}>
+  <h2 class="flex items-center gap-2 font-display text-lg font-semibold text-ink">
+    <span aria-hidden="true">🛒</span> Where to buy {gameName}
+  </h2>
+  <p class="mt-1 text-sm text-ink-muted">Check the current price on each store:</p>
+  <div class="mt-4 flex flex-wrap gap-2">
+    {
+      stores.map((s) => (
+        <AffiliateButton href={s.href} store={s.label}>
+          {s.label} <span class="font-normal opacity-80">· {s.note}</span>
+        </AffiliateButton>
+      ))
+    }
+  </div>
+  <p class="mt-3 text-[11px] leading-relaxed text-ink-muted">
+    Prices change often (especially during sales) — the store page always shows the live price. Some links may be affiliate links; see our <a class="text-primary hover:underline" href="/disclosure">disclosure</a>.
+  </p>
+</aside>
