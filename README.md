@@ -1,8 +1,8 @@
-# Sleepy Harbor 🏡
+# Cozy Game Guide 🏡
 
 A cozy-games content site — SEO-focused recommendations, reviews, and guides for cozy & simulation games. Built with [Astro](https://astro.build) + Tailwind CSS, output as a fast static site, and ready to deploy to Vercel.
 
-> **Working brand name: "Sleepy Harbor."** Change it (and everything else site-wide) in [`src/config.ts`](src/config.ts).
+> **Brand: "Cozy Game Guide"** · **Domain: [cozygameguide.com](https://cozygameguide.com)**. All site-wide settings live in [`src/config.ts`](src/config.ts).
 
 ---
 

@@ -11,7 +11,7 @@
     <path d="M30 58 L60 33 L90 58 V88 a3 3 0 0 1-3 3 H33 a3 3 0 0 1-3-3 Z" fill="#fbf7f0" />
     <rect x="53" y="68" width="14" height="23" rx="2" fill="#cd7d57" />
   </g>
-  <text x="600" y="330" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-weight="700" fill="#3c372f">Sleepy Harbor</text>
+  <text x="600" y="330" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="70" font-weight="700" fill="#3c372f">Cozy Game Guide</text>
   <text x="600" y="392" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#756d62">Cozy &amp; simulation game recommendations and guides</text>
   <rect x="540" y="438" width="120" height="6" rx="3" fill="#5f8470" />
 </svg>

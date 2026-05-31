@@ -6,12 +6,12 @@
 
 export const SITE = {
   /** Brand name shown in the header, footer and <title>. */
-  name: 'Sleepy Harbor',
+  name: 'Cozy Game Guide',
   /** Used as the default <title> on the homepage. */
-  title: 'Sleepy Harbor — Cozy & Simulation Game Recommendations and Guides',
+  title: 'Cozy Game Guide — Cozy & Simulation Game Recommendations and Guides',
   /** Default meta description / homepage description. */
   description:
-    'Sleepy Harbor helps you find, choose, and get good at cozy and simulation games — relaxing recommendations, honest reviews, and beginner-friendly guides.',
+    'Cozy Game Guide helps you find, choose, and get good at cozy and simulation games — relaxing recommendations, honest reviews, and beginner-friendly guides.',
   /**
    * Full canonical URL of the deployed site (no trailing slash).
    * IMPORTANT: change this to your real domain once you have one. It drives
@@ -21,9 +21,9 @@ export const SITE = {
   /** Short, friendly one-liner shown on the homepage hero. */
   tagline:
     'The cozy corner of the internet for finding, playing, and getting good at relaxing games.',
-  author: 'The Sleepy Harbor Team',
+  author: 'The Cozy Game Guide Team',
   /** Contact email shown on the Contact page. Update to your real inbox. */
-  email: 'hello@sleepyharbor.example',
+  email: 'hello@cozygameguide.com',
   locale: 'en',
   /** OpenGraph locale tag. */
   ogLocale: 'en_US',
@@ -105,7 +105,7 @@ export const MONETIZATION = {
   affiliates: {
     /** Show the affiliate disclosure banner on monetized pages. */
     disclosureEnabled: true,
-    /** Amazon Associates tracking tag, e.g. 'sleepyharbor-20'. */
+    /** Amazon Associates tracking tag, e.g. 'cozygameguide-20'. */
     amazonTag: '',
     /** Generic storefronts — paste your tracked links/IDs when approved. */
     humble: '',

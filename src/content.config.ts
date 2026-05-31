@@ -16,7 +16,7 @@ const blog = defineCollection({
     // Must match a key in CATEGORIES (src/config.ts).
     category: z.enum(['Recommendations', 'Reviews', 'Guides', 'Resources']),
     tags: z.array(z.string()).default([]),
-    author: z.string().default('The Sleepy Harbor Team'),
+    author: z.string().default('The Cozy Game Guide Team'),
     /** Surface this post in the homepage "featured" strip. */
     featured: z.boolean().default(false),
     /** Hide from the site (won't be built into a page or listed). */

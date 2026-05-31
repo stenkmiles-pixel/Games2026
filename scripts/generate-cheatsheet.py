@@ -21,7 +21,7 @@ from reportlab.platypus import (
     SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, HRFlowable,
 )
 
-# --- Sleepy Harbor cozy palette -------------------------------------------
+# --- Cozy Game Guide palette ----------------------------------------------
 SAGE = colors.HexColor("#5f8470")
 CLAY = colors.HexColor("#cd7d57")
 CREAM = colors.HexColor("#fbf7f0")
@@ -31,7 +31,7 @@ INK_MUTED = colors.HexColor("#756d62")
 LINE = colors.HexColor("#e8e0d2")
 WHITE = colors.white
 
-SITE = "sleepy-harbor.vercel.app"
+SITE = "cozygameguide.com"
 
 OUT_DIR = os.path.join(os.path.dirname(__file__), "..", "public", "downloads")
 os.makedirs(OUT_DIR, exist_ok=True)
@@ -41,7 +41,7 @@ doc = SimpleDocTemplate(
     OUT, pagesize=letter,
     topMargin=0.45 * inch, bottomMargin=0.45 * inch,
     leftMargin=0.6 * inch, rightMargin=0.6 * inch,
-    title="Stardew Valley Gift Cheat Sheet", author="Sleepy Harbor",
+    title="Stardew Valley Gift Cheat Sheet", author="Cozy Game Guide",
 )
 W = doc.width
 
@@ -172,7 +172,7 @@ story.append(Spacer(1, 12))
 story.append(HRFlowable(width="100%", thickness=1, color=LINE))
 story.append(Spacer(1, 6))
 story.append(Paragraph(
-    "Free cheat sheet from <b>Sleepy Harbor</b> &nbsp;&bull;&nbsp; "
+    "Free cheat sheet from <b>Cozy Game Guide</b> &nbsp;&bull;&nbsp; "
     + SITE + " &nbsp;&bull;&nbsp; Tip: you can gift twice per week per villager, plus their birthday.",
     small,
 ))
