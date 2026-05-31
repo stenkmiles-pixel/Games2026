@@ -17,7 +17,7 @@ export const SITE = {
    * IMPORTANT: change this to your real domain once you have one. It drives
    * the sitemap, RSS feed, canonical tags and Open Graph URLs.
    */
-  url: 'https://sleepy-harbor.vercel.app',
+  url: 'https://cozygameguide.com',
   /** Short, friendly one-liner shown on the homepage hero. */
   tagline:
     'The cozy corner of the internet for finding, playing, and getting good at relaxing games.',
