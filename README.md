@@ -128,20 +128,20 @@ Every future `git push` to the main branch redeploys automatically.
 
 ## 🗺️ Content roadmap
 
-The site currently ships with **53 published articles** across five content pillars (Recommendations, Reviews, Guides, Resources, Mindful Gaming). Here are the next SEO topics to write using the template above:
+The site currently ships with **59 published articles** across five content pillars (Recommendations, Reviews, Guides, Resources, Mindful Gaming). Here are the next SEO topics to write using the template above:
 
 1. Best Cozy Games for Mac
-2. Best Cozy Horror Games (Spooky but Gentle)
-3. Best Cozy Games to Play in Autumn
-4. Best Cozy Games for Winter & the Holidays
-5. Stardew Valley: Complete Year 1 Checklist
-6. Stardew Valley: How to Unlock the Greenhouse
-7. Animal Crossing: Best Island Layout Ideas
-8. Coral Island: Best Crops by Season
-9. Fae Farm Beginner Tips
-10. WEBFISHING Beginner Guide
-11. Best Cozy Game Soundtracks to Relax or Study To
-12. Best Plushies & Merch for Cozy Gamers
+2. Best Cozy Games for Winter & the Holidays
+3. Animal Crossing: Best Island Layout Ideas
+4. Coral Island: Best Crops by Season
+5. Fae Farm Beginner Tips
+6. Best Plushies & Merch for Cozy Gamers
+7. Cozy Games Like Spiritfarer
+8. Best Cozy Games for Couples
+9. Disney Dreamlight Valley: How to Unlock Characters
+10. Stardew Valley: Festivals Guide (What to Do at Each)
+11. Best Cozy Pixel-Art Games
+12. A Cozy-Games Digital Detox: Playing Mindfully
 
 Aim for 2–3 new articles per week, and revisit your best performers in Search Console to expand them.
 
