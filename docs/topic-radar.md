@@ -1,22 +1,17 @@
 # Topic Radar
 
-_This file is auto-generated weekly by the **Topic radar** GitHub Action_
-_(`.github/workflows/discover-topics.yml` → `scripts/discover-topics.mjs`)._
+_Auto-generated 2026-06-01T12:27:47.443Z. Signals + AI suggestions to help pick what to write next._
+_Review, fact-check, and never auto-publish — this is an assistant, not an autopilot._
 
-It hasn't run on GitHub yet. To generate the first real radar:
+## Part B — AI topic suggestions
 
-1. **(Optional, for AI suggestions)** Add a repository secret — either
-   `ANTHROPIC_API_KEY` *or* `GEMINI_API_KEY` — under
-   **Settings → Secrets and variables → Actions**.
-2. Go to the **Actions** tab → **Topic radar** → **Run workflow**.
+> **AI suggestions are off.** Add an `ANTHROPIC_API_KEY` *or* `GEMINI_API_KEY` repository secret to enable ranked topic ideas here. (Raw signals above work without a key.)
 
-On each run it writes two sections here:
 
-- **Part A — Raw signals:** trending "hot" posts from cozy-gaming subreddits
-  (no API key needed).
-- **Part B — AI topic suggestions:** ranked article ideas that read Part A +
-  the existing article list (to avoid duplicates), each citing the signal it
-  came from. Only appears when an LLM key is set.
+## Part A — Raw signals (Reddit "hot")
 
-> ⚠️ This is an **assistant, not an autopilot.** Always review and fact-check
-> suggestions before writing, and never auto-publish AI-drafted content.
+_No Reddit signals fetched this run (network or rate limit). Try again later._
+
+
+---
+_Tracking 67 existing articles. Edit `scripts/discover-topics.mjs` to add signal sources (Steam upcoming, Google Trends, Search Console)._
