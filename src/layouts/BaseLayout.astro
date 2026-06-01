@@ -49,6 +49,11 @@ const jsonLd = props.jsonLd
         <meta name="google-site-verification" content={SITE.googleSiteVerification} />
       )
     }
+    {
+      SITE.impactSiteVerification && (
+        <meta name="impact-site-verification" value={SITE.impactSiteVerification} />
+      )
+    }
     <script is:inline>
       // Apply the saved (or system) theme before first paint to avoid a flash.
       const stored = localStorage.getItem('theme');

@@ -33,6 +33,12 @@ export const SITE = {
    * here (the long string inside content="..."). Then redeploy and click Verify.
    */
   googleSiteVerification: 'y35Xbe5vRfkxLUQpQ-HB5oKYPWpo04UwvHszVzXCrRY',
+  /**
+   * Impact.com affiliate-network site verification. Rendered as
+   * <meta name="impact-site-verification" value="..."> — note it uses `value`,
+   * NOT `content`. Verifies domain ownership for affiliate programs.
+   */
+  impactSiteVerification: '0b93d762-9be3-4512-a6a0-c9e867ffe2a1',
 } as const;
 
 /** Primary navigation links (header + footer). */
