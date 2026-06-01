@@ -2,6 +2,9 @@
 /**
  * Lead-magnet / resource download entry. Point `MONETIZATION.download.href` at a
  * real file (or an email-gated link) to turn this into a list-building tool.
+ *
+ * Vertical card layout: reads cleanly both full-width (mobile) and in the
+ * narrow desktop sidebar (where a side-by-side layout squeezed the label).
  */
 import { MONETIZATION } from '../config';
 
@@ -10,21 +13,59 @@ interface Props {
 }
 const { class: className = '' } = Astro.props;
 const { enabled, label, href } = MONETIZATION.download;
+// The eyebrow already says "Free resource", so drop a redundant leading "Free".
+const title = label.replace(/^free\s+/i, '');
 ---
 {
   enabled && (
     <aside
-      class:list={['card flex flex-col gap-3 p-5 sm:flex-row sm:items-center sm:justify-between', className]}
+      class:list={['card flex flex-col gap-4 p-5', className]}
       aria-label="Free download"
     >
       <div class="flex items-center gap-3">
-        <span aria-hidden="true" class="text-3xl">📥</span>
-        <div>
-          <p class="font-semibold text-ink">Free resource</p>
-          <p class="text-sm text-ink-muted">{label}</p>
+        <span
+          class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-accent-soft text-primary"
+          aria-hidden="true"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+            <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+            <path d="M12 18v-6" />
+            <path d="m9 15 3 3 3-3" />
+          </svg>
+        </span>
+        <div class="min-w-0">
+          <p class="text-[11px] font-bold uppercase tracking-[0.12em] text-accent">Free resource</p>
+          <p class="font-display text-[15px] font-semibold leading-snug text-ink">{title}</p>
         </div>
       </div>
-      <a href={href} class="btn btn-secondary shrink-0 no-underline" download>
+      <a href={href} class="btn btn-primary w-full no-underline" download>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" x2="12" y1="15" y2="3" />
+        </svg>
         Download
       </a>
     </aside>
