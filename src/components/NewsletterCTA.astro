@@ -2,6 +2,10 @@
 /**
  * Email capture CTA — the long-term audience asset. Wire it up by pasting your
  * email provider's form action URL into MONETIZATION.newsletter.actionUrl.
+ *
+ * Progressive enhancement: the <form> still posts normally if JS is off (Kit's
+ * hosted success page), but with JS it submits via fetch and shows an inline,
+ * on-brand confirmation so the visitor never leaves the site.
  */
 import { MONETIZATION } from '../config';
 
@@ -15,39 +19,92 @@ const placeholder = !actionUrl || actionUrl === '#';
 {
   enabled && (
     <section
-      class:list={[
-        'card overflow-hidden bg-accent-soft p-6 text-center sm:p-8',
-        className,
-      ]}
+      class:list={['card overflow-hidden bg-accent-soft p-6 text-center sm:p-8', className]}
       aria-label="Newsletter signup"
+      data-newsletter
     >
-      <h2 class="font-display text-xl font-semibold text-ink sm:text-2xl">
-        🌿 Get cozy game picks in your inbox
-      </h2>
-      <p class="mx-auto mt-2 max-w-md text-sm text-ink-muted">
-        New recommendations, reviews and guides — no spam, just relaxing games worth your time.
-      </p>
-      <form
-        action={actionUrl}
-        method="post"
-        class="mx-auto mt-5 flex max-w-md flex-col gap-2 sm:flex-row"
-      >
-        <label class="sr-only" for="newsletter-email">Email address</label>
-        <input
-          id="newsletter-email"
-          type="email"
-          name="email_address"
-          required
-          placeholder="you@example.com"
-          class="flex-1 rounded-full border border-line bg-surface px-4 py-2.5 text-sm text-ink placeholder:text-ink-muted"
-        />
-        <button type="submit" class="btn btn-primary">Subscribe</button>
-      </form>
-      {placeholder && import.meta.env.DEV && (
-        <p class="mt-3 text-[11px] text-ink-muted">
-          Dev note: set <code>MONETIZATION.newsletter.actionUrl</code> in src/config.ts to make this live.
+      <div data-newsletter-content>
+        <h2 class="font-display text-xl font-semibold text-ink sm:text-2xl">
+          🌿 Get cozy game picks in your inbox
+        </h2>
+        <p class="mx-auto mt-2 max-w-md text-sm text-ink-muted">
+          New recommendations, reviews and guides — no spam, just relaxing games worth your time.
         </p>
-      )}
+        <form
+          action={actionUrl}
+          method="post"
+          class="mx-auto mt-5 flex max-w-md flex-col gap-2 sm:flex-row"
+          data-newsletter-form
+        >
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input
+            id="newsletter-email"
+            type="email"
+            name="email_address"
+            required
+            placeholder="you@example.com"
+            class="flex-1 rounded-full border border-line bg-surface px-4 py-2.5 text-sm text-ink placeholder:text-ink-muted"
+          />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        {placeholder && import.meta.env.DEV && (
+          <p class="mt-3 text-[11px] text-ink-muted">
+            Dev note: set <code>MONETIZATION.newsletter.actionUrl</code> in src/config.ts to make this live.
+          </p>
+        )}
+      </div>
+
+      <div data-newsletter-success hidden tabindex="-1" class="outline-none">
+        <h2 class="font-display text-xl font-semibold text-ink sm:text-2xl">
+          🌿 You're almost in!
+        </h2>
+        <p class="mx-auto mt-2 max-w-md text-sm text-ink-muted">
+          Check your inbox and click the confirmation link to finish subscribing — then your first
+          cozy pick is on its way. (Nothing in a minute? Peek in your spam folder.)
+        </p>
+      </div>
     </section>
   )
 }
+
+<script>
+  // Submit the newsletter form without leaving the site, then show the inline
+  // success state. Bound on astro:page-load so it works after View Transitions.
+  function bindNewsletterForms() {
+    document.querySelectorAll<HTMLFormElement>('form[data-newsletter-form]').forEach((form) => {
+      if (form.dataset.bound) return;
+      form.dataset.bound = 'true';
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        const button = form.querySelector('button[type="submit"]');
+        if (button instanceof HTMLButtonElement) {
+          button.disabled = true;
+          button.textContent = 'Subscribing…';
+        }
+
+        try {
+          await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { Accept: 'application/json' },
+          });
+        } catch {
+          // CORS-opaque or transient network: the POST still reaches Kit in the
+          // common case, so we optimistically confirm rather than dead-end.
+        }
+
+        const section = form.closest('[data-newsletter]');
+        const content = section?.querySelector<HTMLElement>('[data-newsletter-content]');
+        const success = section?.querySelector<HTMLElement>('[data-newsletter-success]');
+        if (content && success) {
+          content.hidden = true;
+          success.hidden = false;
+          success.focus();
+        }
+      });
+    });
+  }
+
+  document.addEventListener('astro:page-load', bindNewsletterForms);
+</script>
