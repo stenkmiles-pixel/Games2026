@@ -1,0 +1,45 @@
+name: Topic radar
+
+# Weekly trend + AI topic suggestions. Collects cozy-gaming signals (Reddit hot)
+# and, if an LLM key is set, ranked article ideas — written to docs/topic-radar.md.
+# Works WITHOUT any key (raw signals only); add ANTHROPIC_API_KEY or GEMINI_API_KEY
+# to enable AI suggestions. Never publishes content; just updates the radar file.
+
+on:
+  schedule:
+    - cron: '0 7 * * 1' # ~07:00 UTC every Monday
+  workflow_dispatch: {} # allow manual runs from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Discover topics
+        env:
+          # Set ONE of these as a repo secret to turn on AI suggestions.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Optional model override (e.g. claude-3-5-sonnet-latest / gemini-2.0-flash).
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+        run: node scripts/discover-topics.mjs
+
+      - name: Commit & push if the radar changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/topic-radar.md
+          if git diff --staged --quiet; then
+            echo "No topic-radar changes."
+          else
+            git commit -m "chore: update topic radar"
+            git push
+          fi
