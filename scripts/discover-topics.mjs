@@ -8,6 +8,10 @@
  *  - With an LLM key, adds Part B (AI topic suggestions), each citing the raw
  *    signal it came from — so suggestions are auditable, not black-box.
  *
+ * Signal sources are CI-friendly (datacenter IPs, no auth): the Steam store
+ * search API and the Hacker News (Algolia) API. Reddit's public JSON blocks
+ * cloud IPs, so it was dropped; re-add it later via OAuth if desired.
+ *
  * Secrets / env (all optional):
  *   ANTHROPIC_API_KEY   -> use Claude for Part B
  *   GEMINI_API_KEY      -> use Gemini for Part B (checked if no Anthropic key)
@@ -22,19 +26,20 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const BLOG_DIR = join(ROOT, 'src', 'content', 'blog');
 const OUT_PATH = join(ROOT, 'docs', 'topic-radar.md');
 
-// Cozy-gaming subreddits to sample "hot" posts from. Missing/banned subs just
-// return nothing (fault-tolerant), so it's safe to add/remove freely.
-const SUBREDDITS = [
-  'CozyGamers',
-  'StardewValley',
-  'AnimalCrossing',
-  'SimulationGaming',
-  'FieldsOfMistria',
-  'Palia',
-];
-
 const UA = 'cozygameguide-topic-radar/1.0 (+https://cozygameguide.com)';
 const NOW_ISO = new Date().toISOString();
+
+/** Decode the handful of HTML entities Steam titles can contain. */
+const decodeEntities = (s) =>
+  s
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&trade;/g, '™')
+    .replace(/&reg;/g, '®');
 
 /** Read the slugs of every existing article so the LLM can avoid duplicates. */
 function existingSlugs() {
@@ -48,57 +53,87 @@ function existingSlugs() {
   }
 }
 
-/** Fetch "hot" posts from one subreddit. Returns [] on any error. */
-async function fetchSubreddit(sub) {
+/** Fetch games from the Steam store search API. Returns [{ title, url }]. */
+async function fetchSteam(query) {
   try {
-    const res = await fetch(`https://www.reddit.com/r/${sub}/hot.json?limit=15&raw_json=1`, {
+    const res = await fetch(`https://store.steampowered.com/search/results/?${query}&infinite=1`, {
       headers: { 'User-Agent': UA },
     });
     if (!res.ok) {
-      console.warn(`[topics] r/${sub}: HTTP ${res.status}`);
+      console.warn(`[topics] Steam (${query}): HTTP ${res.status}`);
       return [];
     }
     const data = await res.json();
-    const posts = data?.data?.children ?? [];
-    return posts
-      .map((p) => p?.data)
-      .filter((d) => d && !d.stickied)
-      .map((d) => ({
-        sub,
-        title: d.title,
-        score: d.score ?? 0,
-        comments: d.num_comments ?? 0,
-        url: `https://www.reddit.com${d.permalink}`,
-      }));
+    const html = data?.results_html || '';
+    const re =
+      /<a[^>]+href="(https:\/\/store\.steampowered\.com\/app\/[^"]+)"[\s\S]*?<span class="title">([^<]+)<\/span>/g;
+    const items = [];
+    for (const m of html.matchAll(re)) {
+      items.push({ title: decodeEntities(m[2]).trim(), url: m[1].split('?')[0] });
+    }
+    return items;
   } catch (e) {
-    console.warn(`[topics] r/${sub} failed: ${e.message}`);
+    console.warn(`[topics] Steam (${query}) failed: ${e.message}`);
     return [];
   }
 }
 
-/** Build the human-readable "raw signals" section (Part A). */
-function buildSignalsMarkdown(redditPosts) {
-  if (redditPosts.length === 0) {
-    return '_No Reddit signals fetched this run (network or rate limit). Try again later._\n';
+/** Search the Hacker News (Algolia) API. Returns [{ title, url, meta }]. */
+async function fetchHN(query) {
+  try {
+    const res = await fetch(
+      `https://hn.algolia.com/api/v1/search?query=${encodeURIComponent(query)}&tags=story&hitsPerPage=8`
+    );
+    if (!res.ok) {
+      console.warn(`[topics] HN "${query}": HTTP ${res.status}`);
+      return [];
+    }
+    const data = await res.json();
+    return (data?.hits ?? [])
+      .filter((h) => h.title)
+      .map((h) => ({
+        title: h.title,
+        url: h.url || `https://news.ycombinator.com/item?id=${h.objectID}`,
+        meta: `${h.points ?? 0} pts`,
+      }));
+  } catch (e) {
+    console.warn(`[topics] HN "${query}" failed: ${e.message}`);
+    return [];
   }
-  const top = [...redditPosts].sort((a, b) => b.score - a.score).slice(0, 30);
-  const lines = top.map(
-    (p) => `| r/${p.sub} | [${p.title.replace(/\|/g, '\\|')}](${p.url}) | ${p.score} | ${p.comments} |`
-  );
-  return (
-    '| Subreddit | Hot post | Upvotes | Comments |\n' +
-    '|---|---|---:|---:|\n' +
-    lines.join('\n') +
-    '\n'
-  );
 }
 
-/** Compose the instruction sent to the LLM. */
-function buildLLMPrompt(redditPosts, slugs) {
-  const signalList = [...redditPosts]
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 40)
-    .map((p) => `- [r/${p.sub} | ${p.score}↑ | ${p.comments}c] ${p.title}`)
+/** Drop duplicate titles (case-insensitive), preserving order. */
+function dedupeByTitle(items) {
+  const seen = new Set();
+  const out = [];
+  for (const it of items) {
+    const key = it.title.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(it);
+  }
+  return out;
+}
+
+/** Build the human-readable "raw signals" section (Part A). `groups` = [{label, items}]. */
+function buildSignalsMarkdown(groups) {
+  let md = '';
+  for (const g of groups) {
+    if (g.items.length === 0) continue;
+    md += `### ${g.label}\n\n`;
+    for (const it of g.items.slice(0, 15)) {
+      md += `- [${it.title.replace(/\|/g, '\\|')}](${it.url})${it.meta ? ` — ${it.meta}` : ''}\n`;
+    }
+    md += '\n';
+  }
+  return md || '_No signals fetched this run (network or rate limit). Try again later._\n';
+}
+
+/** Compose the instruction sent to the LLM. `signals` = [{source, title}]. */
+function buildLLMPrompt(signals, slugs) {
+  const signalList = signals
+    .slice(0, 50)
+    .map((s) => `- [${s.source}] ${s.title}`)
     .join('\n');
 
   return `You are the SEO content editor for Cozy Game Guide (cozygameguide.com), a site about cozy & simulation games (recommendations, reviews, guides, resources, and a "Mindful Gaming" wellness angle).
@@ -106,7 +141,7 @@ function buildLLMPrompt(redditPosts, slugs) {
 EXISTING ARTICLES (slugs) — do NOT propose duplicates of these:
 ${slugs.join(', ')}
 
-THIS WEEK'S TRENDING SIGNALS (Reddit hot posts in cozy-gaming subreddits):
+THIS WEEK'S SIGNALS (newest & top-selling "cozy" games on Steam, plus cozy-gaming buzz on Hacker News):
 ${signalList || '(none fetched this run)'}
 
 TASK: Propose 8 NEW article ideas that (a) are not duplicates of the existing slugs, (b) target real search demand suggested by the signals or by evergreen cozy-gaming interest, and (c) fit one of these categories exactly: Recommendations, Reviews, Guides, Resources, Mindful Gaming.
@@ -219,11 +254,23 @@ function buildSuggestionsMarkdown({ provider, items, raw }) {
 
 async function main() {
   const slugs = existingSlugs();
-  const redditResults = await Promise.all(SUBREDDITS.map(fetchSubreddit));
-  const redditPosts = redditResults.flat();
 
-  const partA = buildSignalsMarkdown(redditPosts);
-  const suggestions = await askLLM(buildLLMPrompt(redditPosts, slugs));
+  // CI-friendly signal sources (no auth, datacenter-accessible).
+  const [steamNew, steamTop, ...hnArrays] = await Promise.all([
+    fetchSteam('term=cozy&category1=998&sort_by=Released_DESC&count=15'),
+    fetchSteam('term=cozy&category1=998&filter=topsellers&count=15'),
+    ...['cozy game', 'farming sim', 'life sim'].map(fetchHN),
+  ]);
+
+  const groups = [
+    { label: 'Steam · newest cozy releases', items: dedupeByTitle(steamNew) },
+    { label: 'Steam · top-selling cozy games', items: dedupeByTitle(steamTop) },
+    { label: 'Hacker News buzz', items: dedupeByTitle(hnArrays.flat()) },
+  ];
+  const signals = groups.flatMap((g) => g.items.map((it) => ({ source: g.label, title: it.title })));
+
+  const partA = buildSignalsMarkdown(groups);
+  const suggestions = await askLLM(buildLLMPrompt(signals, slugs));
   const partB = buildSuggestionsMarkdown(suggestions);
 
   const md = `# Topic Radar
@@ -235,12 +282,12 @@ _Review, fact-check, and never auto-publish — this is an assistant, not an aut
 
 ${partB}
 
-## Part A — Raw signals (Reddit "hot")
+## Part A — Raw signals (Steam + Hacker News)
 
 ${partA}
 
 ---
-_Tracking ${slugs.length} existing articles. Edit \`scripts/discover-topics.mjs\` to add signal sources (Steam upcoming, Google Trends, Search Console)._
+_Tracking ${slugs.length} existing articles. Next signal to add when traffic arrives: Google Search Console "almost-ranking" queries (see scripts/discover-topics.mjs)._
 `;
 
   try {
@@ -250,7 +297,7 @@ _Tracking ${slugs.length} existing articles. Edit \`scripts/discover-topics.mjs\
   }
   writeFileSync(OUT_PATH, md);
   console.log(
-    `[topics] Wrote topic-radar.md (${redditPosts.length} signals, AI: ${suggestions.provider ?? 'off'}).`
+    `[topics] Wrote topic-radar.md (${signals.length} signals, AI: ${suggestions.provider ?? 'off'}).`
   );
 }
 
