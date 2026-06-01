@@ -26,16 +26,23 @@ const { title, description, pubDate, updatedDate, category, author, tags, heroIm
 const c = CATEGORIES[category];
 const canonicalUrl = new URL(`/blog/${post.id}/`, SITE.url).href;
 
+const blogImage = new URL(heroImage ?? '/og-default.png', SITE.url).href;
 const articleJsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: title,
   description,
+  image: blogImage,
   datePublished: pubDate.toISOString(),
   dateModified: (updatedDate ?? pubDate).toISOString(),
   author: { '@type': 'Organization', name: author },
-  publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  publisher: { '@id': `${SITE.url}/#organization` },
+  isPartOf: { '@id': `${SITE.url}/#website` },
   mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
+  ...(tags.length ? { keywords: tags.join(', ') } : {}),
+  articleSection: c.label,
+  inLanguage: SITE.locale,
+  isAccessibleForFree: true,
 };
 
 // Editorial Review structured data — only for single-game reviews that set a
@@ -50,6 +57,7 @@ const reviewJsonLd =
         datePublished: pubDate.toISOString(),
         author: { '@type': 'Organization', name: author },
         publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+        inLanguage: SITE.locale,
         itemReviewed: { '@type': 'VideoGame', name: gameName ?? title },
         reviewRating: { '@type': 'Rating', ratingValue: rating, bestRating: 5, worstRating: 1 },
       }
@@ -60,6 +68,7 @@ const pageJsonLd = reviewJsonLd ? [articleJsonLd, reviewJsonLd] : articleJsonLd;
 <BaseLayout
   title={title}
   description={description}
+  image={heroImage}
   type="article"
   publishedTime={pubDate}
   modifiedTime={updatedDate ?? pubDate}

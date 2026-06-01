@@ -2,7 +2,7 @@
 import '@fontsource-variable/fraunces';
 import '@fontsource-variable/nunito';
 import '../styles/global.css';
-import { SITE, MONETIZATION } from '../config';
+import { SITE, MONETIZATION, SOCIAL } from '../config';
 import SEO from '../components/SEO.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -20,18 +20,39 @@ interface Props {
 
 const props = Astro.props;
 
-// Site-wide structured data, always present.
-const websiteJsonLd = {
+// Site-wide structured data, always present. Organization is the entity AI
+// answer engines attribute citations to; WebSite and every article's publisher
+// reference it by @id so the whole graph resolves to one publisher node.
+const organizationJsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'WebSite',
+  '@type': 'Organization',
+  '@id': `${SITE.url}/#organization`,
   name: SITE.name,
   url: SITE.url,
   description: SITE.description,
+  logo: {
+    '@type': 'ImageObject',
+    url: new URL('/logo.png', SITE.url).href,
+  },
+  ...(SOCIAL.length ? { sameAs: SOCIAL.map((s) => s.href) } : {}),
 };
 
-const jsonLd = props.jsonLd
-  ? [websiteJsonLd, ...(Array.isArray(props.jsonLd) ? props.jsonLd : [props.jsonLd])]
-  : [websiteJsonLd];
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${SITE.url}/#website`,
+  name: SITE.name,
+  url: SITE.url,
+  description: SITE.description,
+  inLanguage: SITE.locale,
+  publisher: { '@id': `${SITE.url}/#organization` },
+};
+
+const jsonLd = [
+  organizationJsonLd,
+  websiteJsonLd,
+  ...(props.jsonLd ? (Array.isArray(props.jsonLd) ? props.jsonLd : [props.jsonLd]) : []),
+];
 ---
 
 <!doctype html>
