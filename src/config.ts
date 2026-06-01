@@ -122,10 +122,11 @@ export const MONETIZATION = {
   newsletter: {
     enabled: true,
     /**
-     * Paste your email provider's form action URL (Buttondown, MailerLite,
-     * ConvertKit, etc.). Left as '#' the form is a non-functional placeholder.
+     * Email provider form action URL. Kit (ConvertKit) form 9507506.
+     * NOTE: Kit requires the email field to be named `email_address`
+     * (see NewsletterCTA.astro). Left as '#' the form is a placeholder.
      */
-    actionUrl: '#',
+    actionUrl: 'https://app.kit.com/forms/9507506/subscriptions',
   },
   /** Lead-magnet download (e.g. a printable cheat sheet). Placeholder for now. */
   download: {
