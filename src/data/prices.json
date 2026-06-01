@@ -1,6 +1,6 @@
 {
   "Coral Island": {
-    "updated": "2026-06-01T02:08:51.887Z",
+    "updated": "2026-06-01T12:11:10.734Z",
     "best": {
       "shop": "Microsoft Store",
       "price": 29.99,
@@ -29,7 +29,7 @@
     ]
   },
   "Disney Dreamlight Valley": {
-    "updated": "2026-06-01T02:40:57.299Z",
+    "updated": "2026-06-01T12:11:10.734Z",
     "best": {
       "shop": "Microsoft Store",
       "price": 27.99,
@@ -70,7 +70,7 @@
     ]
   },
   "Wylde Flowers": {
-    "updated": "2026-06-01T02:40:57.299Z",
+    "updated": "2026-06-01T12:11:10.734Z",
     "best": {
       "shop": "Steam",
       "price": 17.49,
@@ -93,7 +93,7 @@
     ]
   },
   "My Time at Sandrock": {
-    "updated": "2026-06-01T02:40:57.299Z",
+    "updated": "2026-06-01T12:11:10.734Z",
     "best": {
       "shop": "Fanatical",
       "price": 13.99,
@@ -134,7 +134,7 @@
     ]
   },
   "Fields of Mistria": {
-    "updated": "2026-06-01T02:40:57.299Z",
+    "updated": "2026-06-01T12:11:10.734Z",
     "best": {
       "shop": "Steam",
       "price": 13.99,
@@ -151,7 +151,7 @@
     ]
   },
   "Spiritfarer": {
-    "updated": "2026-06-01T02:40:57.299Z",
+    "updated": "2026-06-01T12:11:10.734Z",
     "best": {
       "shop": "GreenManGaming",
       "price": 3.69,
@@ -194,6 +194,23 @@
         "price": 29.99,
         "cut": 0,
         "url": "https://itad.link/018d9386-cfed-709f-b218-dbda6feaf5f1/"
+      }
+    ]
+  },
+  "Hello Kitty Island Adventure": {
+    "updated": "2026-06-01T12:11:10.734Z",
+    "best": {
+      "shop": "Steam",
+      "price": 23.99,
+      "cut": 40,
+      "url": "https://itad.link/0194b64a-00bf-70b2-8de4-bba2f834ad5f/"
+    },
+    "offers": [
+      {
+        "shop": "Steam",
+        "price": 23.99,
+        "cut": 40,
+        "url": "https://itad.link/0194b64a-00bf-70b2-8de4-bba2f834ad5f/"
       }
     ]
   }
