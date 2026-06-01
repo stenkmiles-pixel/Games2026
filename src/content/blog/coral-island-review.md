@@ -5,6 +5,7 @@ pubDate: 2026-05-20
 category: 'Reviews'
 rating: 4.5
 gameName: 'Coral Island'
+teaPairing: 'Iced hibiscus tea, sunshine optional'
 tags: ['coral island', 'review', 'farming sims']
 ---
 

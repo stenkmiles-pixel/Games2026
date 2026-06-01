@@ -5,6 +5,7 @@ pubDate: 2026-05-15
 category: 'Reviews'
 rating: 4
 gameName: 'Wylde Flowers'
+teaPairing: 'Lavender tea by candlelight'
 tags: ['wylde flowers', 'review', 'farming sims']
 ---
 

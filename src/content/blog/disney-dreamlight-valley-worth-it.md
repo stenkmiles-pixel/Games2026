@@ -5,6 +5,7 @@ pubDate: 2026-04-22
 category: 'Reviews'
 rating: 4
 gameName: 'Disney Dreamlight Valley'
+teaPairing: 'Hot cocoa, extra marshmallows'
 tags: ['disney dreamlight valley', 'review', 'life sim']
 ---
 

@@ -3,6 +3,7 @@ title: 'Stardew Valley as Self-Care: Finding Calm in the Daily Routine'
 description: 'How Stardew Valley became a quiet act of self-care for so many players — the comfort of its daily routine, gentle progress, and lessons you can carry off the farm.'
 pubDate: 2026-04-08
 category: 'Mindful Gaming'
+teaPairing: 'Warm milk and honey'
 tags: ['stardew valley', 'self care', 'mindful gaming']
 ---
 

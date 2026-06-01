@@ -5,6 +5,7 @@ pubDate: 2025-12-08
 category: 'Reviews'
 rating: 4
 gameName: 'Fields of Mistria'
+teaPairing: 'Jasmine green tea, blossoms outside'
 tags: ['fields of mistria', 'review', 'farming sims']
 ---
 

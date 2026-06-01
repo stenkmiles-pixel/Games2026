@@ -3,6 +3,7 @@ title: 'How to Build a Cozy Game Night Ritual for Self-Care'
 description: 'Turn gaming into genuine self-care with a simple cozy game night ritual — set the scene, pick the right game, and create a calming wind-down you look forward to.'
 pubDate: 2026-04-25
 category: 'Mindful Gaming'
+teaPairing: 'Peppermint tea, lights low'
 tags: ['self care', 'ritual', 'mindful gaming']
 ---
 

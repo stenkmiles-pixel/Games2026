@@ -5,6 +5,7 @@ pubDate: 2026-01-05
 category: 'Reviews'
 rating: 4
 gameName: 'My Time at Sandrock'
+teaPairing: 'Spiced chai, sleeves rolled up'
 tags: ['my time at sandrock', 'review', 'life sims']
 ---
 

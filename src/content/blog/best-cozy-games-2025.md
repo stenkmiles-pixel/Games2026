@@ -6,6 +6,7 @@ updatedDate: 2026-05-15
 category: 'Recommendations'
 tags: ['cozy games', 'best of', 'recommendations']
 featured: true
+editorNote: 'New to cozy games? Start here — our shortlist of the gentlest, most rewarding places to unwind.'
 ---
 
 There has never been a better time to be into cozy games. Whether you've got fifteen quiet minutes before bed or a whole rainy Sunday, the genre we love has exploded — and picking what to play next can feel surprisingly hard.

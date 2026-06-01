@@ -5,6 +5,7 @@ pubDate: 2026-02-22
 category: 'Reviews'
 rating: 4.5
 gameName: 'Spiritfarer'
+teaPairing: 'Chamomile — keep tissues nearby'
 tags: ['spiritfarer', 'review', 'management games']
 ---
 

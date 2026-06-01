@@ -14,6 +14,7 @@ import AdSlot from '../components/AdSlot.astro';
 import PostCard from '../components/PostCard.astro';
 import SceneHero from '../components/SceneHero.astro';
 import WhereToBuy from '../components/WhereToBuy.astro';
+import CozyCompanion from '../components/CozyCompanion.astro';
 
 interface Props {
   post: CollectionEntry<'blog'>;
@@ -21,7 +22,7 @@ interface Props {
   related: CollectionEntry<'blog'>[];
 }
 const { post, headings, related } = Astro.props;
-const { title, description, pubDate, updatedDate, category, author, tags, heroImage, heroImageAlt, heroCredit, rating, gameName } = post.data;
+const { title, description, pubDate, updatedDate, category, author, tags, heroImage, heroImageAlt, heroCredit, rating, gameName, teaPairing } = post.data;
 const c = CATEGORIES[category];
 const canonicalUrl = new URL(`/blog/${post.id}/`, SITE.url).href;
 
@@ -96,15 +97,7 @@ const pageJsonLd = reviewJsonLd ? [articleJsonLd, reviewJsonLd] : articleJsonLd;
               )
             }
           </div>
-          {
-            rating != null && (
-              <p class="mt-4 inline-flex items-center gap-1.5 rounded-full bg-accent-soft px-3 py-1 text-sm font-bold text-primary">
-                <span aria-hidden="true">☕</span>
-                <span>{rating} / 5</span>
-                <span class="sr-only">Our cozy score: {rating} out of 5</span>
-              </p>
-            )
-          }
+          <CozyCompanion rating={rating} teaPairing={teaPairing} class="mt-4" />
         </header>
 
         <figure transition:name={`hero-${post.id}`} class="mt-6 overflow-hidden rounded-2xl border border-line bg-surface-2">

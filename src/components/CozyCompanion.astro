@@ -1,0 +1,46 @@
+---
+/**
+ * A small, low-key "cozy companion" row shown under the title of reviews and
+ * mindful posts: the ☕ cozy score (reuses the post's `rating`), an optional
+ * 🍵 drink/mood pairing, and a 🎧 link to our soundtracks round-up for ambiance.
+ * Brand-neutral and warm — no nautical lore, no audio embed.
+ */
+interface Props {
+  rating?: number;
+  teaPairing?: string;
+  class?: string;
+}
+const { rating, teaPairing, class: className = '' } = Astro.props;
+const show = rating != null || !!teaPairing;
+---
+{
+  show && (
+    <div
+      class:list={[
+        'flex flex-wrap items-center gap-x-4 gap-y-1.5 rounded-full border border-line bg-surface-2/50 px-4 py-2 text-sm',
+        className,
+      ]}
+    >
+      {rating != null && (
+        <span class="inline-flex items-center gap-1.5 font-semibold text-primary">
+          <span aria-hidden="true">☕</span>
+          {rating} / 5
+          <span class="sr-only">cozy score out of 5</span>
+        </span>
+      )}
+      {teaPairing && (
+        <span class="inline-flex items-center gap-1.5 text-ink-muted">
+          <span aria-hidden="true">🍵</span>
+          {teaPairing}
+        </span>
+      )}
+      <a
+        href="/blog/best-cozy-game-soundtracks/"
+        class="inline-flex items-center gap-1.5 text-ink-muted transition-colors hover:text-primary"
+      >
+        <span aria-hidden="true">🎧</span>
+        Ambiance
+      </a>
+    </div>
+  )
+}

@@ -26,6 +26,10 @@ const blog = defineCollection({
     rating: z.number().min(0).max(5).optional(),
     // The game being reviewed (used for Review structured data). Falls back to title.
     gameName: z.string().optional(),
+    // Optional cozy "companion" suggestion shown under the title (a drink / mood).
+    teaPairing: z.string().optional(),
+    // Optional one-line editorial note shown on the post's card (esp. when featured).
+    editorNote: z.string().optional(),
     author: z.string().default('The Cozy Game Guide Team'),
     /** Surface this post in the homepage "featured" strip. */
     featured: z.boolean().default(false),
