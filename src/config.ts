@@ -104,10 +104,10 @@ export const SOCIAL: { label: string; href: string }[] = [
  */
 export const MONETIZATION = {
   ads: {
-    /** Loads the AdSense script (in BaseLayout) for verification + Auto ads. */
+    // AdSense (new account). Loads the loader script in BaseLayout for
+    // site verification + Auto ads.
     enabled: true,
-    /** Your AdSense publisher id, e.g. 'ca-pub-XXXXXXXXXXXXXXXX'. */
-    adsenseClientId: 'ca-pub-3299003349230089',
+    adsenseClientId: 'ca-pub-4414010628194972',
   },
   affiliates: {
     /** Show the affiliate disclosure banner on monetized pages. */

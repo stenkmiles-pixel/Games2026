@@ -1,0 +1,40 @@
+name: Refresh game prices
+
+# Runs daily to refresh src/data/prices.json from the ITAD API, then commits
+# the result (which triggers a Vercel deploy). The build itself never calls
+# ITAD, so deploys can't break if the API is down.
+
+on:
+  schedule:
+    - cron: '17 6 * * *' # ~06:17 UTC daily
+  workflow_dispatch: {} # allow manual runs from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch latest prices
+        env:
+          ITAD_API_KEY: ${{ secrets.ITAD_API_KEY }}
+        run: node scripts/fetch-prices.mjs
+
+      - name: Commit & push if prices changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/prices.json
+          if git diff --staged --quiet; then
+            echo "No price changes."
+          else
+            git commit -m "chore: refresh game prices"
+            git push
+          fi

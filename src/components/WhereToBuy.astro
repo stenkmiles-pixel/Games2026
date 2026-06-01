@@ -1,14 +1,28 @@
 ---
 /**
- * "Where to buy" panel for review articles. Renders outbound store buttons for
- * a given game. Works immediately with store SEARCH links (always accurate — no
- * fragile app IDs). It auto-upgrades:
- *   - Affiliate tags from MONETIZATION.affiliates are appended when set.
- *   - Live prices appear here later once the ITAD price feed (Phase B) is wired.
+ * "Where to buy" panel for review articles. Shows the live best price (from the
+ * scheduled ITAD feed in src/data/prices.json, reputable stores only) plus
+ * outbound store buttons. Works with or without price data:
+ *   - With data: headline "From $X at <Shop>" + buttons.
+ *   - Without:   buttons only (still accurate — store search links).
+ * Affiliate tags from MONETIZATION.affiliates are appended when set.
  * AdSense-safe: outbound links only, no third-party scripts.
  */
 import { MONETIZATION } from '../config';
 import AffiliateButton from './AffiliateButton.astro';
+import priceData from '../data/prices.json';
+
+interface Offer {
+  shop: string;
+  price: number;
+  cut: number;
+  url: string;
+}
+interface PriceInfo {
+  updated: string;
+  best: Offer;
+  offers: Offer[];
+}
 
 interface Props {
   gameName: string;
@@ -17,18 +31,11 @@ interface Props {
 const { gameName, class: className = '' } = Astro.props;
 const q = encodeURIComponent(gameName);
 const aff = MONETIZATION.affiliates;
+const info = (priceData as Record<string, PriceInfo>)[gameName];
 
 const stores = [
-  {
-    label: 'Steam',
-    note: 'PC',
-    href: `https://store.steampowered.com/search/?term=${q}`,
-  },
-  {
-    label: 'Nintendo eShop',
-    note: 'Switch',
-    href: `https://www.nintendo.com/us/search/?q=${q}`,
-  },
+  { label: 'Steam', note: 'PC', href: `https://store.steampowered.com/search/?term=${q}` },
+  { label: 'Nintendo eShop', note: 'Switch', href: `https://www.nintendo.com/us/search/?q=${q}` },
   {
     label: 'Humble',
     note: 'PC keys',
@@ -40,7 +47,21 @@ const stores = [
   <h2 class="flex items-center gap-2 font-display text-lg font-semibold text-ink">
     <span aria-hidden="true">🛒</span> Where to buy {gameName}
   </h2>
-  <p class="mt-1 text-sm text-ink-muted">Check the current price on each store:</p>
+
+  {
+    info?.best ? (
+      <p class="mt-1 text-sm text-ink">
+        <span aria-hidden="true">💰</span> From <strong>${info.best.price.toFixed(2)}</strong> at {info.best.shop}
+        {info.best.cut > 0 && (
+          <span class="ml-1 rounded bg-accent-soft px-1.5 py-0.5 text-xs font-bold text-primary">-{info.best.cut}%</span>
+        )}
+        <span class="text-ink-muted"> · live price</span>
+      </p>
+    ) : (
+      <p class="mt-1 text-sm text-ink-muted">Check the current price on each store:</p>
+    )
+  }
+
   <div class="mt-4 flex flex-wrap gap-2">
     {
       stores.map((s) => (
@@ -50,7 +71,8 @@ const stores = [
       ))
     }
   </div>
+
   <p class="mt-3 text-[11px] leading-relaxed text-ink-muted">
-    Prices change often (especially during sales) — the store page always shows the live price. Some links may be affiliate links; see our <a class="text-primary hover:underline" href="/disclosure">disclosure</a>.
+    Prices update daily and may change (especially during sales) — the store page always shows the live price. Some links may be affiliate links; see our <a class="text-primary hover:underline" href="/disclosure">disclosure</a>.
   </p>
 </aside>

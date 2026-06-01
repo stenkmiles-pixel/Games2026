@@ -1,0 +1,200 @@
+{
+  "Coral Island": {
+    "updated": "2026-06-01T02:08:51.887Z",
+    "best": {
+      "shop": "Microsoft Store",
+      "price": 29.99,
+      "cut": 0,
+      "url": "https://itad.link/018d9386-425a-71b0-833e-c43440ca7e96/"
+    },
+    "offers": [
+      {
+        "shop": "Microsoft Store",
+        "price": 29.99,
+        "cut": 0,
+        "url": "https://itad.link/018d9386-425a-71b0-833e-c43440ca7e96/"
+      },
+      {
+        "shop": "Steam",
+        "price": 29.99,
+        "cut": 0,
+        "url": "https://itad.link/018d9386-425a-71b0-833e-c434400917e3/"
+      },
+      {
+        "shop": "Humble Store",
+        "price": 29.99,
+        "cut": 0,
+        "url": "https://itad.link/018d9386-425a-71b0-833e-c4343f42412c/"
+      }
+    ]
+  },
+  "Disney Dreamlight Valley": {
+    "updated": "2026-06-01T02:40:57.299Z",
+    "best": {
+      "shop": "Microsoft Store",
+      "price": 27.99,
+      "cut": 30,
+      "url": "https://itad.link/018d9386-4e6e-7367-88fb-adedfc159961/"
+    },
+    "offers": [
+      {
+        "shop": "Microsoft Store",
+        "price": 27.99,
+        "cut": 30,
+        "url": "https://itad.link/018d9386-4e6e-7367-88fb-adedfc159961/"
+      },
+      {
+        "shop": "Fanatical",
+        "price": 39.99,
+        "cut": 0,
+        "url": "https://itad.link/0190db02-f108-70fe-8f3f-3dcfc56b9b74/"
+      },
+      {
+        "shop": "Epic Game Store",
+        "price": 39.99,
+        "cut": 0,
+        "url": "https://itad.link/0196ef24-a418-7161-8e20-d296dfb8a869/"
+      },
+      {
+        "shop": "Steam",
+        "price": 39.99,
+        "cut": 0,
+        "url": "https://itad.link/018d9386-4e6e-7367-88fb-adedffebdf99/"
+      },
+      {
+        "shop": "GreenManGaming",
+        "price": 39.99,
+        "cut": 0,
+        "url": "https://itad.link/019e1829-e830-71e4-a582-adee7836eae5/"
+      }
+    ]
+  },
+  "Wylde Flowers": {
+    "updated": "2026-06-01T02:40:57.299Z",
+    "best": {
+      "shop": "Steam",
+      "price": 17.49,
+      "cut": 30,
+      "url": "https://itad.link/018d9386-f986-7361-8716-f17e1d560ffd/"
+    },
+    "offers": [
+      {
+        "shop": "Steam",
+        "price": 17.49,
+        "cut": 30,
+        "url": "https://itad.link/018d9386-f986-7361-8716-f17e1d560ffd/"
+      },
+      {
+        "shop": "Microsoft Store",
+        "price": 24.99,
+        "cut": 0,
+        "url": "https://itad.link/019cec59-70bc-734c-8ecd-056de1df6e09/"
+      }
+    ]
+  },
+  "My Time at Sandrock": {
+    "updated": "2026-06-01T02:40:57.299Z",
+    "best": {
+      "shop": "Fanatical",
+      "price": 13.99,
+      "cut": 65,
+      "url": "https://itad.link/01991575-4a90-73e4-9582-75106cd3853a/"
+    },
+    "offers": [
+      {
+        "shop": "Fanatical",
+        "price": 13.99,
+        "cut": 65,
+        "url": "https://itad.link/01991575-4a90-73e4-9582-75106cd3853a/"
+      },
+      {
+        "shop": "Epic Game Store",
+        "price": 39.99,
+        "cut": 0,
+        "url": "https://itad.link/018d959d-e034-715a-b9c8-787827af7167/"
+      },
+      {
+        "shop": "Humble Store",
+        "price": 39.99,
+        "cut": 0,
+        "url": "https://itad.link/018d9386-9f5c-7115-9311-5b61dcea1100/"
+      },
+      {
+        "shop": "Steam",
+        "price": 39.99,
+        "cut": 0,
+        "url": "https://itad.link/018d9386-9f5c-7115-9311-5b61dffe9665/"
+      },
+      {
+        "shop": "GreenManGaming",
+        "price": 39.99,
+        "cut": 0,
+        "url": "https://itad.link/018d9386-9f5c-7115-9311-5b61eb534ee8/"
+      }
+    ]
+  },
+  "Fields of Mistria": {
+    "updated": "2026-06-01T02:40:57.299Z",
+    "best": {
+      "shop": "Steam",
+      "price": 13.99,
+      "cut": 0,
+      "url": "https://itad.link/0191237c-1392-72bc-b86f-ff1de0335de4/"
+    },
+    "offers": [
+      {
+        "shop": "Steam",
+        "price": 13.99,
+        "cut": 0,
+        "url": "https://itad.link/0191237c-1392-72bc-b86f-ff1de0335de4/"
+      }
+    ]
+  },
+  "Spiritfarer": {
+    "updated": "2026-06-01T02:40:57.299Z",
+    "best": {
+      "shop": "GreenManGaming",
+      "price": 3.69,
+      "cut": 88,
+      "url": "https://itad.link/018d9386-cfed-709f-b218-dbda70a4341e/"
+    },
+    "offers": [
+      {
+        "shop": "GreenManGaming",
+        "price": 3.69,
+        "cut": 88,
+        "url": "https://itad.link/018d9386-cfed-709f-b218-dbda70a4341e/"
+      },
+      {
+        "shop": "Epic Game Store",
+        "price": 4.49,
+        "cut": 85,
+        "url": "https://itad.link/018d959f-13fb-7070-8be4-03921e7b0a75/"
+      },
+      {
+        "shop": "GOG",
+        "price": 4.49,
+        "cut": 85,
+        "url": "https://itad.link/018d9386-cfed-709f-b218-dbda684286c9/"
+      },
+      {
+        "shop": "Humble Store",
+        "price": 4.49,
+        "cut": 85,
+        "url": "https://itad.link/018d9386-cfed-709f-b218-dbda6a6795fc/"
+      },
+      {
+        "shop": "Microsoft Store",
+        "price": 29.99,
+        "cut": 0,
+        "url": "https://itad.link/018d9386-cfed-709f-b218-dbda6a15c320/"
+      },
+      {
+        "shop": "Steam",
+        "price": 29.99,
+        "cut": 0,
+        "url": "https://itad.link/018d9386-cfed-709f-b218-dbda6feaf5f1/"
+      }
+    ]
+  }
+}
