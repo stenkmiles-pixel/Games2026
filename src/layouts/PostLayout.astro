@@ -22,7 +22,7 @@ interface Props {
   related: CollectionEntry<'blog'>[];
 }
 const { post, headings, related } = Astro.props;
-const { title, description, pubDate, updatedDate, category, author, tags, heroImage, heroImageAlt, heroCredit, rating, gameName, teaPairing } = post.data;
+const { title, description, pubDate, updatedDate, category, author, tags, heroImage, heroImageAlt, heroCredit, rating, gameName, freeToPlay, teaPairing } = post.data;
 const c = CATEGORIES[category];
 const canonicalUrl = new URL(`/blog/${post.id}/`, SITE.url).href;
 
@@ -119,7 +119,7 @@ const pageJsonLd = reviewJsonLd ? [articleJsonLd, reviewJsonLd] : articleJsonLd;
           <slot />
         </div>
 
-        {category === 'Reviews' && gameName && <WhereToBuy gameName={gameName} class="mt-10" />}
+        {category === 'Reviews' && gameName && !freeToPlay && <WhereToBuy gameName={gameName} class="mt-10" />}
 
         {
           tags.length > 0 && (

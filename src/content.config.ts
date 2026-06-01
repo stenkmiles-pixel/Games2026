@@ -26,6 +26,9 @@ const blog = defineCollection({
     rating: z.number().min(0).max(5).optional(),
     // The game being reviewed (used for Review structured data). Falls back to title.
     gameName: z.string().optional(),
+    // Free-to-play titles (e.g. Palia) keep gameName for the Review rich snippet
+    // but skip the "Where to buy" price widget, which doesn't fit a free game.
+    freeToPlay: z.boolean().default(false),
     // Optional cozy "companion" suggestion shown under the title (a drink / mood).
     teaPairing: z.string().optional(),
     // Optional one-line editorial note shown on the post's card (esp. when featured).
