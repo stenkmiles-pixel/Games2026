@@ -113,9 +113,9 @@ export const MONETIZATION = {
     /** Show the affiliate disclosure banner on monetized pages. */
     disclosureEnabled: true,
     /** Amazon Associates tracking tag, e.g. 'cozygameguide-20'. */
-    amazonTag: '',
+    amazonTag: 'cozygameguide-20',
     /** Generic storefronts — paste your tracked links/IDs when approved. */
-    humble: '',
+    humble: '8471381',
     fanatical: '',
     greenManGaming: '',
   },
