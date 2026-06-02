@@ -197,15 +197,23 @@ async function askLLM(prompt) {
         {
           method: 'POST',
           headers: { 'content-type': 'application/json' },
-          body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: prompt }] }],
+            // Force a bare JSON response (no markdown fences / prose to parse around).
+            generationConfig: { responseMimeType: 'application/json', temperature: 0.7 },
+          }),
         }
       );
       if (!res.ok) {
+        const body = await res.text().catch(() => '');
         console.warn(`[topics] Gemini HTTP ${res.status}`);
-        return { provider, items: null, raw: null };
+        return { provider, items: null, raw: `HTTP ${res.status} (model "${model}"): ${body.slice(0, 400)}` };
       }
       const data = await res.json();
       rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text ?? null;
+      if (!rawText) {
+        return { provider, items: null, raw: `Gemini returned no usable text: ${JSON.stringify(data).slice(0, 400)}` };
+      }
     } else {
       return { provider: null, items: null, raw: null };
     }
@@ -215,14 +223,22 @@ async function askLLM(prompt) {
   }
 
   if (!rawText) return { provider, items: null, raw: null };
-  // Strip accidental code fences, then try to parse JSON.
-  const cleaned = rawText.replace(/^```(json)?/i, '').replace(/```$/, '').trim();
-  try {
-    const items = JSON.parse(cleaned);
-    return { provider, items: Array.isArray(items) ? items : null, raw: rawText };
-  } catch {
-    return { provider, items: null, raw: rawText };
-  }
+  return { provider, items: parseSuggestions(rawText), raw: rawText };
+}
+
+/** Robustly pull a JSON array out of an LLM reply — raw, code-fenced, or in prose. */
+function parseSuggestions(text) {
+  const tryParse = (s) => {
+    try {
+      const v = JSON.parse(s);
+      return Array.isArray(v) ? v : null;
+    } catch {
+      return null;
+    }
+  };
+  const defenced = text.replace(/```(?:json)?/gi, '').trim();
+  const arrayMatch = defenced.match(/\[[\s\S]*\]/);
+  return tryParse(text.trim()) || tryParse(defenced) || (arrayMatch ? tryParse(arrayMatch[0]) : null);
 }
 
 /** Render Part B (AI suggestions) markdown. */
