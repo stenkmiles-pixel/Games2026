@@ -1,12 +1,18 @@
 # Topic Radar
 
-_Auto-generated 2026-06-02T12:31:10.442Z. Signals + AI suggestions to help pick what to write next._
+_Auto-generated 2026-06-02T13:17:30.938Z. Signals + AI suggestions to help pick what to write next._
 _Review, fact-check, and never auto-publish — this is an assistant, not an autopilot._
 
 ## Part B — AI topic suggestions
 
 > _Gemini was reached but returned no parseable suggestions this run._
 
+```
+HTTP 429 (model "gemini-2.0-flash"): {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, l
+```
 
 
 ## Part A — Raw signals (Steam + Hacker News)
@@ -42,8 +48,8 @@ _Review, fact-check, and never auto-publish — this is an assistant, not an aut
 - [Town to City](https://store.steampowered.com/app/3115220/Town_to_City/)
 - [Outbound](https://store.steampowered.com/app/2681030/Outbound/)
 - [Hozy](https://store.steampowered.com/app/3326230/Hozy/)
-- [Sky: Children of the Light](https://store.steampowered.com/app/2325290/Sky_Children_of_the_Light/)
 - [House Flipper](https://store.steampowered.com/app/613100/House_Flipper/)
+- [Sky: Children of the Light](https://store.steampowered.com/app/2325290/Sky_Children_of_the_Light/)
 - [Core Keeper](https://store.steampowered.com/app/1621690/Core_Keeper/)
 - [Cast n Chill](https://store.steampowered.com/app/3483740/Cast_n_Chill/)
 
@@ -68,4 +74,4 @@ _Review, fact-check, and never auto-publish — this is an assistant, not an aut
 
 
 ---
-_Tracking 70 existing articles. Next signal to add when traffic arrives: Google Search Console "almost-ranking" queries (see scripts/discover-topics.mjs)._
+_Tracking 73 existing articles. Next signal to add when traffic arrives: Google Search Console "almost-ranking" queries (see scripts/discover-topics.mjs)._
