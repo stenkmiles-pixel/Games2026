@@ -1,6 +1,6 @@
 {
   "Coral Island": {
-    "updated": "2026-06-01T12:11:10.734Z",
+    "updated": "2026-06-02T10:56:07.247Z",
     "best": {
       "shop": "Microsoft Store",
       "price": 29.99,
@@ -29,7 +29,7 @@
     ]
   },
   "Disney Dreamlight Valley": {
-    "updated": "2026-06-01T12:11:10.734Z",
+    "updated": "2026-06-02T10:56:07.247Z",
     "best": {
       "shop": "Microsoft Store",
       "price": 27.99,
@@ -70,7 +70,7 @@
     ]
   },
   "Wylde Flowers": {
-    "updated": "2026-06-01T12:11:10.734Z",
+    "updated": "2026-06-02T10:56:07.247Z",
     "best": {
       "shop": "Steam",
       "price": 17.49,
@@ -93,18 +93,18 @@
     ]
   },
   "My Time at Sandrock": {
-    "updated": "2026-06-01T12:11:10.734Z",
+    "updated": "2026-06-02T10:56:07.247Z",
     "best": {
       "shop": "Fanatical",
-      "price": 13.99,
-      "cut": 65,
+      "price": 31.19,
+      "cut": 22,
       "url": "https://itad.link/01991575-4a90-73e4-9582-75106cd3853a/"
     },
     "offers": [
       {
         "shop": "Fanatical",
-        "price": 13.99,
-        "cut": 65,
+        "price": 31.19,
+        "cut": 22,
         "url": "https://itad.link/01991575-4a90-73e4-9582-75106cd3853a/"
       },
       {
@@ -134,7 +134,7 @@
     ]
   },
   "Fields of Mistria": {
-    "updated": "2026-06-01T12:11:10.734Z",
+    "updated": "2026-06-02T10:56:07.247Z",
     "best": {
       "shop": "Steam",
       "price": 13.99,
@@ -151,7 +151,7 @@
     ]
   },
   "Spiritfarer": {
-    "updated": "2026-06-01T12:11:10.734Z",
+    "updated": "2026-06-02T10:56:07.247Z",
     "best": {
       "shop": "GreenManGaming",
       "price": 3.69,
@@ -172,12 +172,6 @@
         "url": "https://itad.link/018d959f-13fb-7070-8be4-03921e7b0a75/"
       },
       {
-        "shop": "GOG",
-        "price": 4.49,
-        "cut": 85,
-        "url": "https://itad.link/018d9386-cfed-709f-b218-dbda684286c9/"
-      },
-      {
         "shop": "Humble Store",
         "price": 4.49,
         "cut": 85,
@@ -194,11 +188,17 @@
         "price": 29.99,
         "cut": 0,
         "url": "https://itad.link/018d9386-cfed-709f-b218-dbda6feaf5f1/"
+      },
+      {
+        "shop": "GOG",
+        "price": 29.99,
+        "cut": 0,
+        "url": "https://itad.link/018d9386-cfed-709f-b218-dbda684286c9/"
       }
     ]
   },
   "Hello Kitty Island Adventure": {
-    "updated": "2026-06-01T12:11:10.734Z",
+    "updated": "2026-06-02T10:56:07.247Z",
     "best": {
       "shop": "Steam",
       "price": 23.99,
