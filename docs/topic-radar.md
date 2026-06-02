@@ -1,50 +1,51 @@
 # Topic Radar
 
-_Auto-generated 2026-06-01T13:02:15.131Z. Signals + AI suggestions to help pick what to write next._
+_Auto-generated 2026-06-02T12:31:10.442Z. Signals + AI suggestions to help pick what to write next._
 _Review, fact-check, and never auto-publish — this is an assistant, not an autopilot._
 
 ## Part B — AI topic suggestions
 
-> **AI suggestions are off.** Add an `ANTHROPIC_API_KEY` *or* `GEMINI_API_KEY` repository secret to enable ranked topic ideas here. (Raw signals above work without a key.)
+> _Gemini was reached but returned no parseable suggestions this run._
+
 
 
 ## Part A — Raw signals (Steam + Hacker News)
 
 ### Steam · newest cozy releases
 
+- [Collie Companion](https://store.steampowered.com/app/4707480/Collie_Companion/)
+- [In The Roots Of The Mountain](https://store.steampowered.com/app/4676280/In_The_Roots_Of_The_Mountain/)
+- [Rescue the Puppies](https://store.steampowered.com/app/3910690/Rescue_the_Puppies/)
+- [Chef Knight](https://store.steampowered.com/app/4304930/Chef_Knight/)
+- [Tattoo Removal Simulator](https://store.steampowered.com/app/3143910/Tattoo_Removal_Simulator/)
+- [Let's Café](https://store.steampowered.com/app/3019270/Lets_Caf/)
+- [Focus Grove](https://store.steampowered.com/app/4030830/Focus_Grove/)
+- [Lost in Art: a Miniature Realm](https://store.steampowered.com/app/2900050/Lost_in_Art_a_Miniature_Realm/)
+- [Cosy Housing](https://store.steampowered.com/app/3635320/Cosy_Housing/)
+- [Cozy Cooking](https://store.steampowered.com/app/4127690/Cozy_Cooking/)
 - [Arcane Merchant](https://store.steampowered.com/app/4086760/Arcane_Merchant/)
 - [ORBITAL](https://store.steampowered.com/app/4245820/ORBITAL/)
 - [100 Music Cats](https://store.steampowered.com/app/4310660/100_Music_Cats/)
 - [Deck-A-Doodle Solitaire](https://store.steampowered.com/app/4701820/DeckADoodle_Solitaire/)
 - [Lexispell](https://store.steampowered.com/app/4053960/Lexispell/)
-- [VoxelMancy](https://store.steampowered.com/app/4707120/VoxelMancy/)
-- [101 Cats in Hanoi](https://store.steampowered.com/app/4618910/101_Cats_in_Hanoi/)
-- [Mighty Meow](https://store.steampowered.com/app/3262100/Mighty_Meow/)
-- [Cozy Petchi Cats](https://store.steampowered.com/app/4492650/Cozy_Petchi_Cats/)
-- [Gelli Fields](https://store.steampowered.com/app/1965980/Gelli_Fields/)
-- [DRYER DRAMA](https://store.steampowered.com/app/4466370/DRYER_DRAMA/)
-- [Dread Fields](https://store.steampowered.com/app/4258770/Dread_Fields/)
-- [Ova Magica](https://store.steampowered.com/app/1299170/Ova_Magica/)
-- [100 Cats Lost In World 2 Find & Color](https://store.steampowered.com/app/3766200/100_Cats_Lost_In_World_2_Find__Color/)
-- [Map Map - A Game About Maps](https://store.steampowered.com/app/2702260/Map_Map__A_Game_About_Maps/)
 
 ### Steam · top-selling cozy games
 
 - [Paralives](https://store.steampowered.com/app/1118520/Paralives/)
 - [Heartopia](https://store.steampowered.com/app/4025700/Heartopia/)
 - [Palia](https://store.steampowered.com/app/2707930/Palia/)
+- [Ale & Tale Tavern](https://store.steampowered.com/app/2683150/Ale__Tale_Tavern/)
+- [GIRLS' FRONTLINE 2: EXILIUM](https://store.steampowered.com/app/3347400/GIRLS_FRONTLINE_2_EXILIUM/)
+- [Arcane Merchant](https://store.steampowered.com/app/4086760/Arcane_Merchant/)
+- [Hello Kitty Island Adventure](https://store.steampowered.com/app/2495100/Hello_Kitty_Island_Adventure/)
+- [Chef Knight](https://store.steampowered.com/app/4304930/Chef_Knight/)
 - [Town to City](https://store.steampowered.com/app/3115220/Town_to_City/)
 - [Outbound](https://store.steampowered.com/app/2681030/Outbound/)
-- [Hello Kitty Island Adventure](https://store.steampowered.com/app/2495100/Hello_Kitty_Island_Adventure/)
 - [Hozy](https://store.steampowered.com/app/3326230/Hozy/)
-- [GIRLS' FRONTLINE 2: EXILIUM](https://store.steampowered.com/app/3347400/GIRLS_FRONTLINE_2_EXILIUM/)
-- [Core Keeper](https://store.steampowered.com/app/1621690/Core_Keeper/)
-- [House Flipper](https://store.steampowered.com/app/613100/House_Flipper/)
 - [Sky: Children of the Light](https://store.steampowered.com/app/2325290/Sky_Children_of_the_Light/)
-- [Infinity Nikki](https://store.steampowered.com/app/3164330/Infinity_Nikki/)
+- [House Flipper](https://store.steampowered.com/app/613100/House_Flipper/)
+- [Core Keeper](https://store.steampowered.com/app/1621690/Core_Keeper/)
 - [Cast n Chill](https://store.steampowered.com/app/3483740/Cast_n_Chill/)
-- [A Little to the Left](https://store.steampowered.com/app/1629520/A_Little_to_the_Left/)
-- [Map Map - A Game About Maps](https://store.steampowered.com/app/2702260/Map_Map__A_Game_About_Maps/)
 
 ### Hacker News buzz
 
@@ -67,4 +68,4 @@ _Review, fact-check, and never auto-publish — this is an assistant, not an aut
 
 
 ---
-_Tracking 67 existing articles. Next signal to add when traffic arrives: Google Search Console "almost-ranking" queries (see scripts/discover-topics.mjs)._
+_Tracking 70 existing articles. Next signal to add when traffic arrives: Google Search Console "almost-ranking" queries (see scripts/discover-topics.mjs)._
