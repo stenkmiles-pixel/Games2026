@@ -12,11 +12,19 @@ on:
 permissions:
   contents: write
 
+# Serialize with the other auto-commit workflow (shared group) so two scheduled
+# jobs can never race to push to main.
+concurrency:
+  group: site-auto-commit
+  cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0 # full history so rebase-before-push is reliable
 
       - uses: actions/setup-node@v5
         with:
