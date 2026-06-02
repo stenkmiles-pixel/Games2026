@@ -36,5 +36,7 @@ jobs:
             echo "No price changes."
           else
             git commit -m "chore: refresh game prices"
+            # Re-sync first so a concurrent job (e.g. topic radar) can't reject the push.
+            git pull --rebase --autostash origin main
             git push
           fi

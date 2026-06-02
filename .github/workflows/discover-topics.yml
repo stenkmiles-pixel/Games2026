@@ -1,6 +1,6 @@
 name: Topic radar
 
-# Weekly trend + AI topic suggestions. Collects cozy-gaming signals (Reddit hot)
+# Weekly trend + AI topic suggestions. Collects cozy-gaming signals (Steam + HN)
 # and, if an LLM key is set, ranked article ideas — written to docs/topic-radar.md.
 # Works WITHOUT any key (raw signals only); add ANTHROPIC_API_KEY or GEMINI_API_KEY
 # to enable AI suggestions. Never publishes content; just updates the radar file.
@@ -41,5 +41,7 @@ jobs:
             echo "No topic-radar changes."
           else
             git commit -m "chore: update topic radar"
+            # Re-sync first so a concurrent job (e.g. price refresh) can't reject the push.
+            git pull --rebase --autostash origin main
             git push
           fi
