@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "sleepy-harbor.vercel.app" }],
+      "destination": "https://cozygameguide.com/:path*",
+      "permanent": true
+    }
+  ]
+}
