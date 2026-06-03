@@ -26,3 +26,7 @@ pnpm-debug.log*
 Thumbs.db
 
 .vercel
+
+# local-only notes (never committed) — e.g. payout.md holds private cashout setup
+payout.md
+*.local.md
