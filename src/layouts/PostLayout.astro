@@ -13,6 +13,7 @@ import NewsletterCTA from '../components/NewsletterCTA.astro';
 import AdSlot from '../components/AdSlot.astro';
 import PostCard from '../components/PostCard.astro';
 import SceneHero from '../components/SceneHero.astro';
+import { sceneMotif } from '../utils/posts';
 import WhereToBuy from '../components/WhereToBuy.astro';
 import CozyCompanion from '../components/CozyCompanion.astro';
 
@@ -115,7 +116,7 @@ const pageJsonLd = reviewJsonLd ? [articleJsonLd, reviewJsonLd] : articleJsonLd;
               heroImage ? (
                 <img src={heroImage} alt={heroImageAlt ?? title} class="h-full w-full object-cover" />
               ) : (
-                <SceneHero seed={post.id} />
+                <SceneHero seed={post.id} motif={sceneMotif(post.data)} />
               )
             }
           </div>

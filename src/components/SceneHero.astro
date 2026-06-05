@@ -4,6 +4,10 @@
  * real photo is set. Picks one of several cozy palettes deterministically from
  * the post's slug, so cards get visual variety while staying on-brand. Pure SVG
  * = tiny, scalable, no performance cost.
+ *
+ * An optional `motif` adds a foreground silhouette (cottage, farm, fishing,
+ * campfire, mountain, forest) so a card instantly reads as "that kind of game"
+ * without using any licensed art. Derive it with sceneMotif() in utils/posts.
  */
 interface Variant {
   skyTop: string;
@@ -15,9 +19,10 @@ interface Variant {
 
 interface Props {
   seed: string;
+  motif?: string;
   class?: string;
 }
-const { seed, class: className = '' } = Astro.props;
+const { seed, motif = '', class: className = '' } = Astro.props;
 
 const variants: Variant[] = [
   // dawn
@@ -46,6 +51,19 @@ const stars = v.moon
       r: (i % 3) * 0.5 + 0.8,
     }))
   : [];
+
+// Foreground silhouette motifs. `s` = silhouette (darkest hill), `w` = warm glow.
+const s = v.hills[2];
+const w = v.body.fill;
+const motifs: Record<string, string> = {
+  cottage: `<path d="M548,606 L548,512 L600,464 L652,512 L652,606 Z" fill="${s}"/><rect x="628" y="480" width="13" height="28" fill="${s}"/><rect x="586" y="536" width="22" height="24" rx="3" fill="${w}" opacity="0.92"/>`,
+  farm: `<path d="M566,606 L566,520 L600,490 L634,520 L634,606 Z" fill="${s}"/><rect x="592" y="556" width="16" height="50" fill="${w}" opacity="0.85"/><g stroke="${s}" stroke-width="6" stroke-linecap="round"><path d="M476,606 L476,582"/><path d="M500,606 L500,575"/><path d="M524,606 L524,584"/><path d="M676,606 L676,584"/><path d="M700,606 L700,575"/><path d="M724,606 L724,582"/></g>`,
+  fishing: `<g fill="none" stroke="${s}" stroke-width="5" stroke-linecap="round" opacity="0.7"><path d="M548,598 q42,-16 84,0"/><path d="M520,616 q62,-18 124,0"/></g><path d="M594,556 q30,-18 60,0 q-30,18 -60,0 Z" fill="${s}"/><path d="M654,556 l18,-11 v22 Z" fill="${s}"/>`,
+  campfire: `<path d="M600,548 C584,568 586,592 600,602 C614,592 616,568 600,548 Z" fill="${w}"/><g stroke="${s}" stroke-width="9" stroke-linecap="round"><path d="M570,606 L630,594"/><path d="M570,594 L630,606"/></g>`,
+  mountain: `<path d="M430,610 L600,462 L770,610 Z" fill="${s}"/><path d="M600,462 L632,490 L568,490 Z" fill="#fbf7f0" opacity="0.9"/>`,
+  forest: `<g fill="${s}"><path d="M556,606 L582,548 L608,606 Z"/><path d="M594,606 L628,530 L662,606 Z"/><path d="M650,606 L672,560 L694,606 Z"/></g>`,
+};
+const motifMarkup = motif && motifs[motif] ? motifs[motif] : '';
 ---
 <svg
   class:list={['h-full w-full', className]}
@@ -66,6 +84,7 @@ const stars = v.moon
   <circle class="drift" cx={v.body.x} cy={v.body.y} r={v.body.r} fill={v.body.fill} opacity="0.92" />
   <path d="M0,430 Q300,360 620,418 T1200,402 L1200,675 L0,675 Z" fill={v.hills[0]} opacity="0.92" />
   <path d="M0,500 Q360,446 700,500 T1200,486 L1200,675 L0,675 Z" fill={v.hills[1]} />
+  {motifMarkup && <g set:html={motifMarkup} />}
   <path d="M0,576 Q300,538 640,574 T1200,560 L1200,675 L0,675 Z" fill={v.hills[2]} />
 </svg>
 
