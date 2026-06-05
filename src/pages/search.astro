@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../config';
+---
+<BaseLayout
+  title={`Search · ${SITE.name}`}
+  description="Search cozy game recommendations, reviews and guides across Cozy Game Guide."
+>
+  <div class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+    <h1 class="font-display text-3xl font-bold text-ink sm:text-4xl">Search</h1>
+    <p class="mt-2 text-ink-muted">Find a game, guide, or list across the site.</p>
+
+    <div class="mt-6">
+      <label class="sr-only" for="site-search">Search articles</label>
+      <input
+        id="site-search"
+        type="search"
+        autocomplete="off"
+        autofocus
+        placeholder="Try “stardew”, “steam deck”, “fishing”…"
+        class="w-full rounded-full border border-line bg-surface px-5 py-3 text-ink placeholder:text-ink-muted focus:border-primary focus:outline-none"
+      />
+    </div>
+
+    <p id="search-status" class="mt-5 text-sm text-ink-muted" aria-live="polite"></p>
+    <ul id="search-results" class="mt-3 space-y-3"></ul>
+  </div>
+</BaseLayout>
+
+<script>
+  function setupSearch() {
+    const input = document.getElementById('site-search') as HTMLInputElement | null;
+    if (!input || input.dataset.bound) return;
+    input.dataset.bound = 'true';
+
+    const results = document.getElementById('search-results');
+    const status = document.getElementById('search-status');
+    let index: Array<{ title: string; description: string; url: string; category: string; tags: string[] }> = [];
+    let ready = false;
+
+    const esc = (s: string) =>
+      s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
+
+    function render(q: string) {
+      if (!ready || !results || !status) return;
+      const query = q.trim().toLowerCase();
+      if (!query) {
+        results.innerHTML = '';
+        status.textContent = '';
+        return;
+      }
+      const words = query.split(/\s+/);
+      const hits = index.filter((it) => {
+        const hay = (it.title + ' ' + it.description + ' ' + it.category + ' ' + it.tags.join(' ')).toLowerCase();
+        return words.every((w) => hay.includes(w));
+      });
+      status.textContent = `${hits.length} result${hits.length === 1 ? '' : 's'} for “${q.trim()}”`;
+      results.innerHTML = hits
+        .slice(0, 40)
+        .map(
+          (it) => `
+        <li class="card p-4">
+          <a class="font-display text-lg font-semibold text-ink hover:text-primary" href="${it.url}">${esc(it.title)}</a>
+          <p class="mt-1 text-sm leading-relaxed text-ink-muted">${esc(it.description)}</p>
+        </li>`
+        )
+        .join('');
+    }
+
+    fetch('/search-index.json')
+      .then((r) => r.json())
+      .then((data) => {
+        index = data;
+        ready = true;
+        const q = new URLSearchParams(location.search).get('q');
+        if (q) {
+          input.value = q;
+          render(q);
+        }
+      })
+      .catch(() => {
+        if (status) status.textContent = 'Search is unavailable right now.';
+      });
+
+    input.addEventListener('input', () => render(input.value));
+  }
+
+  document.addEventListener('astro:page-load', setupSearch);
+</script>
