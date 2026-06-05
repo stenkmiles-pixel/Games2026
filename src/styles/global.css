@@ -87,7 +87,7 @@ h4 {
 .prose {
   --tw-prose-body: var(--ink);
   --tw-prose-headings: var(--ink);
-  --tw-prose-links: var(--primary);
+  --tw-prose-links: var(--primary-hover);
   --tw-prose-bold: var(--ink);
   --tw-prose-counters: var(--ink-muted);
   --tw-prose-bullets: var(--primary);
