@@ -15,6 +15,9 @@ cons:
   - 'Still growing — a fresh 1.0'
 rating: 4.5
 gameName: 'Town to City'
+heroImage: '/images/games/town-to-city-review.jpg'
+heroImageAlt: 'Town to City cover art'
+heroCredit: 'Cover art © Galaxy Grove (via Steam)'
 teaPairing: 'Espresso on a sunny terrace'
 tags: ['town to city', 'review', 'building games']
 ---

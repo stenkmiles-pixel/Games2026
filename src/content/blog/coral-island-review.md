@@ -15,6 +15,9 @@ cons:
   - 'A few systems are shallower than Stardew'
 rating: 4.5
 gameName: 'Coral Island'
+heroImage: '/images/games/coral-island-review.jpg'
+heroImageAlt: 'Coral Island cover art'
+heroCredit: 'Cover art © Stairway Games (via Steam)'
 teaPairing: 'Iced hibiscus tea, sunshine optional'
 tags: ['coral island', 'review', 'farming sims']
 ---

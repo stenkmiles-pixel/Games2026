@@ -5,6 +5,9 @@ pubDate: 2026-06-02
 category: 'Reviews'
 rating: 4
 gameName: 'Core Keeper'
+heroImage: '/images/games/is-core-keeper-cozy.jpg'
+heroImageAlt: 'Core Keeper cover art'
+heroCredit: 'Cover art © Pugstorm (via Steam)'
 teaPairing: 'Coffee and a long evening underground'
 tags: ['core keeper', 'review', 'sandbox']
 verdict: 'Cozy-adjacent: warm base-building and farming wrapped around real combat and bosses.'

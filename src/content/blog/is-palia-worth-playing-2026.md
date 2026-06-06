@@ -15,6 +15,9 @@ cons:
   - 'Always-online, so no offline play'
 rating: 4
 gameName: 'Palia'
+heroImage: '/images/games/is-palia-worth-playing-2026.jpg'
+heroImageAlt: 'Palia cover art'
+heroCredit: 'Cover art © Singularity 6 (via Steam)'
 freeToPlay: true
 teaPairing: 'Bubble tea, best shared with friends'
 tags: ['palia', 'review', 'cozy mmo']

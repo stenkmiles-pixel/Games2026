@@ -5,6 +5,9 @@ pubDate: 2026-06-02
 category: 'Reviews'
 rating: 4.5
 gameName: 'Tiny Glade'
+heroImage: '/images/games/tiny-glade-review.jpg'
+heroImageAlt: 'Tiny Glade cover art'
+heroCredit: 'Cover art © Pounce Light (via Steam)'
 teaPairing: 'Chamomile and a rainy afternoon'
 tags: ['tiny glade', 'review', 'building games']
 verdict: 'The purest cozy experience money can buy — building with zero pressure.'

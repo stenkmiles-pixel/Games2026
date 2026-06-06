@@ -5,6 +5,9 @@ pubDate: 2026-06-02
 category: 'Reviews'
 rating: 4
 gameName: 'Infinity Nikki'
+heroImage: '/images/games/is-infinity-nikki-cozy.jpg'
+heroImageAlt: 'Infinity Nikki cover art'
+heroCredit: 'Cover art © Infold Games (via Steam)'
 freeToPlay: true
 teaPairing: 'Peach iced tea and a dreamy playlist'
 tags: ['infinity nikki', 'review', 'cozy games']

@@ -14,6 +14,9 @@ cons:
   - 'Some unlocks are grindy or time-gated'
 rating: 4
 gameName: 'Disney Dreamlight Valley'
+heroImage: '/images/games/disney-dreamlight-valley-worth-it.jpg'
+heroImageAlt: 'Disney Dreamlight Valley cover art'
+heroCredit: 'Cover art © Gameloft (via Steam)'
 teaPairing: 'Hot cocoa, extra marshmallows'
 tags: ['disney dreamlight valley', 'review', 'life sim']
 ---

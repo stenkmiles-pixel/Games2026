@@ -15,6 +15,9 @@ cons:
   - 'The theme of loss is not for everyone'
 rating: 4.5
 gameName: 'Spiritfarer'
+heroImage: '/images/games/spiritfarer-review.jpg'
+heroImageAlt: 'Spiritfarer cover art'
+heroCredit: 'Cover art © Thunder Lotus Games (via Steam)'
 teaPairing: 'Chamomile — keep tissues nearby'
 tags: ['spiritfarer', 'review', 'management games']
 ---

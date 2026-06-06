@@ -15,6 +15,9 @@ cons:
   - 'Light, optional combat'
 rating: 4
 gameName: 'My Time at Sandrock'
+heroImage: '/images/games/my-time-at-sandrock-review.jpg'
+heroImageAlt: 'My Time at Sandrock cover art'
+heroCredit: 'Cover art © Pathea Games (via Steam)'
 teaPairing: 'Spiced chai, sleeves rolled up'
 tags: ['my time at sandrock', 'review', 'life sims']
 ---

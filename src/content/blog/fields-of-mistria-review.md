@@ -15,6 +15,9 @@ cons:
   - 'Single-player only'
 rating: 4
 gameName: 'Fields of Mistria'
+heroImage: '/images/games/fields-of-mistria-review.jpg'
+heroImageAlt: 'Fields of Mistria cover art'
+heroCredit: 'Cover art © NPC Studio (via Steam)'
 teaPairing: 'Jasmine green tea, blossoms outside'
 tags: ['fields of mistria', 'review', 'farming sims']
 ---

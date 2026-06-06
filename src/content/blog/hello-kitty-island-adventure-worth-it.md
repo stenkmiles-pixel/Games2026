@@ -5,6 +5,9 @@ pubDate: 2026-05-31
 category: 'Reviews'
 rating: 4
 gameName: 'Hello Kitty Island Adventure'
+heroImage: '/images/games/hello-kitty-island-adventure-worth-it.jpg'
+heroImageAlt: 'Hello Kitty Island Adventure cover art'
+heroCredit: 'Cover art © Sunblink (via Steam)'
 teaPairing: 'Strawberry milk and a sunny afternoon'
 tags: ['hello kitty island adventure', 'review', 'cozy games']
 verdict: 'Far deeper and more generous than it looks, with zero microtransactions.'

@@ -15,6 +15,9 @@ cons:
   - 'A few tense darkness moments'
 rating: 4.5
 gameName: 'Sky: Children of the Light'
+heroImage: '/images/games/is-sky-children-of-the-light-cozy.jpg'
+heroImageAlt: 'Sky: Children of the Light cover art'
+heroCredit: 'Cover art © thatgamecompany (via Steam)'
 freeToPlay: true
 teaPairing: 'Lavender tea at golden hour'
 tags: ['sky children of the light', 'review', 'cozy games']

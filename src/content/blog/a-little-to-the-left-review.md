@@ -5,6 +5,9 @@ pubDate: 2026-06-02
 category: 'Reviews'
 rating: 4
 gameName: 'A Little to the Left'
+heroImage: '/images/games/a-little-to-the-left-review.jpg'
+heroImageAlt: 'A Little to the Left cover art'
+heroCredit: 'Cover art © Max Inferno (via Steam)'
 teaPairing: 'Green tea and a freshly tidied desk'
 tags: ['a little to the left', 'review', 'puzzle games']
 verdict: 'A gentle, gorgeous puzzler that turns tidying into meditation.'
