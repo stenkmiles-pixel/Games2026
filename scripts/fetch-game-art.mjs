@@ -28,7 +28,7 @@ const games = [
   { slug: 'a-little-to-the-left-review', name: 'A Little to the Left', appid: 1629520 },
   { slug: 'hello-kitty-island-adventure-worth-it', name: 'Hello Kitty Island Adventure', appid: 2495100 },
   { slug: 'my-time-at-sandrock-review', name: 'My Time at Sandrock', appid: 1084600 },
-  { slug: 'wylde-flowers-review', name: 'Wylde Flowers', appid: 1730590 },
+  { slug: 'wylde-flowers-review', name: 'Wylde Flowers', appid: 1896700 },
 ];
 
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, '');

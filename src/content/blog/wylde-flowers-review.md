@@ -15,6 +15,9 @@ cons:
   - 'Smaller in scope — you may finish it sooner'
 rating: 4
 gameName: 'Wylde Flowers'
+heroImage: '/images/games/wylde-flowers-review.jpg'
+heroImageAlt: 'Wylde Flowers cover art'
+heroCredit: 'Cover art © Studio Drydock (via Steam)'
 teaPairing: 'Lavender tea by candlelight'
 tags: ['wylde flowers', 'review', 'farming sims']
 ---
