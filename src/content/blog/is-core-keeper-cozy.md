@@ -7,6 +7,15 @@ rating: 4
 gameName: 'Core Keeper'
 teaPairing: 'Coffee and a long evening underground'
 tags: ['core keeper', 'review', 'sandbox']
+verdict: 'Cozy-adjacent: warm base-building and farming wrapped around real combat and bosses.'
+pros:
+  - 'Base-building and lighting up the dark is a joy'
+  - 'Relaxing farming, fishing and cooking'
+  - 'Excellent drop-in co-op for up to 8'
+cons:
+  - 'Real combat and nine tough bosses'
+  - 'A survival game at heart, with progression gates'
+  - 'Deep biomes get tense, not snug'
 ---
 
 Core Keeper looks adorable — a cute, glowing, pixel-art world of underground caverns you light up and make your own. But it's also a survival sandbox with combat and bosses. So cozy players keep asking the same question: is Core Keeper actually *cozy*? Here's our honest answer.

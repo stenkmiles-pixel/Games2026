@@ -31,6 +31,10 @@ const blog = defineCollection({
     freeToPlay: z.boolean().default(false),
     // Optional cozy "companion" suggestion shown under the title (a drink / mood).
     teaPairing: z.string().optional(),
+    // Optional structured verdict for the review "score card" (ReviewSummary).
+    verdict: z.string().optional(),
+    pros: z.array(z.string()).optional(),
+    cons: z.array(z.string()).optional(),
     // Optional one-line editorial note shown on the post's card (esp. when featured).
     editorNote: z.string().optional(),
     author: z.string().default('The Cozy Game Guide Team'),

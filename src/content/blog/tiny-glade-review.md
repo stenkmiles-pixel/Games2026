@@ -7,6 +7,15 @@ rating: 4.5
 gameName: 'Tiny Glade'
 teaPairing: 'Chamomile and a rainy afternoon'
 tags: ['tiny glade', 'review', 'building games']
+verdict: 'The purest cozy experience money can buy — building with zero pressure.'
+pros:
+  - 'Gridless building "chemistry" makes everything look gorgeous'
+  - 'Staggeringly pretty — every scene is a fairytale postcard'
+  - 'Zero pressure: no goals, timers, or fail states'
+cons:
+  - 'No goals at all — aimless if you need progression'
+  - 'More a relaxing toy than a long game'
+  - 'PC only, no console version'
 ---
 
 Some cozy games are relaxing *despite* their goals. Tiny Glade is relaxing because it has **none** — no quests, no resources, no fail states, no wrong answers. You just build pretty little castles and watch them come to life. After plenty of happy, aimless hours, here's our honest take.

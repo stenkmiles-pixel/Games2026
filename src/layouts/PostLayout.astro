@@ -16,6 +16,7 @@ import SceneHero from '../components/SceneHero.astro';
 import { sceneMotif } from '../utils/posts';
 import WhereToBuy from '../components/WhereToBuy.astro';
 import CozyCompanion from '../components/CozyCompanion.astro';
+import ReviewSummary from '../components/ReviewSummary.astro';
 
 interface Props {
   post: CollectionEntry<'blog'>;
@@ -23,7 +24,7 @@ interface Props {
   related: CollectionEntry<'blog'>[];
 }
 const { post, headings, related } = Astro.props;
-const { title, description, pubDate, updatedDate, category, author, tags, heroImage, heroImageAlt, heroCredit, rating, gameName, freeToPlay, teaPairing } = post.data;
+const { title, description, pubDate, updatedDate, category, author, tags, heroImage, heroImageAlt, heroCredit, rating, gameName, freeToPlay, teaPairing, verdict, pros, cons } = post.data;
 const c = CATEGORIES[category];
 const canonicalUrl = new URL(`/blog/${post.id}/`, SITE.url).href;
 
@@ -122,6 +123,20 @@ const pageJsonLd = reviewJsonLd ? [articleJsonLd, reviewJsonLd] : articleJsonLd;
           </div>
           {heroCredit && <figcaption class="px-4 py-2 text-xs text-ink-muted">{heroCredit}</figcaption>}
         </figure>
+
+        {
+          category === 'Reviews' && rating != null && (
+            <ReviewSummary
+              rating={rating}
+              gameName={gameName}
+              freeToPlay={freeToPlay}
+              verdict={verdict}
+              pros={pros}
+              cons={cons}
+              class="mt-6"
+            />
+          )
+        }
 
         <AdSlot />
 

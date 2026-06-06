@@ -1,0 +1,104 @@
+---
+/**
+ * At-a-glance verdict card for review articles: visual score, price (or free),
+ * and optional pros/cons. Reuses existing frontmatter (rating, gameName,
+ * freeToPlay) + the live ITAD price; pros/cons/verdict are optional add-ons.
+ */
+import Stars from './Stars.astro';
+import priceData from '../data/prices.json';
+
+interface Best {
+  shop: string;
+  price: number;
+  cut: number;
+  url: string;
+}
+interface Props {
+  rating: number;
+  gameName?: string;
+  freeToPlay?: boolean;
+  verdict?: string;
+  pros?: string[];
+  cons?: string[];
+  class?: string;
+}
+const {
+  rating,
+  gameName,
+  freeToPlay = false,
+  verdict,
+  pros = [],
+  cons = [],
+  class: className = '',
+} = Astro.props;
+
+const best = gameName
+  ? ((priceData as Record<string, { best?: Best } | undefined>)[gameName]?.best ?? null)
+  : null;
+const hasProsCons = pros.length > 0 || cons.length > 0;
+---
+<aside class:list={['card overflow-hidden', className]} aria-label="Review summary">
+  <div class="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 border-b border-line bg-surface-2 px-5 py-4">
+    <div class="flex items-center gap-3">
+      <span class="font-display text-3xl font-bold leading-none text-ink">{rating.toFixed(1)}</span>
+      <span class="leading-tight">
+        <Stars rating={rating} class="text-lg" />
+        <span class="block text-xs text-ink-muted">out of 5</span>
+      </span>
+    </div>
+    <div class="text-sm text-ink-muted">
+      {
+        freeToPlay ? (
+          <span class="font-semibold text-primary">🟢 Free to play</span>
+        ) : best ? (
+          <span>
+            From <strong class="text-ink">${best.price.toFixed(2)}</strong> at {best.shop}
+            {best.cut > 0 && <span class="ml-1 text-primary">(-{best.cut}%)</span>}
+          </span>
+        ) : null
+      }
+    </div>
+  </div>
+
+  {
+    (verdict || hasProsCons) && (
+      <div class="p-5">
+        {verdict && (
+          <p class="text-ink">
+            <strong>In short:</strong> {verdict}
+          </p>
+        )}
+        {hasProsCons && (
+          <div class:list={['grid gap-5 sm:grid-cols-2', verdict && 'mt-4']}>
+            {pros.length > 0 && (
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-primary">What's great</p>
+                <ul class="mt-2 space-y-1.5 text-sm text-ink">
+                  {pros.map((p) => (
+                    <li class="flex gap-2">
+                      <span class="font-bold text-primary" aria-hidden="true">+</span>
+                      <span>{p}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {cons.length > 0 && (
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-accent">Keep in mind</p>
+                <ul class="mt-2 space-y-1.5 text-sm text-ink">
+                  {cons.map((c) => (
+                    <li class="flex gap-2">
+                      <span class="font-bold text-accent" aria-hidden="true">−</span>
+                      <span>{c}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+    )
+  }
+</aside>

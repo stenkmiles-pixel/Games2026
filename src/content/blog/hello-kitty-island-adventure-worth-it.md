@@ -7,6 +7,15 @@ rating: 4
 gameName: 'Hello Kitty Island Adventure'
 teaPairing: 'Strawberry milk and a sunny afternoon'
 tags: ['hello kitty island adventure', 'review', 'cozy games']
+verdict: 'Far deeper and more generous than it looks, with zero microtransactions.'
+pros:
+  - 'Shockingly deep — well over 100 hours'
+  - 'No microtransactions; unlock everything by playing'
+  - 'Warm friendship system and gentle co-op'
+cons:
+  - 'Wall-to-wall Sanrio aesthetic is divisive'
+  - 'Very gentle — no real challenge'
+  - 'Mobile roots show in a few menus'
 ---
 
 Don't let the bow fool you. Hello Kitty Island Adventure looks like a sugary kids' app, but it's quietly one of the most generous, surprisingly deep cozy games around — and now that it's left Apple Arcade for Switch and PC, far more people can find that out. Here's our honest take on whether it's worth it.

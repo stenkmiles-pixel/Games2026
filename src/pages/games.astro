@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE } from '../config';
 import { getPublishedPosts } from '../utils/posts';
+import Stars from '../components/Stars.astro';
 import priceData from '../data/prices.json';
 
 interface Best {
@@ -79,10 +80,10 @@ const chipOff =
                 <a href={g.url} class="transition-colors hover:text-primary">{g.name}</a>
               </h2>
               <span
-                class="shrink-0 rounded-full bg-accent-soft px-2.5 py-1 text-sm font-bold text-primary"
+                class="flex shrink-0 items-center gap-1.5 rounded-full bg-accent-soft px-2.5 py-1 text-sm font-bold text-ink"
                 aria-label={`Our rating ${g.rating} out of 5`}
               >
-                ★ {g.rating}
+                <Stars rating={g.rating} /> {g.rating}
               </span>
             </div>
             {g.genres.length > 0 && (

@@ -8,6 +8,15 @@ gameName: 'Infinity Nikki'
 freeToPlay: true
 teaPairing: 'Peach iced tea and a dreamy playlist'
 tags: ['infinity nikki', 'review', 'cozy games']
+verdict: 'Genuinely cozy and free — if you can treat the gacha and cash shop as background noise.'
+pros:
+  - 'Dreamy, relaxing open-world exploration'
+  - 'Lovely dress-up collecting at the heart of it'
+  - 'Free to start across PC, PS5 and mobile'
+cons:
+  - 'It is a gacha, with the FOMO that implies'
+  - 'Optional cash shop and battle pass are ever-present'
+  - 'Always-online live-service rhythms'
 ---
 
 Infinity Nikki landed like a glittering surprise: a free, gorgeous, open-world adventure where you explore a dreamy world and collect beautiful outfits. It *looks* like the coziest thing ever — but it's also a **gacha** game. So the real question cozy players are asking is simple: is it actually cozy? Here's our honest answer.

@@ -7,6 +7,15 @@ rating: 3.5
 gameName: 'Tales of the Shire'
 teaPairing: 'A pot of tea and a second breakfast'
 tags: ['tales of the shire', 'review', 'cozy games']
+verdict: 'A lovely, atmospheric hobbit fantasy — wonderful for the vibe, thin as a game.'
+pros:
+  - 'The hobbit fantasy and Shire atmosphere are spot-on'
+  - 'Hands-on cooking is the satisfying star'
+  - 'Truly low-stress: no combat or fail states'
+cons:
+  - 'Shallow systems that do not reward mastery'
+  - 'Slow pace tips into repetitive'
+  - 'Technical rough edges; mixed reception'
 ---
 
 If you've ever wanted to *be* a hobbit — tending a garden, cooking for friends, and never doing anything more stressful than choosing what's for second breakfast — Tales of the Shire is built for that exact daydream. It's the cozy Lord of the Rings life sim from Wētā Workshop, and after time spent settling into Bywater, here's our honest take.

@@ -1,0 +1,26 @@
+---
+/**
+ * Visual star rating (supports fractional, e.g. 4.5) for a 0–5 score.
+ * Renders an outline row with a clipped filled row on top for precise halves.
+ */
+interface Props {
+  rating: number;
+  class?: string;
+}
+const { rating, class: className = '' } = Astro.props;
+const pct = Math.max(0, Math.min(100, (rating / 5) * 100));
+const STARS = '★★★★★';
+---
+<span
+  class:list={['relative inline-block whitespace-nowrap leading-none', className]}
+  role="img"
+  aria-label={`${rating} out of 5 stars`}
+  style="letter-spacing:0.05em"
+>
+  <span class="text-line" aria-hidden="true">{STARS}</span>
+  <span
+    class="absolute inset-0 overflow-hidden text-accent"
+    style={`width:${pct}%`}
+    aria-hidden="true"
+  >{STARS}</span>
+</span>

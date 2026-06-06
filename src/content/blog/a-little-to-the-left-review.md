@@ -7,6 +7,15 @@ rating: 4
 gameName: 'A Little to the Left'
 teaPairing: 'Green tea and a freshly tidied desk'
 tags: ['a little to the left', 'review', 'puzzle games']
+verdict: 'A gentle, gorgeous puzzler that turns tidying into meditation.'
+pros:
+  - 'Pure tactile satisfaction from organizing'
+  - 'Beautiful, warm hand-drawn presentation'
+  - 'No timers, scores, or failure'
+cons:
+  - 'Short — lean on the DLC for more'
+  - 'A few puzzles are ambiguous'
+  - 'A calm vibe, not a real challenge'
 ---
 
 If you've ever felt a tiny spark of joy from lining up pencils by size or squaring off a stack of books, A Little to the Left was made for you. It's a cozy puzzle game about **tidying things into satisfying order** — and it's far more soothing than it has any right to be. Here's our honest take.
