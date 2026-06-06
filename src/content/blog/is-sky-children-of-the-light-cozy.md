@@ -3,6 +3,16 @@ title: 'Is Sky: Children of the Light a Cozy Game?'
 description: "Is Sky: Children of the Light cozy? Our honest take on thatgamecompany's free, serene social adventure — the breathtaking relaxation, the gentle catches, and who will love it."
 pubDate: 2026-06-02
 category: 'Reviews'
+verdict: 'Not a typical cozy game, but a peerless source of calm, beauty and gentle connection — and free.'
+pros:
+  - 'Profoundly relaxing, with a swelling orchestral score'
+  - 'Gentle, wordless connection with no chat toxicity'
+  - 'No combat and no fail screens'
+  - 'Ethical free game — cosmetic-only, no gacha'
+cons:
+  - 'Always-online live-service, with some FOMO'
+  - 'A light grind for candle currency'
+  - 'A few tense darkness moments'
 rating: 4.5
 gameName: 'Sky: Children of the Light'
 freeToPlay: true

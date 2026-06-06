@@ -3,6 +3,16 @@ title: 'Town to City Review: A Gloriously Cozy City Builder'
 description: "Our Town to City review. Galaxy Grove's gridless, Mediterranean-inspired city builder is pure relaxing creativity — no fail states, just lovely towns. Is it worth it?"
 pubDate: 2026-06-02
 category: 'Reviews'
+verdict: 'A gorgeous, gentle, creative city builder — making something pretty with none of the stress.'
+pros:
+  - 'Gridless building makes every town feel hand-made'
+  - 'Gorgeous, warm Mediterranean art'
+  - 'Low-stress by design — no failure spiral'
+  - 'Beloved on Steam (~98% positive)'
+cons:
+  - 'PC only for now'
+  - 'Light on deep simulation'
+  - 'Still growing — a fresh 1.0'
 rating: 4.5
 gameName: 'Town to City'
 teaPairing: 'Espresso on a sunny terrace'

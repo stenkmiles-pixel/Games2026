@@ -3,6 +3,16 @@ title: 'Coral Island Review: Is It Worth It in 2025?'
 description: 'Our honest Coral Island review. Is this tropical farming sim a worthy Stardew Valley alternative? We cover the diving, the town, the pros and cons, and who should buy it.'
 pubDate: 2026-05-20
 category: 'Reviews'
+verdict: 'A gorgeous, generous 3D farm with a whole ocean to bring back to life.'
+pros:
+  - 'One of the best-looking cozy games — warm, colourful 3D'
+  - 'Diving and reef restoration add a fresh second world'
+  - 'Generous content with regular post-launch updates'
+  - 'An inclusive, welcoming town to befriend'
+cons:
+  - 'So many systems it can feel sprawling early on'
+  - 'The occasional performance hiccup or rough edge'
+  - 'A few systems are shallower than Stardew'
 rating: 4.5
 gameName: 'Coral Island'
 teaPairing: 'Iced hibiscus tea, sunshine optional'

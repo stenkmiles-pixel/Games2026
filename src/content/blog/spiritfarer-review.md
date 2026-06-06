@@ -3,6 +3,16 @@ title: 'Spiritfarer Review: A Cozy Game About Letting Go'
 description: "Our Spiritfarer review. This gorgeous management game about caring for spirits is one of the most beautiful and moving cozy games ever made — here's who should play it."
 pubDate: 2026-02-22
 category: 'Reviews'
+verdict: 'As moving as it is relaxing — a high point of the entire cozy genre.'
+pros:
+  - 'Stunning hand-drawn animation full of personality'
+  - 'Genuinely moving, beautifully written stories'
+  - 'A deeply relaxing sail-gather-cook loop'
+  - 'Dozens of hours of content'
+cons:
+  - 'Travel and backtracking can feel slow'
+  - 'A slow burn — one to savour, not rush'
+  - 'The theme of loss is not for everyone'
 rating: 4.5
 gameName: 'Spiritfarer'
 teaPairing: 'Chamomile — keep tissues nearby'
