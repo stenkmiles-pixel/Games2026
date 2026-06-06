@@ -1,0 +1,164 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../config';
+import { getPublishedPosts } from '../utils/posts';
+import priceData from '../data/prices.json';
+
+interface Best {
+  shop: string;
+  price: number;
+  cut: number;
+  url: string;
+}
+const prices = priceData as Record<string, { best?: Best } | undefined>;
+
+const posts = await getPublishedPosts();
+// "Rated games" = review articles that set a gameName + rating.
+const games = posts
+  .filter((p) => p.data.category === 'Reviews' && p.data.gameName && p.data.rating != null)
+  .map((p) => {
+    const name = p.data.gameName as string;
+    const nameLower = name.toLowerCase();
+    const genres = (p.data.tags ?? []).filter(
+      (t) => !['review', 'comparison'].includes(t) && t !== nameLower
+    );
+    return {
+      name,
+      rating: p.data.rating as number,
+      url: `/blog/${p.id}/`,
+      genres,
+      freeToPlay: p.data.freeToPlay ?? false,
+      best: prices[name]?.best ?? null,
+    };
+  })
+  .sort((a, b) => b.rating - a.rating);
+
+const allGenres = [...new Set(games.flatMap((g) => g.genres))].sort();
+const chipOn = 'rounded-full border border-line bg-primary px-3 py-1.5 text-sm font-semibold text-white';
+const chipOff =
+  'rounded-full border border-line bg-surface px-3 py-1.5 text-sm font-semibold text-ink-muted transition-colors hover:text-primary';
+---
+<BaseLayout
+  title={`Game Library · ${SITE.name}`}
+  description="Browse every cozy game we've reviewed, with our scores, genres and live prices. Filter by type and sort by our rating."
+>
+  <div class="mx-auto max-w-5xl px-4 py-12 sm:px-6">
+    <h1 class="font-display text-3xl font-bold text-ink sm:text-4xl">Game Library</h1>
+    <p class="mt-2 max-w-2xl text-ink-muted">
+      Every cozy game we've reviewed, with our score and live price. Filter by genre, sort by rating.
+    </p>
+
+    <div class="mt-6 flex flex-wrap items-center gap-2" data-filters>
+      <button data-genre="" class={chipOn} aria-pressed="true">All</button>
+      {allGenres.map((t) => (
+        <button data-genre={t} class={chipOff} aria-pressed="false">{t}</button>
+      ))}
+      <span class="ml-auto flex items-center gap-2 text-sm text-ink-muted">
+        <label for="games-sort">Sort</label>
+        <select id="games-sort" class="rounded-lg border border-line bg-surface px-2 py-1 text-sm text-ink">
+          <option value="rating">Our rating</option>
+          <option value="name">Name (A–Z)</option>
+        </select>
+      </span>
+    </div>
+
+    <p id="games-count" class="mt-4 text-sm text-ink-muted" aria-live="polite">{games.length} games</p>
+
+    <ul id="games-grid" class="mt-3 grid gap-4 sm:grid-cols-2">
+      {
+        games.map((g) => (
+          <li
+            data-game
+            data-genres={g.genres.join('|')}
+            data-rating={g.rating}
+            data-name={g.name}
+            class="card flex flex-col p-5"
+          >
+            <div class="flex items-start justify-between gap-3">
+              <h2 class="font-display text-lg font-semibold leading-snug text-ink">
+                <a href={g.url} class="transition-colors hover:text-primary">{g.name}</a>
+              </h2>
+              <span
+                class="shrink-0 rounded-full bg-accent-soft px-2.5 py-1 text-sm font-bold text-primary"
+                aria-label={`Our rating ${g.rating} out of 5`}
+              >
+                ★ {g.rating}
+              </span>
+            </div>
+            {g.genres.length > 0 && (
+              <div class="mt-2 flex flex-wrap gap-1.5">
+                {g.genres.map((t) => (
+                  <span class="rounded-full bg-surface-2 px-2 py-0.5 text-xs text-ink-muted">{t}</span>
+                ))}
+              </div>
+            )}
+            <p class="mt-3 text-sm text-ink-muted">
+              {g.freeToPlay
+                ? 'Free to play'
+                : g.best
+                  ? `From $${g.best.price.toFixed(2)} at ${g.best.shop}`
+                  : 'See review for price'}
+            </p>
+            <a href={g.url} class="mt-auto pt-3 text-sm font-semibold text-primary hover:underline">
+              Read review →
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</BaseLayout>
+
+<script>
+  function setupGames() {
+    const grid = document.getElementById('games-grid');
+    const filters = document.querySelector('[data-filters]');
+    if (!grid || !filters || grid.dataset.bound) return;
+    grid.dataset.bound = 'true';
+
+    const count = document.getElementById('games-count');
+    const sortSel = document.getElementById('games-sort') as HTMLSelectElement | null;
+    const cards = Array.from(grid.querySelectorAll('[data-game]')) as HTMLElement[];
+    const ON =
+      'rounded-full border border-line bg-primary px-3 py-1.5 text-sm font-semibold text-white';
+    const OFF =
+      'rounded-full border border-line bg-surface px-3 py-1.5 text-sm font-semibold text-ink-muted transition-colors hover:text-primary';
+    let activeGenre = '';
+
+    function apply() {
+      let shown = 0;
+      cards.forEach((c) => {
+        const genres = (c.dataset.genres || '').split('|');
+        const match = !activeGenre || genres.includes(activeGenre);
+        c.style.display = match ? '' : 'none';
+        if (match) shown++;
+      });
+      if (count) count.textContent = `${shown} game${shown === 1 ? '' : 's'}`;
+    }
+
+    filters.querySelectorAll('button[data-genre]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        activeGenre = (btn as HTMLElement).dataset.genre || '';
+        filters.querySelectorAll('button[data-genre]').forEach((b) => {
+          const on = b === btn;
+          b.setAttribute('aria-pressed', String(on));
+          b.className = on ? ON : OFF;
+        });
+        apply();
+      });
+    });
+
+    sortSel?.addEventListener('change', () => {
+      const by = sortSel.value;
+      [...cards]
+        .sort((a, b) =>
+          by === 'name'
+            ? (a.dataset.name || '').localeCompare(b.dataset.name || '')
+            : Number(b.dataset.rating) - Number(a.dataset.rating)
+        )
+        .forEach((c) => grid.appendChild(c));
+    });
+  }
+
+  document.addEventListener('astro:page-load', setupGames);
+</script>

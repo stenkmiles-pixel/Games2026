@@ -45,6 +45,7 @@ export const SITE = {
 export const NAV: { label: string; href: string }[] = [
   { label: 'Home', href: '/' },
   { label: 'All Articles', href: '/blog' },
+  { label: 'Games', href: '/games' },
   { label: 'Recommendations', href: '/category/recommendations' },
   { label: 'Reviews', href: '/category/reviews' },
   { label: 'Guides', href: '/category/guides' },
