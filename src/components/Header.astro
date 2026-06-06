@@ -1,11 +1,16 @@
 ---
-import { SITE, NAV } from '../config';
+import { SITE, NAV, CATEGORIES } from '../config';
 
 const path = Astro.url.pathname.replace(/\/+$/, '') || '/';
 const isActive = (href: string) => {
   const h = href.replace(/\/+$/, '') || '/';
   return h === '/' ? path === '/' : path === h || path.startsWith(h + '/');
 };
+
+// Desktop nav: collapse the five category links into one "Browse" dropdown.
+const topNav = NAV.filter((i) => !i.href.startsWith('/category/'));
+const cats = Object.values(CATEGORIES);
+const onCategory = path.startsWith('/category');
 ---
 
 <header class="sticky top-0 z-40 border-b border-line bg-canvas/85 backdrop-blur">
@@ -17,7 +22,61 @@ const isActive = (href: string) => {
 
     <nav aria-label="Primary" class="hidden items-center gap-1 lg:flex">
       {
-        NAV.map((item) => (
+        topNav.slice(0, 2).map((item) => (
+          <a
+            href={item.href}
+            aria-current={isActive(item.href) ? 'page' : undefined}
+            class:list={[
+              'rounded-full px-3 py-1.5 text-sm font-semibold transition-colors hover:text-primary',
+              isActive(item.href) ? 'bg-accent-soft text-primary' : 'text-ink-muted',
+            ]}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+
+      <details data-browse class="group relative">
+        <summary
+          class:list={[
+            'flex cursor-pointer list-none items-center gap-1 rounded-full px-3 py-1.5 text-sm font-semibold transition-colors hover:text-primary [&::-webkit-details-marker]:hidden',
+            onCategory ? 'bg-accent-soft text-primary' : 'text-ink-muted',
+          ]}
+        >
+          Browse
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="transition-transform group-open:rotate-180"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </summary>
+        <div
+          class="absolute left-0 top-full z-50 mt-2 w-60 rounded-2xl border border-line bg-canvas p-2 shadow-[0_18px_40px_-12px_rgba(60,55,47,0.28)]"
+        >
+          {
+            cats.map((c) => (
+              <a
+                href={`/category/${c.slug}`}
+                class="flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm font-semibold text-ink-muted transition-colors hover:bg-surface-2 hover:text-primary"
+              >
+                <span aria-hidden="true">{c.emoji}</span> {c.label}
+              </a>
+            ))
+          }
+        </div>
+      </details>
+
+      {
+        topNav.slice(2).map((item) => (
           <a
             href={item.href}
             aria-current={isActive(item.href) ? 'page' : undefined}
@@ -102,6 +161,8 @@ const isActive = (href: string) => {
 <script>
   // Bind on every page load AND after each View Transitions navigation
   // (astro:page-load fires for both), since the header is re-rendered on swap.
+  let docListenersBound = false;
+
   function setupHeader() {
     const themeBtn = document.getElementById('theme-toggle');
     if (themeBtn && !themeBtn.dataset.bound) {
@@ -124,6 +185,25 @@ const isActive = (href: string) => {
         } else {
           menu.setAttribute('hidden', '');
           menuBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    // Close the "Browse" dropdown on outside-click or Escape. Bound once at
+    // module scope so View Transitions navigations can't stack duplicate
+    // listeners; they look the dropdown up fresh on each event.
+    if (!docListenersBound) {
+      docListenersBound = true;
+      const browse = () =>
+        document.querySelector('details[data-browse]') as HTMLDetailsElement | null;
+      document.addEventListener('click', (e) => {
+        const d = browse();
+        if (d && d.open && e.target instanceof Node && !d.contains(e.target)) d.open = false;
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          const d = browse();
+          if (d && d.open) d.open = false;
         }
       });
     }
