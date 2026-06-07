@@ -5,6 +5,9 @@ pubDate: 2026-05-30
 category: 'Reviews'
 rating: 3.5
 gameName: 'Tales of the Shire'
+heroImage: '/images/games/tales-of-the-shire-review.jpg'
+heroImageAlt: 'Tales of the Shire cover art'
+heroCredit: 'Cover art © Wētā Workshop / Private Division (via Steam)'
 teaPairing: 'A pot of tea and a second breakfast'
 tags: ['tales of the shire', 'review', 'cozy games']
 verdict: 'A lovely, atmospheric hobbit fantasy — wonderful for the vibe, thin as a game.'

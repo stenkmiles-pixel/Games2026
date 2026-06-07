@@ -156,6 +156,17 @@ h4 {
   border-radius: 1rem;
 }
 
+/* Dark mode: gently dim + de-glare the generated "scene" illustrations so their
+   pastel daytime skies sit calmly on the dark canvas at night, instead of
+   glowing like little lightboxes. Real cover photos are intentionally left at
+   full brightness. The soft transition keeps the theme toggle from flickering. */
+.dark .scene-hero {
+  filter: brightness(0.8) saturate(0.92);
+}
+.scene-hero {
+  transition: filter 0.25s ease;
+}
+
 /* Constrain images that authors drop into Markdown. */
 .prose :where(img) {
   border-radius: 0.75rem;
