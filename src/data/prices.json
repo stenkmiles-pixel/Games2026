@@ -1,6 +1,6 @@
 {
   "Coral Island": {
-    "updated": "2026-06-18T10:49:22.293Z",
+    "updated": "2026-06-19T10:57:59.442Z",
     "best": {
       "shop": "Microsoft Store",
       "price": 17.99,
@@ -16,8 +16,8 @@
       },
       {
         "shop": "Steam",
-        "price": 29.99,
-        "cut": 0,
+        "price": 17.99,
+        "cut": 40,
         "url": "https://itad.link/018d9386-425a-71b0-833e-c434400917e3/"
       },
       {
@@ -29,7 +29,7 @@
     ]
   },
   "Disney Dreamlight Valley": {
-    "updated": "2026-06-18T10:49:22.293Z",
+    "updated": "2026-06-19T10:57:59.442Z",
     "best": {
       "shop": "Fanatical",
       "price": 39.99,
@@ -70,7 +70,7 @@
     ]
   },
   "Wylde Flowers": {
-    "updated": "2026-06-18T10:49:22.293Z",
+    "updated": "2026-06-19T10:57:59.442Z",
     "best": {
       "shop": "Microsoft Store",
       "price": 24.99,
@@ -93,7 +93,7 @@
     ]
   },
   "My Time at Sandrock": {
-    "updated": "2026-06-18T10:49:22.293Z",
+    "updated": "2026-06-19T10:57:59.442Z",
     "best": {
       "shop": "Fanatical",
       "price": 31.19,
@@ -134,7 +134,7 @@
     ]
   },
   "Fields of Mistria": {
-    "updated": "2026-06-18T10:49:22.293Z",
+    "updated": "2026-06-19T10:57:59.442Z",
     "best": {
       "shop": "Steam",
       "price": 13.99,
@@ -151,7 +151,7 @@
     ]
   },
   "Spiritfarer": {
-    "updated": "2026-06-18T10:49:22.293Z",
+    "updated": "2026-06-19T10:57:59.442Z",
     "best": {
       "shop": "Microsoft Store",
       "price": 29.99,
@@ -198,7 +198,7 @@
     ]
   },
   "Hello Kitty Island Adventure": {
-    "updated": "2026-06-18T10:49:22.293Z",
+    "updated": "2026-06-19T10:57:59.442Z",
     "best": {
       "shop": "Steam",
       "price": 39.99,
@@ -215,7 +215,7 @@
     ]
   },
   "Tiny Glade": {
-    "updated": "2026-06-18T10:49:22.293Z",
+    "updated": "2026-06-19T10:57:59.442Z",
     "best": {
       "shop": "Steam",
       "price": 14.99,
@@ -232,7 +232,7 @@
     ]
   },
   "A Little to the Left": {
-    "updated": "2026-06-18T10:49:22.293Z",
+    "updated": "2026-06-19T10:57:59.442Z",
     "best": {
       "shop": "Fanatical",
       "price": 13.49,
@@ -267,7 +267,7 @@
     ]
   },
   "Core Keeper": {
-    "updated": "2026-06-18T10:49:22.293Z",
+    "updated": "2026-06-19T10:57:59.442Z",
     "best": {
       "shop": "GOG",
       "price": 11.99,
@@ -314,7 +314,7 @@
     ]
   },
   "Town to City": {
-    "updated": "2026-06-18T10:49:22.293Z",
+    "updated": "2026-06-19T10:57:59.442Z",
     "best": {
       "shop": "Fanatical",
       "price": 26.88,
