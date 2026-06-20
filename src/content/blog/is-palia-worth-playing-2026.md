@@ -2,6 +2,7 @@
 title: 'Is Palia Worth Playing in 2026?'
 description: "An honest look at whether Palia is worth playing in 2026. The free cozy MMO had a rocky start — but with the Royal Highlands expansion and 10M+ players, here's where it stands now."
 pubDate: 2026-05-31
+updatedDate: 2026-06-19
 category: 'Reviews'
 verdict: 'Free, thriving, and more polished than ever — well worth a download in 2026.'
 pros:
@@ -21,6 +22,15 @@ heroCredit: 'Cover art © Singularity 6 (via Steam)'
 freeToPlay: true
 teaPairing: 'Bubble tea, best shared with friends'
 tags: ['palia', 'review', 'cozy mmo']
+faq:
+  - q: "Is Palia free to play?"
+    a: "Yes — Palia is completely free to download and play, on PC (Steam and Epic) and Nintendo Switch. It's funded by optional cosmetics, not a box price."
+  - q: "Is Palia pay to win?"
+    a: "No. Everything you can buy is cosmetic — outfits, furniture and decor. Nothing for sale gives a gameplay advantage, so all the meaningful progression is earned just by playing."
+  - q: "Can you play Palia solo?"
+    a: "Yes. Although it's an MMO with a shared open world, you can play almost entirely solo and at your own pace — other players are around but never required."
+  - q: "What do you actually do in Palia?"
+    a: "The cozy staples: farming, fishing, cooking, bug-catching, hunting and gathering, plus building and decorating your own home plot, all wrapped in a gentle story and a friendly community."
 ---
 
 Palia arrived as the cozy MMO a lot of us had been waiting for — a free, combat-optional world where you farm, craft, decorate, and befriend a town alongside other players. After a wobbly first year and some real worry about its future, where does it stand in 2026? Here's our honest take.

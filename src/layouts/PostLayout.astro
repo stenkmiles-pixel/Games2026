@@ -17,6 +17,7 @@ import { sceneMotif } from '../utils/posts';
 import WhereToBuy from '../components/WhereToBuy.astro';
 import CozyCompanion from '../components/CozyCompanion.astro';
 import ReviewSummary from '../components/ReviewSummary.astro';
+import CoverImage from '../components/CoverImage.astro';
 
 interface Props {
   post: CollectionEntry<'blog'>;
@@ -24,7 +25,7 @@ interface Props {
   related: CollectionEntry<'blog'>[];
 }
 const { post, headings, related } = Astro.props;
-const { title, description, pubDate, updatedDate, category, author, tags, heroImage, heroImageAlt, heroCredit, rating, gameName, freeToPlay, teaPairing, verdict, pros, cons } = post.data;
+const { title, description, pubDate, updatedDate, category, author, tags, heroImage, heroImageAlt, heroCredit, rating, gameName, freeToPlay, teaPairing, verdict, pros, cons, faq } = post.data;
 const c = CATEGORIES[category];
 const canonicalUrl = new URL(`/blog/${post.id}/`, SITE.url).href;
 
@@ -65,7 +66,22 @@ const reviewJsonLd =
       }
     : null;
 
-const pageJsonLd = reviewJsonLd ? [articleJsonLd, reviewJsonLd] : articleJsonLd;
+// FAQ structured data — emitted whenever an article supplies a `faq` array.
+// Helps AI answer engines and "People also ask" extract clean Q&A pairs.
+const faqJsonLd =
+  faq && faq.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faq.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null;
+
+const pageJsonLd = [articleJsonLd, reviewJsonLd, faqJsonLd].filter(Boolean);
 ---
 <BaseLayout
   title={title}
@@ -115,7 +131,7 @@ const pageJsonLd = reviewJsonLd ? [articleJsonLd, reviewJsonLd] : articleJsonLd;
           <div class="aspect-[16/9] w-full">
             {
               heroImage ? (
-                <img src={heroImage} alt={heroImageAlt ?? title} class="h-full w-full object-cover" />
+                <CoverImage src={heroImage} alt={heroImageAlt ?? title} eager class="h-full w-full object-cover" />
               ) : (
                 <SceneHero seed={post.id} motif={sceneMotif(post.data)} />
               )
@@ -145,6 +161,24 @@ const pageJsonLd = reviewJsonLd ? [articleJsonLd, reviewJsonLd] : articleJsonLd;
         </div>
 
         {category === 'Reviews' && gameName && !freeToPlay && <WhereToBuy gameName={gameName} class="mt-10" />}
+
+        {
+          faq && faq.length > 0 && (
+            <section class="mt-12" aria-labelledby="faq-heading">
+              <h2 id="faq-heading" class="font-display text-2xl font-semibold text-ink">
+                Frequently asked questions
+              </h2>
+              <dl class="mt-4 space-y-3">
+                {faq.map((f) => (
+                  <div class="card p-5">
+                    <dt class="font-display font-semibold text-ink">{f.q}</dt>
+                    <dd class="mt-2 leading-relaxed text-ink-muted">{f.a}</dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          )
+        }
 
         {
           tags.length > 0 && (

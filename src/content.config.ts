@@ -35,6 +35,9 @@ const blog = defineCollection({
     verdict: z.string().optional(),
     pros: z.array(z.string()).optional(),
     cons: z.array(z.string()).optional(),
+    // Optional FAQ — renders a visible Q&A section + FAQPage structured data
+    // (helps AI answer engines and "People also ask" extract clean Q&A).
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
     // Optional one-line editorial note shown on the post's card (esp. when featured).
     editorNote: z.string().optional(),
     author: z.string().default('The Cozy Game Guide Team'),

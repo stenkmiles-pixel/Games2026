@@ -2,6 +2,7 @@
 title: 'Coral Island Review: Is It Worth It in 2025?'
 description: 'Our honest Coral Island review. Is this tropical farming sim a worthy Stardew Valley alternative? We cover the diving, the town, the pros and cons, and who should buy it.'
 pubDate: 2026-05-20
+updatedDate: 2026-06-19
 category: 'Reviews'
 verdict: 'A gorgeous, generous 3D farm with a whole ocean to bring back to life.'
 pros:
@@ -20,6 +21,15 @@ heroImageAlt: 'Coral Island cover art'
 heroCredit: 'Cover art © Stairway Games (via Steam)'
 teaPairing: 'Iced hibiscus tea, sunshine optional'
 tags: ['coral island', 'review', 'farming sims']
+faq:
+  - q: "Is Coral Island worth it?"
+    a: "Yes — if you want a gorgeous 3D farming sim with more to do than most, Coral Island is well worth it, especially after its 1.0 updates. It's one of the best Stardew Valley alternatives, mixing farming, diving and a whole town and coral reef to bring back to life."
+  - q: "Is Coral Island finished or still in early access?"
+    a: "It's finished. Coral Island left early access and reached its full 1.0 release, and the team has kept adding free content updates since."
+  - q: "What platforms is Coral Island on?"
+    a: "Coral Island is on PC (Steam), PlayStation 5 and Xbox Series X|S, and it's available on Xbox Game Pass."
+  - q: "Is Coral Island like Stardew Valley?"
+    a: "Very much so. It shares the same farming-and-town-life loop, but in warm 3D and with its own twist — scuba diving and restoring an ocean reef alongside your farm."
 ---
 
 Coral Island arrived with a simple, irresistible pitch: *Stardew Valley, but in gorgeous 3D, on a tropical island, with diving.* After plenty of hours in Starlet Town, here's our honest take on whether it's worth your time and money.

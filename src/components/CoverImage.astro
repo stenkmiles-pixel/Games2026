@@ -1,0 +1,44 @@
+---
+/**
+ * Cover image with a WebP source for faster loading. The JPEG stays as the
+ * universal fallback (and remains the OG / structured-data image). WebP files
+ * are produced by scripts/optimize-images.mjs.
+ *
+ * Uses display:contents on <picture> so the <img>'s utility classes (h-full,
+ * object-cover, hover transforms) resolve against the real parent box rather
+ * than the picture wrapper.
+ *
+ * eager=true marks an above-the-fold hero: load immediately at high priority
+ * (helps Largest Contentful Paint). Otherwise the image lazy-loads.
+ */
+interface Props {
+  src: string;
+  alt: string;
+  eager?: boolean;
+  width?: number;
+  height?: number;
+  class?: string;
+}
+const {
+  src,
+  alt,
+  eager = false,
+  width = 616,
+  height = 353,
+  class: className = 'h-full w-full object-cover',
+} = Astro.props;
+const webp = /\.jpe?g$/i.test(src) ? src.replace(/\.jpe?g$/i, '.webp') : null;
+---
+<picture class="contents">
+  {webp && <source srcset={webp} type="image/webp" />}
+  <img
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    decoding="async"
+    loading={eager ? 'eager' : 'lazy'}
+    fetchpriority={eager ? 'high' : undefined}
+    class:list={[className]}
+  />
+</picture>
