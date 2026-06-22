@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import NewsletterCTA from '../components/NewsletterCTA.astro';
+import { SITE } from '../config';
+---
+<BaseLayout
+  title="Editorial Policy & How We Review"
+  description={`How ${SITE.name} chooses, plays, scores and updates the games we cover — and the standards behind every recommendation.`}
+>
+  <div class="mx-auto max-w-3xl px-4 py-10 sm:px-6">
+    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Editorial Policy' }]} />
+    <article class="prose prose-lg mt-6 max-w-none">
+      <h1>Editorial Policy &amp; How We Review</h1>
+      <p>
+        {SITE.name} exists to help you find cozy games worth your time and money. To be useful, our
+        advice has to be trustworthy — so here is exactly how we choose what to cover, how we play
+        and score games, how we stay current, and how the site is funded. If we ever fall short of
+        these standards, please <a href="/contact">tell us</a>.
+      </p>
+
+      <h2>Independence comes first</h2>
+      <p>
+        Our recommendations are never for sale. No developer, publisher or store can pay for a
+        positive review, a higher score, or a place on one of our lists. We don't accept payment in
+        exchange for coverage, and a free review copy of a game never obligates us to be kind to it.
+        When we say a game is worth your money, it's because we believe it.
+      </p>
+
+      <h2>How we choose what to cover</h2>
+      <p>
+        We focus on the cozy and simulation corner of gaming — farming sims, life sims, gentle
+        building and management games, and relaxing adventures. We prioritise games that genuinely
+        fit that brief: low-stress, welcoming, and rewarding to unwind with. Lists are curated by
+        hand, not generated automatically, and we only include a game when we can say something
+        useful about <em>why</em> it earns its place.
+      </p>
+
+      <h2>How we play and test</h2>
+      <p>
+        We base our reviews and recommendations on hands-on time with the games — playing them as a
+        real player would, across the platforms most people will use. For bigger sims that means
+        many hours; for shorter games it often means seeing them through to the end. Where a game is
+        still evolving (early access or live-service titles), we say so, and we tell you what state
+        it's in at the time of writing.
+      </p>
+
+      <h2>How our scores work</h2>
+      <p>Reviews carry a score out of 5. Here's roughly what each level means:</p>
+      <ul>
+        <li><strong>4.5–5</strong> — Exceptional. A standout we'd recommend to almost anyone in the mood for it.</li>
+        <li><strong>4–4.4</strong> — Great. Well worth your time, with only minor caveats.</li>
+        <li><strong>3–3.9</strong> — Good, but with real trade-offs. Worth it for the right player.</li>
+        <li><strong>Below 3</strong> — Flawed enough that we'd suggest waiting, or looking elsewhere first.</li>
+      </ul>
+      <p>
+        Every review spells out the trade-offs in plain language — the pros, the cons, and exactly
+        who we think will (and won't) enjoy it — so the score is never the whole story.
+      </p>
+
+      <h2>Keeping content current</h2>
+      <p>
+        Cozy games change: prices move, updates land, and free games get bigger. We revisit and
+        update our most useful articles, and when an article has been meaningfully revised we show an
+        "Updated" date on it. Live prices in our "where to buy" panels refresh automatically. If you
+        spot something out of date or incorrect, <a href="/contact">let us know</a> and we'll fix it.
+      </p>
+
+      <h2>How the site is funded</h2>
+      <p>
+        Some links on {SITE.name} are affiliate links: if you buy through them, we may earn a small
+        commission at no extra cost to you. That support helps keep the site running and free to
+        read, but it never influences our opinions, scores, or which games we recommend. You can read
+        the full <a href="/disclosure">affiliate disclosure</a> any time.
+      </p>
+
+      <h2>Corrections &amp; feedback</h2>
+      <p>
+        We're a small, independent site and we get things wrong sometimes. If you find a factual
+        error, a broken link, or a game we should be covering, please <a href="/contact">get in
+        touch</a>. We read every message and update accordingly.
+      </p>
+    </article>
+
+    <NewsletterCTA class="mt-12" />
+  </div>
+</BaseLayout>
