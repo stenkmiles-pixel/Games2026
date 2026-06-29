@@ -1,6 +1,6 @@
 # Topic Radar
 
-_Auto-generated 2026-06-22T12:40:08.387Z. Signals + AI suggestions to help pick what to write next._
+_Auto-generated 2026-06-29T11:51:23.298Z. Signals + AI suggestions to help pick what to write next._
 _Review, fact-check, and never auto-publish — this is an assistant, not an autopilot._
 
 ## Part B — AI topic suggestions
@@ -11,7 +11,7 @@ _Review, fact-check, and never auto-publish — this is an assistant, not an aut
 HTTP 429 (model "gemini-2.0-flash"): {
   "error": {
     "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, l
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, 
 ```
 
 
@@ -19,39 +19,39 @@ HTTP 429 (model "gemini-2.0-flash"): {
 
 ### Steam · newest cozy releases
 
-- [Pawsome Resort](https://store.steampowered.com/app/3759220/Pawsome_Resort/)
-- [Cozy Cleaner](https://store.steampowered.com/app/2742710/Cozy_Cleaner/)
-- [Agraria](https://store.steampowered.com/app/4448700/Agraria/)
-- [Where Stones Sleep](https://store.steampowered.com/app/4396340/Where_Stones_Sleep/)
-- [Skillwood](https://store.steampowered.com/app/2776630/Skillwood/)
-- [Treasure Beach](https://store.steampowered.com/app/3939700/Treasure_Beach/)
-- [Summer Sisters](https://store.steampowered.com/app/4353630/Summer_Sisters/)
-- [Snake Coil: Puzzle Adventure](https://store.steampowered.com/app/4178360/Snake_Coil_Puzzle_Adventure/)
-- [Late for School](https://store.steampowered.com/app/4127210/Late_for_School/)
-- [Chopping Together🌲](https://store.steampowered.com/app/4313610/Chopping_Together/)
-- [100 Madagascar Cats](https://store.steampowered.com/app/4324610/100_Madagascar_Cats/)
-- [Monster Hub](https://store.steampowered.com/app/4072310/Monster_Hub/)
-- [Tumble Type](https://store.steampowered.com/app/4654770/Tumble_Type/)
-- [BunnyBakery](https://store.steampowered.com/app/4159000/BunnyBakery/)
-- [Glimvale : My Mini Overworld](https://store.steampowered.com/app/3403590/Glimvale__My_Mini_Overworld/)
+- [Professional Cats](https://store.steampowered.com/app/4440360/Professional_Cats/)
+- [NomNom Treasure Hunt](https://store.steampowered.com/app/4818770/NomNom_Treasure_Hunt/)
+- [Fool's Guild](https://store.steampowered.com/app/3307320/Fools_Guild/)
+- [Incrementoad](https://store.steampowered.com/app/4528890/Incrementoad/)
+- [Farming Chillhood](https://store.steampowered.com/app/4774600/Farming_Chillhood/)
+- [Bella Cozy Island](https://store.steampowered.com/app/4762940/Bella_Cozy_Island/)
+- [Book Organizer](https://store.steampowered.com/app/4774660/Book_Organizer/)
+- [Heartmend: 3D Jigsaw Puzzle](https://store.steampowered.com/app/4775980/Heartmend_3D_Jigsaw_Puzzle/)
+- [Painting PC](https://store.steampowered.com/app/4521680/Painting_PC/)
+- [Don't Sleep With The Fishes](https://store.steampowered.com/app/4834070/Dont_Sleep_With_The_Fishes/)
+- [The Button Maze](https://store.steampowered.com/app/4825770/The_Button_Maze/)
+- [Lofi Lagoon](https://store.steampowered.com/app/4784360/Lofi_Lagoon/)
+- [Cozy Mining](https://store.steampowered.com/app/4283650/Cozy_Mining/)
+- [FILL IT](https://store.steampowered.com/app/4835130/FILL_IT/)
+- [Tiny Terra Spaces](https://store.steampowered.com/app/3788070/Tiny_Terra_Spaces/)
 
 ### Steam · top-selling cozy games
 
 - [Paralives](https://store.steampowered.com/app/1118520/Paralives/)
+- [GIRLS' FRONTLINE 2: EXILIUM](https://store.steampowered.com/app/3347400/GIRLS_FRONTLINE_2_EXILIUM/)
 - [Solarpunk™](https://store.steampowered.com/app/1805110/Solarpunk/)
+- [Hello Kitty Island Adventure](https://store.steampowered.com/app/2495100/Hello_Kitty_Island_Adventure/)
 - [Oxygen Not Included](https://store.steampowered.com/app/457140/Oxygen_Not_Included/)
 - [Palia](https://store.steampowered.com/app/2707930/Palia/)
-- [Heartopia](https://store.steampowered.com/app/4025700/Heartopia/)
-- [GIRLS' FRONTLINE 2: EXILIUM](https://store.steampowered.com/app/3347400/GIRLS_FRONTLINE_2_EXILIUM/)
-- [Tales of Seikyu](https://store.steampowered.com/app/2340520/Tales_of_Seikyu/)
-- [Infinity Nikki](https://store.steampowered.com/app/3164330/Infinity_Nikki/)
 - [Outbound](https://store.steampowered.com/app/2681030/Outbound/)
-- [Treasure Beach](https://store.steampowered.com/app/3939700/Treasure_Beach/)
-- [Sky: Children of the Light](https://store.steampowered.com/app/2325290/Sky_Children_of_the_Light/)
 - [Hozy](https://store.steampowered.com/app/3326230/Hozy/)
-- [Sledding Game](https://store.steampowered.com/app/3438850/Sledding_Game/)
-- [Cozy Cleaner](https://store.steampowered.com/app/2742710/Cozy_Cleaner/)
-- [Tales of the Shire: A The Lord of The Rings™ Game](https://store.steampowered.com/app/2016460/Tales_of_the_Shire_A_The_Lord_of_The_Rings_Game/)
+- [Town to City](https://store.steampowered.com/app/3115220/Town_to_City/)
+- [Heartopia](https://store.steampowered.com/app/4025700/Heartopia/)
+- [Tales of Seikyu](https://store.steampowered.com/app/2340520/Tales_of_Seikyu/)
+- [Tiny Bookshop](https://store.steampowered.com/app/2133760/Tiny_Bookshop/)
+- [Core Keeper](https://store.steampowered.com/app/1621690/Core_Keeper/)
+- [Tiny Glade](https://store.steampowered.com/app/2198150/Tiny_Glade/)
+- [MISERY](https://store.steampowered.com/app/2119830/MISERY/)
 
 ### Hacker News buzz
 
