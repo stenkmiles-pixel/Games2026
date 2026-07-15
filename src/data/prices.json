@@ -1,6 +1,6 @@
 {
   "Coral Island": {
-    "updated": "2026-07-14T08:28:26.916Z",
+    "updated": "2026-07-15T08:36:27.041Z",
     "best": {
       "shop": "Humble Store",
       "price": 17.99,
@@ -29,7 +29,7 @@
     ]
   },
   "Disney Dreamlight Valley": {
-    "updated": "2026-07-14T08:28:26.916Z",
+    "updated": "2026-07-15T08:36:27.041Z",
     "best": {
       "shop": "Fanatical",
       "price": 39.99,
@@ -70,7 +70,7 @@
     ]
   },
   "Wylde Flowers": {
-    "updated": "2026-07-14T08:28:26.916Z",
+    "updated": "2026-07-15T08:36:27.041Z",
     "best": {
       "shop": "Microsoft Store",
       "price": 24.99,
@@ -93,18 +93,18 @@
     ]
   },
   "My Time at Sandrock": {
-    "updated": "2026-07-14T08:28:26.916Z",
+    "updated": "2026-07-15T08:36:27.041Z",
     "best": {
       "shop": "Fanatical",
-      "price": 29.95,
-      "cut": 25,
+      "price": 31.19,
+      "cut": 22,
       "url": "https://itad.link/01991575-4a90-73e4-9582-75106cd3853a/"
     },
     "offers": [
       {
         "shop": "Fanatical",
-        "price": 29.95,
-        "cut": 25,
+        "price": 31.19,
+        "cut": 22,
         "url": "https://itad.link/01991575-4a90-73e4-9582-75106cd3853a/"
       },
       {
@@ -134,7 +134,7 @@
     ]
   },
   "Fields of Mistria": {
-    "updated": "2026-07-14T08:28:26.916Z",
+    "updated": "2026-07-15T08:36:27.041Z",
     "best": {
       "shop": "Steam",
       "price": 13.99,
@@ -151,7 +151,7 @@
     ]
   },
   "Spiritfarer": {
-    "updated": "2026-07-14T08:28:26.916Z",
+    "updated": "2026-07-15T08:36:27.041Z",
     "best": {
       "shop": "GreenManGaming",
       "price": 3.69,
@@ -198,7 +198,7 @@
     ]
   },
   "Hello Kitty Island Adventure": {
-    "updated": "2026-07-14T08:28:26.916Z",
+    "updated": "2026-07-15T08:36:27.041Z",
     "best": {
       "shop": "Steam",
       "price": 23.99,
@@ -215,7 +215,7 @@
     ]
   },
   "Tiny Glade": {
-    "updated": "2026-07-14T08:28:26.916Z",
+    "updated": "2026-07-15T08:36:27.041Z",
     "best": {
       "shop": "Steam",
       "price": 14.99,
@@ -232,7 +232,7 @@
     ]
   },
   "A Little to the Left": {
-    "updated": "2026-07-14T08:28:26.916Z",
+    "updated": "2026-07-15T08:36:27.041Z",
     "best": {
       "shop": "Humble Store",
       "price": 5.99,
@@ -267,7 +267,7 @@
     ]
   },
   "Core Keeper": {
-    "updated": "2026-07-14T08:28:26.916Z",
+    "updated": "2026-07-15T08:36:27.041Z",
     "best": {
       "shop": "GOG",
       "price": 11.99,
@@ -314,25 +314,25 @@
     ]
   },
   "Town to City": {
-    "updated": "2026-07-14T08:28:26.916Z",
+    "updated": "2026-07-15T08:36:27.041Z",
     "best": {
-      "shop": "Fanatical",
-      "price": 26.88,
-      "cut": 10,
-      "url": "https://itad.link/0199535d-aa4d-70fa-9ea5-a9a9cfaf000c/"
+      "shop": "Steam",
+      "price": 22.49,
+      "cut": 25,
+      "url": "https://itad.link/01995343-f0b2-71c0-aa23-6dc24ca43c5d/"
     },
     "offers": [
+      {
+        "shop": "Steam",
+        "price": 22.49,
+        "cut": 25,
+        "url": "https://itad.link/01995343-f0b2-71c0-aa23-6dc24ca43c5d/"
+      },
       {
         "shop": "Fanatical",
         "price": 26.88,
         "cut": 10,
         "url": "https://itad.link/0199535d-aa4d-70fa-9ea5-a9a9cfaf000c/"
-      },
-      {
-        "shop": "Steam",
-        "price": 29.99,
-        "cut": 0,
-        "url": "https://itad.link/01995343-f0b2-71c0-aa23-6dc24ca43c5d/"
       }
     ]
   }
