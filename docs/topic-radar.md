@@ -1,6 +1,6 @@
 # Topic Radar
 
-_Auto-generated 2026-07-13T10:14:58.560Z. Signals + AI suggestions to help pick what to write next._
+_Auto-generated 2026-07-20T09:48:08.360Z. Signals + AI suggestions to help pick what to write next._
 _Review, fact-check, and never auto-publish — this is an assistant, not an autopilot._
 
 ## Part B — AI topic suggestions
@@ -19,39 +19,39 @@ HTTP 429 (model "gemini-2.0-flash"): {
 
 ### Steam · newest cozy releases
 
-- [OmniSeed](https://store.steampowered.com/app/4401850/OmniSeed/)
-- [Mysarium: Cozy Lo-fi Terrarium](https://store.steampowered.com/app/4156770/Mysarium_Cozy_Lofi_Terrarium/)
-- [Tidy Up: Spaceship](https://store.steampowered.com/app/4882280/Tidy_Up_Spaceship/)
-- [Finding Cats](https://store.steampowered.com/app/4830500/Finding_Cats/)
-- [Neko Station](https://store.steampowered.com/app/4141710/Neko_Station/)
-- [Seabell Supper](https://store.steampowered.com/app/4435470/Seabell_Supper/)
-- [Paradise Island](https://store.steampowered.com/app/4069000/Paradise_Island/)
-- [Purrrfect Spa](https://store.steampowered.com/app/3755850/Purrrfect_Spa/)
-- [魔法少女甜心3D Magical Girl Sweetheart 3D](https://store.steampowered.com/app/4886100/3D_Magical_Girl_Sweetheart_3D/)
-- [Pore Cleaning Simulator](https://store.steampowered.com/app/4876150/Pore_Cleaning_Simulator/)
-- [Blobbin](https://store.steampowered.com/app/4736050/Blobbin/)
-- [Built by Day, Bitten by Night](https://store.steampowered.com/app/4734670/Built_by_Day_Bitten_by_Night/)
-- [Isekai x Isekai](https://store.steampowered.com/app/4542860/Isekai_x_Isekai/)
-- [FitBlocks～Wooden block puzzle～](https://store.steampowered.com/app/4850850/FitBlocksWooden_block_puzzle/)
-- [MyBiz: Pomodoro Desk Tycoon](https://store.steampowered.com/app/4725000/MyBiz_Pomodoro_Desk_Tycoon/)
+- [Cat 3](https://store.steampowered.com/app/4884830/Cat_3/)
+- [Aerolicious](https://store.steampowered.com/app/4774170/Aerolicious/)
+- [Everything Invades](https://store.steampowered.com/app/3980800/Everything_Invades/)
+- [100 Swamp Cats](https://store.steampowered.com/app/4516150/100_Swamp_Cats/)
+- [Whisker Tales](https://store.steampowered.com/app/4848950/Whisker_Tales/)
+- [Gone Exploring](https://store.steampowered.com/app/4843580/Gone_Exploring/)
+- [walk](https://store.steampowered.com/app/4563880/walk/)
+- [Cozy Radiation Cleaner](https://store.steampowered.com/app/4782520/Cozy_Radiation_Cleaner/)
+- [Toy Keeper](https://store.steampowered.com/app/4867330/Toy_Keeper/)
+- [Lured In](https://store.steampowered.com/app/4178020/Lured_In/)
+- [Lepidarium](https://store.steampowered.com/app/4335540/Lepidarium/)
+- [Keypress Express](https://store.steampowered.com/app/4816900/Keypress_Express/)
+- [Tavern Legends](https://store.steampowered.com/app/3160880/Tavern_Legends/)
+- [DigWorld](https://store.steampowered.com/app/4567230/DigWorld/)
+- [slimes!](https://store.steampowered.com/app/4623260/slimes/)
 
 ### Steam · top-selling cozy games
 
 - [Cat Mail Co.](https://store.steampowered.com/app/4380490/Cat_Mail_Co/)
-- [Moonlight Peaks](https://store.steampowered.com/app/2209900/Moonlight_Peaks/)
 - [Paralives](https://store.steampowered.com/app/1118520/Paralives/)
 - [Heartopia](https://store.steampowered.com/app/4025700/Heartopia/)
-- [NTE: Neverness to Everness](https://store.steampowered.com/app/4508340/NTE_Neverness_to_Everness/)
-- [Palia](https://store.steampowered.com/app/2707930/Palia/)
-- [Solarpunk™](https://store.steampowered.com/app/1805110/Solarpunk/)
-- [Smash Hit Museum](https://store.steampowered.com/app/4182480/Smash_Hit_Museum/)
-- [Hello Kitty Island Adventure](https://store.steampowered.com/app/2495100/Hello_Kitty_Island_Adventure/)
-- [Core Keeper](https://store.steampowered.com/app/1621690/Core_Keeper/)
+- [Moonlight Peaks](https://store.steampowered.com/app/2209900/Moonlight_Peaks/)
 - [GIRLS' FRONTLINE 2: EXILIUM](https://store.steampowered.com/app/3347400/GIRLS_FRONTLINE_2_EXILIUM/)
-- [Supermarket Chaos](https://store.steampowered.com/app/4800590/Supermarket_Chaos/)
-- [Oxygen Not Included](https://store.steampowered.com/app/457140/Oxygen_Not_Included/)
+- [Solarpunk™](https://store.steampowered.com/app/1805110/Solarpunk/)
+- [Leaf it Alone](https://store.steampowered.com/app/3981100/Leaf_it_Alone/)
+- [NTE: Neverness to Everness](https://store.steampowered.com/app/4508340/NTE_Neverness_to_Everness/)
+- [Sky: Children of the Light](https://store.steampowered.com/app/2325290/Sky_Children_of_the_Light/)
 - [Infinity Nikki](https://store.steampowered.com/app/3164330/Infinity_Nikki/)
-- [Outbound](https://store.steampowered.com/app/2681030/Outbound/)
+- [Palia](https://store.steampowered.com/app/2707930/Palia/)
+- [A Game About Chopping Trees](https://store.steampowered.com/app/4512570/A_Game_About_Chopping_Trees/)
+- [Lured In](https://store.steampowered.com/app/4178020/Lured_In/)
+- [Hello Kitty Island Adventure](https://store.steampowered.com/app/2495100/Hello_Kitty_Island_Adventure/)
+- [Town to City](https://store.steampowered.com/app/3115220/Town_to_City/)
 
 ### Hacker News buzz
 
