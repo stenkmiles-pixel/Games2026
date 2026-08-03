@@ -1,6 +1,6 @@
 # Topic Radar
 
-_Auto-generated 2026-07-27T10:30:29.828Z. Signals + AI suggestions to help pick what to write next._
+_Auto-generated 2026-08-03T10:30:26.980Z. Signals + AI suggestions to help pick what to write next._
 _Review, fact-check, and never auto-publish — this is an assistant, not an autopilot._
 
 ## Part B — AI topic suggestions
@@ -19,39 +19,39 @@ HTTP 429 (model "gemini-2.0-flash"): {
 
 ### Steam · newest cozy releases
 
-- [天天斗地主](https://store.steampowered.com/app/4903450/_/)
-- [GodWright](https://store.steampowered.com/app/4884560/GodWright/)
-- [Idylls of the Lunar Maria](https://store.steampowered.com/app/1915430/Idylls_of_the_Lunar_Maria/)
-- [Tiny Train Adventures](https://store.steampowered.com/app/3712350/Tiny_Train_Adventures/)
-- [100 Dragon Cats](https://store.steampowered.com/app/4383080/100_Dragon_Cats/)
-- [Nothing To Declare](https://store.steampowered.com/app/3894850/Nothing_To_Declare/)
-- [Pocket Dinos](https://store.steampowered.com/app/4715900/Pocket_Dinos/)
-- [Organize my Shop](https://store.steampowered.com/app/4751340/Organize_my_Shop/)
-- [Your Furry Mother](https://store.steampowered.com/app/4828550/Your_Furry_Mother/)
-- [Gnome Glade](https://store.steampowered.com/app/4129980/Gnome_Glade/)
-- [Canvas of Thoughts](https://store.steampowered.com/app/4348770/Canvas_of_Thoughts/)
-- [Sunny Side Up](https://store.steampowered.com/app/4267080/Sunny_Side_Up/)
-- [Maze 95 Ultimate](https://store.steampowered.com/app/4320330/Maze_95_Ultimate/)
-- [Horse Craft](https://store.steampowered.com/app/4436780/Horse_Craft/)
-- [50 Sloths in Costa Rica](https://store.steampowered.com/app/4783290/50_Sloths_in_Costa_Rica/)
+- [Tumly](https://store.steampowered.com/app/4881020/Tumly/)
+- [Robin Hood: Sherwood Valley](https://store.steampowered.com/app/4792610/Robin_Hood_Sherwood_Valley/)
+- [BeWHEELdering](https://store.steampowered.com/app/4913630/BeWHEELdering/)
+- [A Little Cove](https://store.steampowered.com/app/4886950/A_Little_Cove/)
+- [Peasant Samurai ～ 百姓ノ持チタル国](https://store.steampowered.com/app/4880700/Peasant_Samurai/)
+- [DeepDig: Together](https://store.steampowered.com/app/3039180/DeepDig_Together/)
+- [Clickstellar](https://store.steampowered.com/app/4946490/Clickstellar/)
+- [Desktop Pet: Idle Cats Cozy Chaotic Companions for your screen](https://store.steampowered.com/app/4923900/Desktop_Pet_Idle_Cats_Cozy_Chaotic_Companions_for_your_screen/)
+- [Froggy's Adventures](https://store.steampowered.com/app/4173880/Froggys_Adventures/)
+- [101 Dogs Hidden in Paris](https://store.steampowered.com/app/4949810/101_Dogs_Hidden_in_Paris/)
+- [100 Undersea Cats](https://store.steampowered.com/app/4383070/100_Undersea_Cats/)
+- [CATS BLOCKS: HOT SPRINGS](https://store.steampowered.com/app/4366150/CATS_BLOCKS_HOT_SPRINGS/)
+- [Rough Draft](https://store.steampowered.com/app/4581350/Rough_Draft/)
+- [Koi Frenzy](https://store.steampowered.com/app/4927100/Koi_Frenzy/)
+- [Security Simulator: Nightshift](https://store.steampowered.com/app/3055550/Security_Simulator_Nightshift/)
 
 ### Steam · top-selling cozy games
 
 - [Heartopia](https://store.steampowered.com/app/4025700/Heartopia/)
+- [Palia](https://store.steampowered.com/app/2707930/Palia/)
 - [Cat Mail Co.](https://store.steampowered.com/app/4380490/Cat_Mail_Co/)
 - [Paralives](https://store.steampowered.com/app/1118520/Paralives/)
-- [Palia](https://store.steampowered.com/app/2707930/Palia/)
+- [Leafy Corner](https://store.steampowered.com/app/3558600/Leafy_Corner/)
 - [NTE: Neverness to Everness](https://store.steampowered.com/app/4508340/NTE_Neverness_to_Everness/)
-- [Solarpunk™](https://store.steampowered.com/app/1805110/Solarpunk/)
 - [Moonlight Peaks](https://store.steampowered.com/app/2209900/Moonlight_Peaks/)
+- [Cast n Chill](https://store.steampowered.com/app/3483740/Cast_n_Chill/)
 - [GIRLS' FRONTLINE 2: EXILIUM](https://store.steampowered.com/app/3347400/GIRLS_FRONTLINE_2_EXILIUM/)
-- [Boba Cafe Simulator](https://store.steampowered.com/app/3683770/Boba_Cafe_Simulator/)
+- [Solarpunk™](https://store.steampowered.com/app/1805110/Solarpunk/)
 - [Leaf it Alone](https://store.steampowered.com/app/3981100/Leaf_it_Alone/)
-- [Nothing To Declare](https://store.steampowered.com/app/3894850/Nothing_To_Declare/)
-- [Town to City](https://store.steampowered.com/app/3115220/Town_to_City/)
-- [Infinity Nikki](https://store.steampowered.com/app/3164330/Infinity_Nikki/)
-- [Aquapark Tycoon](https://store.steampowered.com/app/2819470/Aquapark_Tycoon/)
-- [A Game About Chopping Trees](https://store.steampowered.com/app/4512570/A_Game_About_Chopping_Trees/)
+- [Loddlenaut](https://store.steampowered.com/app/1644940/Loddlenaut/)
+- [The Ranchers](https://store.steampowered.com/app/1501310/The_Ranchers/)
+- [Core Keeper](https://store.steampowered.com/app/1621690/Core_Keeper/)
+- [Sky: Children of the Light](https://store.steampowered.com/app/2325290/Sky_Children_of_the_Light/)
 
 ### Hacker News buzz
 
