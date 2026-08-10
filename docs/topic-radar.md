@@ -1,6 +1,6 @@
 # Topic Radar
 
-_Auto-generated 2026-08-03T10:30:26.980Z. Signals + AI suggestions to help pick what to write next._
+_Auto-generated 2026-08-10T08:18:53.430Z. Signals + AI suggestions to help pick what to write next._
 _Review, fact-check, and never auto-publish — this is an assistant, not an autopilot._
 
 ## Part B — AI topic suggestions
@@ -11,7 +11,7 @@ _Review, fact-check, and never auto-publish — this is an assistant, not an aut
 HTTP 429 (model "gemini-2.0-flash"): {
   "error": {
     "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, 
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, l
 ```
 
 
@@ -19,39 +19,39 @@ HTTP 429 (model "gemini-2.0-flash"): {
 
 ### Steam · newest cozy releases
 
-- [Tumly](https://store.steampowered.com/app/4881020/Tumly/)
-- [Robin Hood: Sherwood Valley](https://store.steampowered.com/app/4792610/Robin_Hood_Sherwood_Valley/)
-- [BeWHEELdering](https://store.steampowered.com/app/4913630/BeWHEELdering/)
-- [A Little Cove](https://store.steampowered.com/app/4886950/A_Little_Cove/)
-- [Peasant Samurai ～ 百姓ノ持チタル国](https://store.steampowered.com/app/4880700/Peasant_Samurai/)
-- [DeepDig: Together](https://store.steampowered.com/app/3039180/DeepDig_Together/)
-- [Clickstellar](https://store.steampowered.com/app/4946490/Clickstellar/)
-- [Desktop Pet: Idle Cats Cozy Chaotic Companions for your screen](https://store.steampowered.com/app/4923900/Desktop_Pet_Idle_Cats_Cozy_Chaotic_Companions_for_your_screen/)
-- [Froggy's Adventures](https://store.steampowered.com/app/4173880/Froggys_Adventures/)
-- [101 Dogs Hidden in Paris](https://store.steampowered.com/app/4949810/101_Dogs_Hidden_in_Paris/)
-- [100 Undersea Cats](https://store.steampowered.com/app/4383070/100_Undersea_Cats/)
-- [CATS BLOCKS: HOT SPRINGS](https://store.steampowered.com/app/4366150/CATS_BLOCKS_HOT_SPRINGS/)
-- [Rough Draft](https://store.steampowered.com/app/4581350/Rough_Draft/)
-- [Koi Frenzy](https://store.steampowered.com/app/4927100/Koi_Frenzy/)
-- [Security Simulator: Nightshift](https://store.steampowered.com/app/3055550/Security_Simulator_Nightshift/)
+- [100 Mystic Cats](https://store.steampowered.com/app/4326430/100_Mystic_Cats/)
+- [Lilim Clicker](https://store.steampowered.com/app/4071500/Lilim_Clicker/)
+- [Bobbitz](https://store.steampowered.com/app/4792630/Bobbitz/)
+- [Milk Can Clicker](https://store.steampowered.com/app/4898140/Milk_Can_Clicker/)
+- [Red the Cook](https://store.steampowered.com/app/4082490/Red_the_Cook/)
+- [Arcade Mogul](https://store.steampowered.com/app/4953950/Arcade_Mogul/)
+- [Hocus Focus](https://store.steampowered.com/app/4202710/Hocus_Focus/)
+- [Château Pluie: The New Cellar Keeper](https://store.steampowered.com/app/4931630/Chteau_Pluie_The_New_Cellar_Keeper/)
+- [Caramellia](https://store.steampowered.com/app/4920880/Caramellia/)
+- [Pixel Harvest](https://store.steampowered.com/app/4918320/Pixel_Harvest/)
+- [Cats of Light](https://store.steampowered.com/app/4669380/Cats_of_Light/)
+- [Journeybound Idle](https://store.steampowered.com/app/4946460/Journeybound_Idle/)
+- [Toy Shop Tidy Up](https://store.steampowered.com/app/4914830/Toy_Shop_Tidy_Up/)
+- [Smelly Bubbles](https://store.steampowered.com/app/4955890/Smelly_Bubbles/)
+- [Sad Virus Tokyo](https://store.steampowered.com/app/4992270/Sad_Virus_Tokyo/)
 
 ### Steam · top-selling cozy games
 
-- [Heartopia](https://store.steampowered.com/app/4025700/Heartopia/)
-- [Palia](https://store.steampowered.com/app/2707930/Palia/)
-- [Cat Mail Co.](https://store.steampowered.com/app/4380490/Cat_Mail_Co/)
+- [ReStory: Chill Electronics Repairs](https://store.steampowered.com/app/3812600/ReStory_Chill_Electronics_Repairs/)
 - [Paralives](https://store.steampowered.com/app/1118520/Paralives/)
-- [Leafy Corner](https://store.steampowered.com/app/3558600/Leafy_Corner/)
-- [NTE: Neverness to Everness](https://store.steampowered.com/app/4508340/NTE_Neverness_to_Everness/)
-- [Moonlight Peaks](https://store.steampowered.com/app/2209900/Moonlight_Peaks/)
 - [Cast n Chill](https://store.steampowered.com/app/3483740/Cast_n_Chill/)
+- [Heartopia](https://store.steampowered.com/app/4025700/Heartopia/)
+- [Cat Mail Co.](https://store.steampowered.com/app/4380490/Cat_Mail_Co/)
+- [NTE: Neverness to Everness](https://store.steampowered.com/app/4508340/NTE_Neverness_to_Everness/)
+- [Palia](https://store.steampowered.com/app/2707930/Palia/)
+- [Doloc Town](https://store.steampowered.com/app/2285550/Doloc_Town/)
+- [Leafy Corner](https://store.steampowered.com/app/3558600/Leafy_Corner/)
 - [GIRLS' FRONTLINE 2: EXILIUM](https://store.steampowered.com/app/3347400/GIRLS_FRONTLINE_2_EXILIUM/)
+- [Cellar Keeper](https://store.steampowered.com/app/4935510/Cellar_Keeper/)
 - [Solarpunk™](https://store.steampowered.com/app/1805110/Solarpunk/)
+- [Moonlight Peaks](https://store.steampowered.com/app/2209900/Moonlight_Peaks/)
+- [Outbound](https://store.steampowered.com/app/2681030/Outbound/)
 - [Leaf it Alone](https://store.steampowered.com/app/3981100/Leaf_it_Alone/)
-- [Loddlenaut](https://store.steampowered.com/app/1644940/Loddlenaut/)
-- [The Ranchers](https://store.steampowered.com/app/1501310/The_Ranchers/)
-- [Core Keeper](https://store.steampowered.com/app/1621690/Core_Keeper/)
-- [Sky: Children of the Light](https://store.steampowered.com/app/2325290/Sky_Children_of_the_Light/)
 
 ### Hacker News buzz
 
