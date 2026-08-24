@@ -1,6 +1,6 @@
 # Topic Radar
 
-_Auto-generated 2026-08-17T07:41:05.664Z. Signals + AI suggestions to help pick what to write next._
+_Auto-generated 2026-08-24T07:47:28.505Z. Signals + AI suggestions to help pick what to write next._
 _Review, fact-check, and never auto-publish — this is an assistant, not an autopilot._
 
 ## Part B — AI topic suggestions
@@ -23,39 +23,39 @@ HTTP 404 (model "gemini-2.0-flash"): {
 
 ### Steam · newest cozy releases
 
-- [Fill The Bucket](https://store.steampowered.com/app/4832600/Fill_The_Bucket/)
-- [Substance Lab POL](https://store.steampowered.com/app/4998080/Substance_Lab_POL/)
-- [Survival Dimension](https://store.steampowered.com/app/4949490/Survival_Dimension/)
-- [Plonkers - totally bonkers plinko](https://store.steampowered.com/app/4939310/Plonkers__totally_bonkers_plinko/)
-- [Hidden Pets: 101 Cats in Athens](https://store.steampowered.com/app/4949840/Hidden_Pets_101_Cats_in_Athens/)
-- [PhotoGuessr](https://store.steampowered.com/app/2825810/PhotoGuessr/)
-- [Typing With Ghostie](https://store.steampowered.com/app/3617890/Typing_With_Ghostie/)
-- [Konbini Cleanup](https://store.steampowered.com/app/4951190/Konbini_Cleanup/)
-- [Kingdom Contracts Tower Defense Incremental](https://store.steampowered.com/app/4467960/Kingdom_Contracts_Tower_Defense_Incremental/)
-- [Oldies](https://store.steampowered.com/app/3363620/Oldies/)
-- [Patisserie Simulator](https://store.steampowered.com/app/3893560/Patisserie_Simulator/)
-- [The Crystal Atelier](https://store.steampowered.com/app/4880370/The_Crystal_Atelier/)
-- [KABUKI FIRE: DOJO](https://store.steampowered.com/app/4978630/KABUKI_FIRE_DOJO/)
-- [Parking in Tight Spaces](https://store.steampowered.com/app/4265570/Parking_in_Tight_Spaces/)
-- [Fellwood](https://store.steampowered.com/app/4632540/Fellwood/)
+- [Travellin Cats in USA](https://store.steampowered.com/app/3196850/Travellin_Cats_in_USA/)
+- [Desktop Bouncer](https://store.steampowered.com/app/4749880/Desktop_Bouncer/)
+- [The Sorting Bureau](https://store.steampowered.com/app/4120790/The_Sorting_Bureau/)
+- [Liminal Space Holiday](https://store.steampowered.com/app/5041880/Liminal_Space_Holiday/)
+- [Aqua Scrap: Deep Clean](https://store.steampowered.com/app/4974760/Aqua_Scrap_Deep_Clean/)
+- [Strange Zoo](https://store.steampowered.com/app/4210110/Strange_Zoo/)
+- [Slots And Shots](https://store.steampowered.com/app/4908080/Slots_And_Shots/)
+- [Mall: Tidy Up Together](https://store.steampowered.com/app/4962010/Mall_Tidy_Up_Together/)
+- [Settler's Domain](https://store.steampowered.com/app/3396920/Settlers_Domain/)
+- [FishDrop](https://store.steampowered.com/app/5045480/FishDrop/)
+- [Food Fight](https://store.steampowered.com/app/4985650/Food_Fight/)
+- [Harvest Hand](https://store.steampowered.com/app/5015520/Harvest_Hand/)
+- [Lo-Fi Laundromat](https://store.steampowered.com/app/4796890/LoFi_Laundromat/)
+- [Vacation Cafe Simulator](https://store.steampowered.com/app/3196440/Vacation_Cafe_Simulator/)
+- [Cozy Marbles](https://store.steampowered.com/app/2836460/Cozy_Marbles/)
 
 ### Steam · top-selling cozy games
 
-- [ReStory: Chill Electronics Repairs](https://store.steampowered.com/app/3812600/ReStory_Chill_Electronics_Repairs/)
-- [Heartopia](https://store.steampowered.com/app/4025700/Heartopia/)
 - [Grounded 2](https://store.steampowered.com/app/2661300/Grounded_2/)
-- [Sort Them Ducks](https://store.steampowered.com/app/4992070/Sort_Them_Ducks/)
+- [Heartopia](https://store.steampowered.com/app/4025700/Heartopia/)
+- [NTE: Neverness to Everness](https://store.steampowered.com/app/4508340/NTE_Neverness_to_Everness/)
+- [ReStory: Chill Electronics Repairs](https://store.steampowered.com/app/3812600/ReStory_Chill_Electronics_Repairs/)
 - [Cat Mail Co.](https://store.steampowered.com/app/4380490/Cat_Mail_Co/)
 - [Paralives](https://store.steampowered.com/app/1118520/Paralives/)
-- [NTE: Neverness to Everness](https://store.steampowered.com/app/4508340/NTE_Neverness_to_Everness/)
 - [Palia](https://store.steampowered.com/app/2707930/Palia/)
-- [Tidy Up Together](https://store.steampowered.com/app/4950470/Tidy_Up_Together/)
-- [Moonlight Peaks](https://store.steampowered.com/app/2209900/Moonlight_Peaks/)
+- [Hello Kitty Island Adventure](https://store.steampowered.com/app/2495100/Hello_Kitty_Island_Adventure/)
+- [The Sorting Bureau](https://store.steampowered.com/app/4120790/The_Sorting_Bureau/)
+- [Hearth and Hamlet](https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/)
+- [Sort Them Ducks](https://store.steampowered.com/app/4992070/Sort_Them_Ducks/)
+- [Vacation Cafe Simulator](https://store.steampowered.com/app/3196440/Vacation_Cafe_Simulator/)
+- [Pizza House Simulator🍕](https://store.steampowered.com/app/4132330/Pizza_House_Simulator/)
 - [Shelves and Sorcery: Tidy Up the Enchanted Shop](https://store.steampowered.com/app/3614130/Shelves_and_Sorcery_Tidy_Up_the_Enchanted_Shop/)
-- [Solarpunk™](https://store.steampowered.com/app/1805110/Solarpunk/)
-- [The One Fish](https://store.steampowered.com/app/4883580/The_One_Fish/)
-- [Core Keeper](https://store.steampowered.com/app/1621690/Core_Keeper/)
-- [Doloc Town](https://store.steampowered.com/app/2285550/Doloc_Town/)
+- [Sledding Game](https://store.steampowered.com/app/3438850/Sledding_Game/)
 
 ### Hacker News buzz
 
