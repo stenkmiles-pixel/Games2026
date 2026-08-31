@@ -1,6 +1,6 @@
 # Topic Radar
 
-_Auto-generated 2026-08-24T07:47:28.505Z. Signals + AI suggestions to help pick what to write next._
+_Auto-generated 2026-08-31T14:30:51.591Z. Signals + AI suggestions to help pick what to write next._
 _Review, fact-check, and never auto-publish — this is an assistant, not an autopilot._
 
 ## Part B — AI topic suggestions
@@ -11,7 +11,7 @@ _Review, fact-check, and never auto-publish — this is an assistant, not an aut
 HTTP 404 (model "gemini-2.0-flash"): {
   "error": {
     "code": 404,
-    "message": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements.",
+    "message": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.",
     "status": "NOT_FOUND"
   }
 }
@@ -23,39 +23,39 @@ HTTP 404 (model "gemini-2.0-flash"): {
 
 ### Steam · newest cozy releases
 
-- [Travellin Cats in USA](https://store.steampowered.com/app/3196850/Travellin_Cats_in_USA/)
-- [Desktop Bouncer](https://store.steampowered.com/app/4749880/Desktop_Bouncer/)
-- [The Sorting Bureau](https://store.steampowered.com/app/4120790/The_Sorting_Bureau/)
-- [Liminal Space Holiday](https://store.steampowered.com/app/5041880/Liminal_Space_Holiday/)
-- [Aqua Scrap: Deep Clean](https://store.steampowered.com/app/4974760/Aqua_Scrap_Deep_Clean/)
-- [Strange Zoo](https://store.steampowered.com/app/4210110/Strange_Zoo/)
-- [Slots And Shots](https://store.steampowered.com/app/4908080/Slots_And_Shots/)
-- [Mall: Tidy Up Together](https://store.steampowered.com/app/4962010/Mall_Tidy_Up_Together/)
-- [Settler's Domain](https://store.steampowered.com/app/3396920/Settlers_Domain/)
-- [FishDrop](https://store.steampowered.com/app/5045480/FishDrop/)
-- [Food Fight](https://store.steampowered.com/app/4985650/Food_Fight/)
-- [Harvest Hand](https://store.steampowered.com/app/5015520/Harvest_Hand/)
-- [Lo-Fi Laundromat](https://store.steampowered.com/app/4796890/LoFi_Laundromat/)
-- [Vacation Cafe Simulator](https://store.steampowered.com/app/3196440/Vacation_Cafe_Simulator/)
-- [Cozy Marbles](https://store.steampowered.com/app/2836460/Cozy_Marbles/)
+- [Until North Ends](https://store.steampowered.com/app/3924020/Until_North_Ends/)
+- [Luminous Jigsaw Puzzles](https://store.steampowered.com/app/4498280/Luminous_Jigsaw_Puzzles/)
+- [Perfect Floor](https://store.steampowered.com/app/4913020/Perfect_Floor/)
+- [DeskBloom](https://store.steampowered.com/app/5086640/DeskBloom/)
+- [Fablewood Chronicles](https://store.steampowered.com/app/5027570/Fablewood_Chronicles/)
+- [Victor Space Program](https://store.steampowered.com/app/4048540/Victor_Space_Program/)
+- [Fortune Factory](https://store.steampowered.com/app/5053230/Fortune_Factory/)
+- [Meme Farm](https://store.steampowered.com/app/4906780/Meme_Farm/)
+- [Bots to Mars](https://store.steampowered.com/app/4984980/Bots_to_Mars/)
+- [Skullchef](https://store.steampowered.com/app/4892720/Skullchef/)
+- [Bunnyhop](https://store.steampowered.com/app/5001890/Bunnyhop/)
+- [Push and Pull](https://store.steampowered.com/app/4575420/Push_and_Pull/)
+- [Necromancer Park](https://store.steampowered.com/app/4905690/Necromancer_Park/)
+- [Too Many Toys!](https://store.steampowered.com/app/5028390/Too_Many_Toys/)
+- [Nekopedia: Find Her Tail](https://store.steampowered.com/app/3905730/Nekopedia_Find_Her_Tail/)
 
 ### Steam · top-selling cozy games
 
-- [Grounded 2](https://store.steampowered.com/app/2661300/Grounded_2/)
 - [Heartopia](https://store.steampowered.com/app/4025700/Heartopia/)
-- [NTE: Neverness to Everness](https://store.steampowered.com/app/4508340/NTE_Neverness_to_Everness/)
+- [Grounded 2](https://store.steampowered.com/app/2661300/Grounded_2/)
 - [ReStory: Chill Electronics Repairs](https://store.steampowered.com/app/3812600/ReStory_Chill_Electronics_Repairs/)
+- [Palia](https://store.steampowered.com/app/2707930/Palia/)
+- [NTE: Neverness to Everness](https://store.steampowered.com/app/4508340/NTE_Neverness_to_Everness/)
+- [GIRLS' FRONTLINE 2: EXILIUM](https://store.steampowered.com/app/3347400/GIRLS_FRONTLINE_2_EXILIUM/)
 - [Cat Mail Co.](https://store.steampowered.com/app/4380490/Cat_Mail_Co/)
 - [Paralives](https://store.steampowered.com/app/1118520/Paralives/)
-- [Palia](https://store.steampowered.com/app/2707930/Palia/)
-- [Hello Kitty Island Adventure](https://store.steampowered.com/app/2495100/Hello_Kitty_Island_Adventure/)
-- [The Sorting Bureau](https://store.steampowered.com/app/4120790/The_Sorting_Bureau/)
-- [Hearth and Hamlet](https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/)
+- [Infinity Nikki](https://store.steampowered.com/app/3164330/Infinity_Nikki/)
+- [Sludgineers](https://store.steampowered.com/app/4073860/Sludgineers/)
+- [Spirit City: Lofi Sessions](https://store.steampowered.com/app/2113850/Spirit_City_Lofi_Sessions/)
+- [Moonlight Peaks](https://store.steampowered.com/app/2209900/Moonlight_Peaks/)
 - [Sort Them Ducks](https://store.steampowered.com/app/4992070/Sort_Them_Ducks/)
-- [Vacation Cafe Simulator](https://store.steampowered.com/app/3196440/Vacation_Cafe_Simulator/)
-- [Pizza House Simulator🍕](https://store.steampowered.com/app/4132330/Pizza_House_Simulator/)
-- [Shelves and Sorcery: Tidy Up the Enchanted Shop](https://store.steampowered.com/app/3614130/Shelves_and_Sorcery_Tidy_Up_the_Enchanted_Shop/)
-- [Sledding Game](https://store.steampowered.com/app/3438850/Sledding_Game/)
+- [Solarpunk™](https://store.steampowered.com/app/1805110/Solarpunk/)
+- [Hearth and Hamlet](https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/)
 
 ### Hacker News buzz
 
