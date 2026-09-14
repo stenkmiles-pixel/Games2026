@@ -1,6 +1,6 @@
 # Topic Radar
 
-_Auto-generated 2026-09-07T13:05:07.712Z. Signals + AI suggestions to help pick what to write next._
+_Auto-generated 2026-09-14T13:25:58.884Z. Signals + AI suggestions to help pick what to write next._
 _Review, fact-check, and never auto-publish — this is an assistant, not an autopilot._
 
 ## Part B — AI topic suggestions
@@ -23,39 +23,39 @@ HTTP 404 (model "gemini-2.0-flash"): {
 
 ### Steam · newest cozy releases
 
-- [Shelf Happens](https://store.steampowered.com/app/4977900/Shelf_Happens/)
-- [Breezy Blooms](https://store.steampowered.com/app/4992680/Breezy_Blooms/)
-- [Locktale](https://store.steampowered.com/app/4304820/Locktale/)
-- [Summer of Singing Insects](https://store.steampowered.com/app/5045260/Summer_of_Singing_Insects/)
-- [Desktop Pet: DonEatFish](https://store.steampowered.com/app/4515550/Desktop_Pet_DonEatFish/)
-- [Darning](https://store.steampowered.com/app/4899120/Darning/)
-- [101 Dogs Hidden in Antalya](https://store.steampowered.com/app/5091840/101_Dogs_Hidden_in_Antalya/)
-- [Numble](https://store.steampowered.com/app/4926400/Numble/)
-- [Exspelled](https://store.steampowered.com/app/5064270/Exspelled/)
-- [Vale Primordial](https://store.steampowered.com/app/5023540/Vale_Primordial/)
-- [Terrarium II](https://store.steampowered.com/app/5097640/Terrarium_II/)
-- [Reality Rivals: The First Season](https://store.steampowered.com/app/3968750/Reality_Rivals_The_First_Season/)
-- [Pile Up](https://store.steampowered.com/app/3994220/Pile_Up/)
-- [100 Panda Cats](https://store.steampowered.com/app/4516160/100_Panda_Cats/)
-- [Retro Arcade Shop Simulator](https://store.steampowered.com/app/4010900/Retro_Arcade_Shop_Simulator/)
+- [Cloudscrapers](https://store.steampowered.com/app/3562200/Cloudscrapers/)
+- [Pibcremental](https://store.steampowered.com/app/4573090/Pibcremental/)
+- [Carrot Clicker](https://store.steampowered.com/app/5117280/Carrot_Clicker/)
+- [Neat!](https://store.steampowered.com/app/4300090/Neat/)
+- [Sect Logistics](https://store.steampowered.com/app/4860160/Sect_Logistics/)
+- [Put Back Stuff](https://store.steampowered.com/app/5130150/Put_Back_Stuff/)
+- [TaskPaw](https://store.steampowered.com/app/4930400/TaskPaw/)
+- [CLUBX](https://store.steampowered.com/app/4808300/CLUBX/)
+- [Flourishing](https://store.steampowered.com/app/4823700/Flourishing/)
+- [Tamespire](https://store.steampowered.com/app/4868610/Tamespire/)
+- [Water Sort:Alchemy](https://store.steampowered.com/app/5122530/Water_SortAlchemy/)
+- [Desert Vein](https://store.steampowered.com/app/5107000/Desert_Vein/)
+- [You Will Get Rich!](https://store.steampowered.com/app/5169430/You_Will_Get_Rich/)
+- [Play the Wor!d](https://store.steampowered.com/app/4727440/Play_the_Word/)
+- [Tentacle Locker 2](https://store.steampowered.com/app/4071460/Tentacle_Locker_2/)
 
 ### Steam · top-selling cozy games
 
-- [Grounded 2](https://store.steampowered.com/app/2661300/Grounded_2/)
+- [Welcome to Elderfield](https://store.steampowered.com/app/3195440/Welcome_to_Elderfield/)
 - [Palia](https://store.steampowered.com/app/2707930/Palia/)
 - [Heartopia](https://store.steampowered.com/app/4025700/Heartopia/)
 - [ReStory: Chill Electronics Repairs](https://store.steampowered.com/app/3812600/ReStory_Chill_Electronics_Repairs/)
-- [NTE: Neverness to Everness](https://store.steampowered.com/app/4508340/NTE_Neverness_to_Everness/)
-- [Core Keeper](https://store.steampowered.com/app/1621690/Core_Keeper/)
+- [Grounded 2](https://store.steampowered.com/app/2661300/Grounded_2/)
+- [Cat Mail Co.](https://store.steampowered.com/app/4380490/Cat_Mail_Co/)
 - [Paralives](https://store.steampowered.com/app/1118520/Paralives/)
 - [GIRLS' FRONTLINE 2: EXILIUM](https://store.steampowered.com/app/3347400/GIRLS_FRONTLINE_2_EXILIUM/)
-- [Cat Mail Co.](https://store.steampowered.com/app/4380490/Cat_Mail_Co/)
+- [NTE: Neverness to Everness](https://store.steampowered.com/app/4508340/NTE_Neverness_to_Everness/)
+- [Tiny Eden](https://store.steampowered.com/app/3375110/Tiny_Eden/)
 - [Moonlight Peaks](https://store.steampowered.com/app/2209900/Moonlight_Peaks/)
-- [Megastore: Tidy Up Together](https://store.steampowered.com/app/5027520/Megastore_Tidy_Up_Together/)
-- [Monk Took Book](https://store.steampowered.com/app/4022090/Monk_Took_Book/)
-- [Green Hell](https://store.steampowered.com/app/815370/Green_Hell/)
-- [Sort Them Ducks](https://store.steampowered.com/app/4992070/Sort_Them_Ducks/)
-- [Rune Factory: Guardians of Azuma](https://store.steampowered.com/app/2864560/Rune_Factory_Guardians_of_Azuma/)
+- [House Flipper](https://store.steampowered.com/app/613100/House_Flipper/)
+- [Neat!](https://store.steampowered.com/app/4300090/Neat/)
+- [A Little to the Left](https://store.steampowered.com/app/1629520/A_Little_to_the_Left/)
+- [Black Friday Janitor: Clean the Whole Mall](https://store.steampowered.com/app/3396010/Black_Friday_Janitor_Clean_the_Whole_Mall/)
 
 ### Hacker News buzz
 
