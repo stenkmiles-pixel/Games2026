@@ -1,6 +1,6 @@
 # Topic Radar
 
-_Auto-generated 2026-09-14T13:25:58.884Z. Signals + AI suggestions to help pick what to write next._
+_Auto-generated 2026-09-21T13:25:38.044Z. Signals + AI suggestions to help pick what to write next._
 _Review, fact-check, and never auto-publish — this is an assistant, not an autopilot._
 
 ## Part B — AI topic suggestions
@@ -23,39 +23,39 @@ HTTP 404 (model "gemini-2.0-flash"): {
 
 ### Steam · newest cozy releases
 
-- [Cloudscrapers](https://store.steampowered.com/app/3562200/Cloudscrapers/)
-- [Pibcremental](https://store.steampowered.com/app/4573090/Pibcremental/)
-- [Carrot Clicker](https://store.steampowered.com/app/5117280/Carrot_Clicker/)
-- [Neat!](https://store.steampowered.com/app/4300090/Neat/)
-- [Sect Logistics](https://store.steampowered.com/app/4860160/Sect_Logistics/)
-- [Put Back Stuff](https://store.steampowered.com/app/5130150/Put_Back_Stuff/)
-- [TaskPaw](https://store.steampowered.com/app/4930400/TaskPaw/)
-- [CLUBX](https://store.steampowered.com/app/4808300/CLUBX/)
-- [Flourishing](https://store.steampowered.com/app/4823700/Flourishing/)
-- [Tamespire](https://store.steampowered.com/app/4868610/Tamespire/)
-- [Water Sort:Alchemy](https://store.steampowered.com/app/5122530/Water_SortAlchemy/)
-- [Desert Vein](https://store.steampowered.com/app/5107000/Desert_Vein/)
-- [You Will Get Rich!](https://store.steampowered.com/app/5169430/You_Will_Get_Rich/)
-- [Play the Wor!d](https://store.steampowered.com/app/4727440/Play_the_Word/)
-- [Tentacle Locker 2](https://store.steampowered.com/app/4071460/Tentacle_Locker_2/)
+- [TINY CAT FISHING](https://store.steampowered.com/app/4224560/TINY_CAT_FISHING/)
+- [Dressmaker](https://store.steampowered.com/app/4019220/Dressmaker/)
+- [Food for Frog](https://store.steampowered.com/app/4064010/Food_for_Frog/)
+- [Mellow Flavor Alley](https://store.steampowered.com/app/5101560/Mellow_Flavor_Alley/)
+- [Tidy Tokens](https://store.steampowered.com/app/5132000/Tidy_Tokens/)
+- [Dear Journey...](https://store.steampowered.com/app/4172110/Dear_Journey/)
+- [Click to Farm](https://store.steampowered.com/app/4761260/Click_to_Farm/)
+- [DIY Dadish](https://store.steampowered.com/app/5157680/DIY_Dadish/)
+- [忍牌忍战大师Ninja Cards and Ninja Battle Master](https://store.steampowered.com/app/5132180/Ninja_Cards_and_Ninja_Battle_Master/)
+- [Screw IT](https://store.steampowered.com/app/4972300/Screw_IT/)
+- [Relaxation Massage Studio](https://store.steampowered.com/app/5040600/Relaxation_Massage_Studio/)
+- [Unfold Flower](https://store.steampowered.com/app/5123190/Unfold_Flower/)
+- [Childhood Slots](https://store.steampowered.com/app/5044710/Childhood_Slots/)
+- [IDEL CAVITY INC.](https://store.steampowered.com/app/5084210/IDEL_CAVITY_INC/)
+- [That Cloud Looks Like](https://store.steampowered.com/app/5171880/That_Cloud_Looks_Like/)
 
 ### Steam · top-selling cozy games
 
-- [Welcome to Elderfield](https://store.steampowered.com/app/3195440/Welcome_to_Elderfield/)
-- [Palia](https://store.steampowered.com/app/2707930/Palia/)
+- [Dressmaker](https://store.steampowered.com/app/4019220/Dressmaker/)
 - [Heartopia](https://store.steampowered.com/app/4025700/Heartopia/)
+- [Palia](https://store.steampowered.com/app/2707930/Palia/)
+- [Welcome to Elderfield](https://store.steampowered.com/app/3195440/Welcome_to_Elderfield/)
+- [GIRLS' FRONTLINE 2: EXILIUM](https://store.steampowered.com/app/3347400/GIRLS_FRONTLINE_2_EXILIUM/)
 - [ReStory: Chill Electronics Repairs](https://store.steampowered.com/app/3812600/ReStory_Chill_Electronics_Repairs/)
 - [Grounded 2](https://store.steampowered.com/app/2661300/Grounded_2/)
 - [Cat Mail Co.](https://store.steampowered.com/app/4380490/Cat_Mail_Co/)
+- [Sky: Children of the Light](https://store.steampowered.com/app/2325290/Sky_Children_of_the_Light/)
 - [Paralives](https://store.steampowered.com/app/1118520/Paralives/)
-- [GIRLS' FRONTLINE 2: EXILIUM](https://store.steampowered.com/app/3347400/GIRLS_FRONTLINE_2_EXILIUM/)
+- [Flamecraft](https://store.steampowered.com/app/3201730/Flamecraft/)
+- [Trivia Murder Party 3](https://store.steampowered.com/app/3048060/Trivia_Murder_Party_3/)
+- [Sniper Dan](https://store.steampowered.com/app/2841650/Sniper_Dan/)
 - [NTE: Neverness to Everness](https://store.steampowered.com/app/4508340/NTE_Neverness_to_Everness/)
-- [Tiny Eden](https://store.steampowered.com/app/3375110/Tiny_Eden/)
-- [Moonlight Peaks](https://store.steampowered.com/app/2209900/Moonlight_Peaks/)
-- [House Flipper](https://store.steampowered.com/app/613100/House_Flipper/)
-- [Neat!](https://store.steampowered.com/app/4300090/Neat/)
-- [A Little to the Left](https://store.steampowered.com/app/1629520/A_Little_to_the_Left/)
-- [Black Friday Janitor: Clean the Whole Mall](https://store.steampowered.com/app/3396010/Black_Friday_Janitor_Clean_the_Whole_Mall/)
+- [Woodo](https://store.steampowered.com/app/2572040/Woodo/)
 
 ### Hacker News buzz
 
