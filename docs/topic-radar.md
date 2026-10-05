@@ -1,6 +1,6 @@
 # Topic Radar
 
-_Auto-generated 2026-09-28T14:37:51.478Z. Signals + AI suggestions to help pick what to write next._
+_Auto-generated 2026-10-05T15:21:49.195Z. Signals + AI suggestions to help pick what to write next._
 _Review, fact-check, and never auto-publish — this is an assistant, not an autopilot._
 
 ## Part B — AI topic suggestions
@@ -23,39 +23,39 @@ HTTP 404 (model "gemini-2.0-flash"): {
 
 ### Steam · newest cozy releases
 
-- [Approved! A Quiet Day of Paperwork](https://store.steampowered.com/app/5237960/Approved_A_Quiet_Day_of_Paperwork/)
-- [Cozy Classical Critters](https://store.steampowered.com/app/5020950/Cozy_Classical_Critters/)
-- [Tab-lings](https://store.steampowered.com/app/5226510/Tablings/)
-- [Visual Novel: The Neighbor with My Face](https://store.steampowered.com/app/5247970/Visual_Novel_The_Neighbor_with_My_Face/)
-- [By Royal Request](https://store.steampowered.com/app/5167010/By_Royal_Request/)
-- [Cozy Jigsaw](https://store.steampowered.com/app/5227040/Cozy_Jigsaw/)
-- [Cats in Wonderland](https://store.steampowered.com/app/3023020/Cats_in_Wonderland/)
-- [Bearly Awesome: Chapter 1](https://store.steampowered.com/app/4610630/Bearly_Awesome_Chapter_1/)
-- [Tiny Desktop Birds](https://store.steampowered.com/app/4923700/Tiny_Desktop_Birds/)
-- [Sylva's Blessing](https://store.steampowered.com/app/5081700/Sylvas_Blessing/)
-- [Solitaire Together](https://store.steampowered.com/app/5213680/Solitaire_Together/)
-- [Lexilotl: Crossword Puzzle Run](https://store.steampowered.com/app/4735750/Lexilotl_Crossword_Puzzle_Run/)
-- [GLUE BLOCKS](https://store.steampowered.com/app/4135890/GLUE_BLOCKS/)
-- [Smoke Keeper](https://store.steampowered.com/app/5115860/Smoke_Keeper/)
-- [WashMate](https://store.steampowered.com/app/4823240/WashMate/)
+- [Service, please](https://store.steampowered.com/app/4905490/Service_please/)
+- [SPLEEN](https://store.steampowered.com/app/5234160/SPLEEN/)
+- [Jono](https://store.steampowered.com/app/5257200/Jono/)
+- [Bony Bones Adventures](https://store.steampowered.com/app/2559520/Bony_Bones_Adventures/)
+- [Hexcavate](https://store.steampowered.com/app/5239340/Hexcavate/)
+- [Dumpling Delight](https://store.steampowered.com/app/5139970/Dumpling_Delight/)
+- [Catventure](https://store.steampowered.com/app/4459980/Catventure/)
+- [蒼海 -AOMI-](https://store.steampowered.com/app/5231010/_AOMI/)
+- [Go](https://store.steampowered.com/app/5233540/Go/)
+- [Blackout](https://store.steampowered.com/app/5267360/Blackout/)
+- [Monster Museum: Tidy Up the collection!](https://store.steampowered.com/app/4998990/Monster_Museum_Tidy_Up_the_collection/)
+- [Tidy Up the Flower Shop](https://store.steampowered.com/app/5221510/Tidy_Up_the_Flower_Shop/)
+- [Let's Tidy Up! : Treasure](https://store.steampowered.com/app/5023770/Lets_Tidy_Up__Treasure/)
+- [DreamFisher](https://store.steampowered.com/app/4979120/DreamFisher/)
+- [101 Dogs Hidden in Shenzhen](https://store.steampowered.com/app/5263590/101_Dogs_Hidden_in_Shenzhen/)
 
 ### Steam · top-selling cozy games
 
 - [Dressmaker](https://store.steampowered.com/app/4019220/Dressmaker/)
-- [Heartopia](https://store.steampowered.com/app/4025700/Heartopia/)
-- [ReStory: Chill Electronics Repairs](https://store.steampowered.com/app/3812600/ReStory_Chill_Electronics_Repairs/)
-- [Grounded 2](https://store.steampowered.com/app/2661300/Grounded_2/)
 - [Paralives](https://store.steampowered.com/app/1118520/Paralives/)
+- [ReStory: Chill Electronics Repairs](https://store.steampowered.com/app/3812600/ReStory_Chill_Electronics_Repairs/)
+- [Heartopia](https://store.steampowered.com/app/4025700/Heartopia/)
+- [Grounded 2](https://store.steampowered.com/app/2661300/Grounded_2/)
+- [Cat Mail Co.](https://store.steampowered.com/app/4380490/Cat_Mail_Co/)
+- [Palia](https://store.steampowered.com/app/2707930/Palia/)
 - [NTE: Neverness to Everness](https://store.steampowered.com/app/4508340/NTE_Neverness_to_Everness/)
 - [GIRLS' FRONTLINE 2: EXILIUM](https://store.steampowered.com/app/3347400/GIRLS_FRONTLINE_2_EXILIUM/)
-- [Palia](https://store.steampowered.com/app/2707930/Palia/)
-- [DinoBones: Tidy Up the Museum](https://store.steampowered.com/app/5064340/DinoBones_Tidy_Up_the_Museum/)
-- [ShantyTown](https://store.steampowered.com/app/2434600/ShantyTown/)
-- [Wand & Order: Tidy up the magic shop!](https://store.steampowered.com/app/4981570/Wand__Order_Tidy_up_the_magic_shop/)
-- [Cat Mail Co.](https://store.steampowered.com/app/4380490/Cat_Mail_Co/)
 - [Tiny Glade](https://store.steampowered.com/app/2198150/Tiny_Glade/)
-- [Infinity Nikki](https://store.steampowered.com/app/3164330/Infinity_Nikki/)
-- [Welcome to Elderfield](https://store.steampowered.com/app/3195440/Welcome_to_Elderfield/)
+- [Hello Kitty Island Adventure](https://store.steampowered.com/app/2495100/Hello_Kitty_Island_Adventure/)
+- [Core Keeper](https://store.steampowered.com/app/1621690/Core_Keeper/)
+- [Solarpunk™](https://store.steampowered.com/app/1805110/Solarpunk/)
+- [Town to City](https://store.steampowered.com/app/3115220/Town_to_City/)
+- [Oxygen Not Included](https://store.steampowered.com/app/457140/Oxygen_Not_Included/)
 
 ### Hacker News buzz
 
