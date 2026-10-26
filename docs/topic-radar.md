@@ -1,6 +1,6 @@
 # Topic Radar
 
-_Auto-generated 2026-10-19T14:06:22.267Z. Signals + AI suggestions to help pick what to write next._
+_Auto-generated 2026-10-26T13:39:28.041Z. Signals + AI suggestions to help pick what to write next._
 _Review, fact-check, and never auto-publish — this is an assistant, not an autopilot._
 
 ## Part B — AI topic suggestions
@@ -23,39 +23,39 @@ HTTP 404 (model "gemini-2.0-flash"): {
 
 ### Steam · newest cozy releases
 
-- [Tall Orders](https://store.steampowered.com/app/5126160/Tall_Orders/)
-- [Number Go Up](https://store.steampowered.com/app/5326820/Number_Go_Up/)
-- [Resonance](https://store.steampowered.com/app/5209950/Resonance/)
-- [Tsudoi](https://store.steampowered.com/app/5332540/Tsudoi/)
-- [The Harbour Between Us](https://store.steampowered.com/app/5359760/The_Harbour_Between_Us/)
-- [Universal Tidy Up](https://store.steampowered.com/app/5119740/Universal_Tidy_Up/)
-- [a Flower for you](https://store.steampowered.com/app/5360830/a_Flower_for_you/)
-- [Cook with Card](https://store.steampowered.com/app/4597500/Cook_with_Card/)
-- [The Grounds-Keeper](https://store.steampowered.com/app/4295900/The_GroundsKeeper/)
-- [Just a Cat](https://store.steampowered.com/app/4350900/Just_a_Cat/)
-- [Inkpress](https://store.steampowered.com/app/4950180/Inkpress/)
-- [I Was Summoned to Another World, but All I Do Is Organize a Run-Down Village](https://store.steampowered.com/app/5269420/I_Was_Summoned_to_Another_World_but_All_I_Do_Is_Organize_a_RunDown_Village/)
-- [Take Good Care of Your Cassava](https://store.steampowered.com/app/5343830/Take_Good_Care_of_Your_Cassava/)
-- [Diceminoes](https://store.steampowered.com/app/4999210/Diceminoes/)
-- [EmberQuest](https://store.steampowered.com/app/5328820/EmberQuest/)
+- [Animal Farm](https://store.steampowered.com/app/5353370/Animal_Farm/)
+- [REKA](https://store.steampowered.com/app/1737870/REKA/)
+- [Where is My Pet?](https://store.steampowered.com/app/4466850/Where_is_My_Pet/)
+- [Munshi Meadows](https://store.steampowered.com/app/5285880/Munshi_Meadows/)
+- [TBT: TaskBarTimber](https://store.steampowered.com/app/5398250/TBT_TaskBarTimber/)
+- [Mining Fire Ball](https://store.steampowered.com/app/5336100/Mining_Fire_Ball/)
+- [PAO PAO](https://store.steampowered.com/app/3024130/PAO_PAO/)
+- [Card Counters](https://store.steampowered.com/app/5293020/Card_Counters/)
+- [Puzzle Peace: Cozy Jigsaw Puzzles](https://store.steampowered.com/app/5324320/Puzzle_Peace_Cozy_Jigsaw_Puzzles/)
+- [Shhh, IT!](https://store.steampowered.com/app/5387480/Shhh_IT/)
+- [DATE_SIMULATOR.EXE](https://store.steampowered.com/app/5196220/DATESIMULATOREXE/)
+- [N in One 中国骨牌合集：牌九、天九、接龙、顶牛](https://store.steampowered.com/app/5381340/N_in_One_中国骨牌合集牌九天九接龙顶牛/)
+- [Halmweit](https://store.steampowered.com/app/5363160/Halmweit/)
+- [TRACE IT](https://store.steampowered.com/app/5398650/TRACE_IT/)
+- [Blamcon's Cyber Range](https://store.steampowered.com/app/5378020/Blamcons_Cyber_Range/)
 
 ### Steam · top-selling cozy games
 
 - [Dressmaker](https://store.steampowered.com/app/4019220/Dressmaker/)
-- [Heartopia](https://store.steampowered.com/app/4025700/Heartopia/)
 - [Brick by Brick: Tidy Up the Small Town!](https://store.steampowered.com/app/5228920/Brick_by_Brick_Tidy_Up_the_Small_Town/)
-- [Hello Kitty Island Adventure](https://store.steampowered.com/app/2495100/Hello_Kitty_Island_Adventure/)
-- [One Million Coins](https://store.steampowered.com/app/5258340/One_Million_Coins/)
-- [Farm to Table](https://store.steampowered.com/app/3582250/Farm_to_Table/)
+- [REKA](https://store.steampowered.com/app/1737870/REKA/)
 - [Grounded 2](https://store.steampowered.com/app/2661300/Grounded_2/)
-- [NTE: Neverness to Everness](https://store.steampowered.com/app/4508340/NTE_Neverness_to_Everness/)
-- [ReStory: Chill Electronics Repairs](https://store.steampowered.com/app/3812600/ReStory_Chill_Electronics_Repairs/)
-- [The Witch's Bakery](https://store.steampowered.com/app/2967950/The_Witchs_Bakery/)
-- [Cat Mail Co.](https://store.steampowered.com/app/4380490/Cat_Mail_Co/)
 - [Palia](https://store.steampowered.com/app/2707930/Palia/)
-- [Core Keeper](https://store.steampowered.com/app/1621690/Core_Keeper/)
-- [Folded Fables: Tidy Up The Dragon Hoard](https://store.steampowered.com/app/4995030/Folded_Fables_Tidy_Up_The_Dragon_Hoard/)
 - [GIRLS' FRONTLINE 2: EXILIUM](https://store.steampowered.com/app/3347400/GIRLS_FRONTLINE_2_EXILIUM/)
+- [ReStory: Chill Electronics Repairs](https://store.steampowered.com/app/3812600/ReStory_Chill_Electronics_Repairs/)
+- [NTE: Neverness to Everness](https://store.steampowered.com/app/4508340/NTE_Neverness_to_Everness/)
+- [Heartopia](https://store.steampowered.com/app/4025700/Heartopia/)
+- [Sky: Children of the Light](https://store.steampowered.com/app/2325290/Sky_Children_of_the_Light/)
+- [PAO PAO](https://store.steampowered.com/app/3024130/PAO_PAO/)
+- [One Million Coins](https://store.steampowered.com/app/5258340/One_Million_Coins/)
+- [Tidy Up the Halloween Shop](https://store.steampowered.com/app/5316540/Tidy_Up_the_Halloween_Shop/)
+- [Paralives](https://store.steampowered.com/app/1118520/Paralives/)
+- [Cat Mail Co.](https://store.steampowered.com/app/4380490/Cat_Mail_Co/)
 
 ### Hacker News buzz
 
