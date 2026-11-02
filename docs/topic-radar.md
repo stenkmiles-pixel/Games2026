@@ -1,6 +1,6 @@
 # Topic Radar
 
-_Auto-generated 2026-10-26T13:39:28.041Z. Signals + AI suggestions to help pick what to write next._
+_Auto-generated 2026-11-02T16:38:33.104Z. Signals + AI suggestions to help pick what to write next._
 _Review, fact-check, and never auto-publish — this is an assistant, not an autopilot._
 
 ## Part B — AI topic suggestions
@@ -23,39 +23,39 @@ HTTP 404 (model "gemini-2.0-flash"): {
 
 ### Steam · newest cozy releases
 
-- [Animal Farm](https://store.steampowered.com/app/5353370/Animal_Farm/)
-- [REKA](https://store.steampowered.com/app/1737870/REKA/)
-- [Where is My Pet?](https://store.steampowered.com/app/4466850/Where_is_My_Pet/)
-- [Munshi Meadows](https://store.steampowered.com/app/5285880/Munshi_Meadows/)
-- [TBT: TaskBarTimber](https://store.steampowered.com/app/5398250/TBT_TaskBarTimber/)
-- [Mining Fire Ball](https://store.steampowered.com/app/5336100/Mining_Fire_Ball/)
-- [PAO PAO](https://store.steampowered.com/app/3024130/PAO_PAO/)
-- [Card Counters](https://store.steampowered.com/app/5293020/Card_Counters/)
-- [Puzzle Peace: Cozy Jigsaw Puzzles](https://store.steampowered.com/app/5324320/Puzzle_Peace_Cozy_Jigsaw_Puzzles/)
-- [Shhh, IT!](https://store.steampowered.com/app/5387480/Shhh_IT/)
-- [DATE_SIMULATOR.EXE](https://store.steampowered.com/app/5196220/DATESIMULATOREXE/)
-- [N in One 中国骨牌合集：牌九、天九、接龙、顶牛](https://store.steampowered.com/app/5381340/N_in_One_中国骨牌合集牌九天九接龙顶牛/)
-- [Halmweit](https://store.steampowered.com/app/5363160/Halmweit/)
-- [TRACE IT](https://store.steampowered.com/app/5398650/TRACE_IT/)
-- [Blamcon's Cyber Range](https://store.steampowered.com/app/5378020/Blamcons_Cyber_Range/)
+- [Hidden Gnomes](https://store.steampowered.com/app/4602050/Hidden_Gnomes/)
+- [SCHISM WORLD](https://store.steampowered.com/app/5398790/SCHISM_WORLD/)
+- [Unscrewed](https://store.steampowered.com/app/5455030/Unscrewed/)
+- [Desktop Cat or Potat](https://store.steampowered.com/app/5399150/Desktop_Cat_or_Potat/)
+- [Cat Over Here!](https://store.steampowered.com/app/5031190/Cat_Over_Here/)
+- [The Arcane Archive](https://store.steampowered.com/app/5443280/The_Arcane_Archive/)
+- [BOB LOGISTICS](https://store.steampowered.com/app/5009390/BOB_LOGISTICS/)
+- [Sabado](https://store.steampowered.com/app/4986750/Sabado/)
+- [Little Pagan Land](https://store.steampowered.com/app/5325180/Little_Pagan_Land/)
+- [Cursor Cult](https://store.steampowered.com/app/5432280/Cursor_Cult/)
+- [I Just Tidied Up!](https://store.steampowered.com/app/5435150/I_Just_Tidied_Up/)
+- [Replay Value: Second Hand Games](https://store.steampowered.com/app/3683940/Replay_Value_Second_Hand_Games/)
+- [Only Axolotls](https://store.steampowered.com/app/5205450/Only_Axolotls/)
+- [Meow Time: cozy cat room](https://store.steampowered.com/app/4072400/Meow_Time_cozy_cat_room/)
+- [Goats and Shrubs: Desktop Topiary](https://store.steampowered.com/app/5092480/Goats_and_Shrubs_Desktop_Topiary/)
 
 ### Steam · top-selling cozy games
 
 - [Dressmaker](https://store.steampowered.com/app/4019220/Dressmaker/)
-- [Brick by Brick: Tidy Up the Small Town!](https://store.steampowered.com/app/5228920/Brick_by_Brick_Tidy_Up_the_Small_Town/)
-- [REKA](https://store.steampowered.com/app/1737870/REKA/)
-- [Grounded 2](https://store.steampowered.com/app/2661300/Grounded_2/)
-- [Palia](https://store.steampowered.com/app/2707930/Palia/)
-- [GIRLS' FRONTLINE 2: EXILIUM](https://store.steampowered.com/app/3347400/GIRLS_FRONTLINE_2_EXILIUM/)
+- [Can 'Em All](https://store.steampowered.com/app/5133900/Can_Em_All/)
 - [ReStory: Chill Electronics Repairs](https://store.steampowered.com/app/3812600/ReStory_Chill_Electronics_Repairs/)
-- [NTE: Neverness to Everness](https://store.steampowered.com/app/4508340/NTE_Neverness_to_Everness/)
+- [REKA](https://store.steampowered.com/app/1737870/REKA/)
 - [Heartopia](https://store.steampowered.com/app/4025700/Heartopia/)
-- [Sky: Children of the Light](https://store.steampowered.com/app/2325290/Sky_Children_of_the_Light/)
-- [PAO PAO](https://store.steampowered.com/app/3024130/PAO_PAO/)
-- [One Million Coins](https://store.steampowered.com/app/5258340/One_Million_Coins/)
-- [Tidy Up the Halloween Shop](https://store.steampowered.com/app/5316540/Tidy_Up_the_Halloween_Shop/)
-- [Paralives](https://store.steampowered.com/app/1118520/Paralives/)
+- [GIRLS' FRONTLINE 2: EXILIUM](https://store.steampowered.com/app/3347400/GIRLS_FRONTLINE_2_EXILIUM/)
+- [Brick by Brick: Tidy Up the Small Town!](https://store.steampowered.com/app/5228920/Brick_by_Brick_Tidy_Up_the_Small_Town/)
+- [Grounded 2](https://store.steampowered.com/app/2661300/Grounded_2/)
+- [Welcome to Elderfield](https://store.steampowered.com/app/3195440/Welcome_to_Elderfield/)
+- [NTE: Neverness to Everness](https://store.steampowered.com/app/4508340/NTE_Neverness_to_Everness/)
+- [Palia](https://store.steampowered.com/app/2707930/Palia/)
 - [Cat Mail Co.](https://store.steampowered.com/app/4380490/Cat_Mail_Co/)
+- [Infinity Nikki](https://store.steampowered.com/app/3164330/Infinity_Nikki/)
+- [Paralives](https://store.steampowered.com/app/1118520/Paralives/)
+- [Leaf it Alone](https://store.steampowered.com/app/3981100/Leaf_it_Alone/)
 
 ### Hacker News buzz
 
@@ -66,13 +66,13 @@ HTTP 404 (model "gemini-2.0-flash"): {
 - [A cozy golf game you can play on your Steam Deck in front of the TV](https://store.steampowered.com/app/2541820/Possibly_Endless_Golf/) — 3 pts
 - [Tiny Glade Developers Discuss Bevy, Proceduralism, Publishers and Cozy Games](https://80.lv/articles/exclusive-tiny-glade-developers-discuss-bevy-proceduralism-publishers-cozy-games/) — 2 pts
 - [The Anthropology of Farming Simulator](https://www.sapiens.org/archaeology/farming-simulator-anthropology/) — 74 pts
+- [Show HN: UK Farming Simulator](https://butterbean.farm/) — 43 pts
 - [Competitive Virtual Farming Is a Thing ('Farming Simulator' Esports League)](https://motherboard.vice.com/en_us/article/gyapew/competitive-virtual-farming-is-a-thing-thanks-to-farming-simulator-esports-league) — 3 pts
 - [Farming Simulator 2026: Revolutionizing Urban Food Production](https://lightcapai.medium.com/vertical-farming-in-2026-revolutionizing-urban-food-production-for-a-sustainable-future-efa3794c960e) — 2 pts
 - [The Peculiar World of Farming Simulator ESports](https://www.youtube.com/watch?v=MM6Deexy3to) — 2 pts
 - [Across Europe, more people have bought Farming Simulator 22 than Forza Horizon 5](https://twitter.com/Chris_Dring/status/1475203483951407104) — 2 pts
 - [Welcome to Farming Simulator](https://www.farming-simulator.com/) — 1 pts
 - [Crop yield calculator with bonus in Farming Simulator 22](https://farmingsimulator.app/en/crop-yield-calculator-bonus-fs22) — 1 pts
-- [Stardew Valley – An Indie Farming Simulation RPG](http://stardewvalley.net/) — 1 pts
 - [Game of Life, simulating itself, infinitely zoomable](https://oimo.io/works/life/) — 1515 pts
 
 
