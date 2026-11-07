@@ -1,6 +1,6 @@
 {
   "Coral Island": {
-    "updated": "2026-11-06T14:18:59.582Z",
+    "updated": "2026-11-07T13:06:41.037Z",
     "best": {
       "shop": "Humble Store",
       "price": 29.99,
@@ -29,7 +29,7 @@
     ]
   },
   "Disney Dreamlight Valley": {
-    "updated": "2026-11-06T14:18:59.582Z",
+    "updated": "2026-11-07T13:06:41.037Z",
     "best": {
       "shop": "Fanatical",
       "price": 39.99,
@@ -70,7 +70,7 @@
     ]
   },
   "Wylde Flowers": {
-    "updated": "2026-11-06T14:18:59.582Z",
+    "updated": "2026-11-07T13:06:41.037Z",
     "best": {
       "shop": "Microsoft Store",
       "price": 24.99,
@@ -93,20 +93,14 @@
     ]
   },
   "My Time at Sandrock": {
-    "updated": "2026-11-06T14:18:59.582Z",
+    "updated": "2026-11-07T13:06:41.037Z",
     "best": {
-      "shop": "GreenManGaming",
-      "price": 9.84,
-      "cut": 75,
-      "url": "https://itad.link/018d9386-9f5c-7115-9311-5b61eb534ee8/?app=iwfroo"
+      "shop": "Fanatical",
+      "price": 31.19,
+      "cut": 22,
+      "url": "https://itad.link/01991575-4a90-73e4-9582-75106cd3853a/?app=iwfroo"
     },
     "offers": [
-      {
-        "shop": "GreenManGaming",
-        "price": 9.84,
-        "cut": 75,
-        "url": "https://itad.link/018d9386-9f5c-7115-9311-5b61eb534ee8/?app=iwfroo"
-      },
       {
         "shop": "Fanatical",
         "price": 31.19,
@@ -130,11 +124,17 @@
         "price": 39.99,
         "cut": 0,
         "url": "https://itad.link/018d9386-9f5c-7115-9311-5b61dffe9665/?app=iwfroo"
+      },
+      {
+        "shop": "GreenManGaming",
+        "price": 39.99,
+        "cut": 0,
+        "url": "https://itad.link/018d9386-9f5c-7115-9311-5b61eb534ee8/?app=iwfroo"
       }
     ]
   },
   "Fields of Mistria": {
-    "updated": "2026-11-06T14:18:59.582Z",
+    "updated": "2026-11-07T13:06:41.037Z",
     "best": {
       "shop": "Steam",
       "price": 13.99,
@@ -151,7 +151,7 @@
     ]
   },
   "Spiritfarer": {
-    "updated": "2026-11-06T14:18:59.582Z",
+    "updated": "2026-11-07T13:06:41.037Z",
     "best": {
       "shop": "Steam",
       "price": 2.99,
@@ -198,7 +198,7 @@
     ]
   },
   "Hello Kitty Island Adventure": {
-    "updated": "2026-11-06T14:18:59.582Z",
+    "updated": "2026-11-07T13:06:41.037Z",
     "best": {
       "shop": "Steam",
       "price": 39.99,
@@ -215,7 +215,7 @@
     ]
   },
   "Tiny Glade": {
-    "updated": "2026-11-06T14:18:59.582Z",
+    "updated": "2026-11-07T13:06:41.037Z",
     "best": {
       "shop": "Steam",
       "price": 14.99,
@@ -232,7 +232,7 @@
     ]
   },
   "A Little to the Left": {
-    "updated": "2026-11-06T14:18:59.582Z",
+    "updated": "2026-11-07T13:06:41.037Z",
     "best": {
       "shop": "Steam",
       "price": 5.99,
@@ -267,20 +267,14 @@
     ]
   },
   "Core Keeper": {
-    "updated": "2026-11-06T14:18:59.582Z",
+    "updated": "2026-11-07T13:06:41.037Z",
     "best": {
-      "shop": "GreenManGaming",
-      "price": 9.47,
-      "cut": 53,
-      "url": "https://itad.link/018d9386-425a-71b0-833e-c4346aab2ae3/?app=iwfroo"
+      "shop": "GOG",
+      "price": 11.99,
+      "cut": 40,
+      "url": "https://itad.link/01919310-59e0-728a-9974-8d982dc8d782/?app=iwfroo"
     },
     "offers": [
-      {
-        "shop": "GreenManGaming",
-        "price": 9.47,
-        "cut": 53,
-        "url": "https://itad.link/018d9386-425a-71b0-833e-c4346aab2ae3/?app=iwfroo"
-      },
       {
         "shop": "GOG",
         "price": 11.99,
@@ -310,11 +304,17 @@
         "price": 19.99,
         "cut": 0,
         "url": "https://itad.link/018d9386-425a-71b0-833e-c43463fc46e4/?app=iwfroo"
+      },
+      {
+        "shop": "GreenManGaming",
+        "price": 19.99,
+        "cut": 0,
+        "url": "https://itad.link/018d9386-425a-71b0-833e-c4346aab2ae3/?app=iwfroo"
       }
     ]
   },
   "Town to City": {
-    "updated": "2026-11-06T14:18:59.582Z",
+    "updated": "2026-11-07T13:06:41.037Z",
     "best": {
       "shop": "Steam",
       "price": 22.49,
@@ -330,8 +330,8 @@
       },
       {
         "shop": "Fanatical",
-        "price": 23.99,
-        "cut": 20,
+        "price": 25.49,
+        "cut": 15,
         "url": "https://itad.link/0199535d-aa4d-70fa-9ea5-a9a9cfaf000c/?app=iwfroo"
       }
     ]
