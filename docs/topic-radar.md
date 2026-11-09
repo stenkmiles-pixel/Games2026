@@ -1,6 +1,6 @@
 # Topic Radar
 
-_Auto-generated 2026-11-02T16:38:33.104Z. Signals + AI suggestions to help pick what to write next._
+_Auto-generated 2026-11-09T16:56:02.249Z. Signals + AI suggestions to help pick what to write next._
 _Review, fact-check, and never auto-publish — this is an assistant, not an autopilot._
 
 ## Part B — AI topic suggestions
@@ -11,7 +11,7 @@ _Review, fact-check, and never auto-publish — this is an assistant, not an aut
 HTTP 404 (model "gemini-2.0-flash"): {
   "error": {
     "code": 404,
-    "message": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).",
+    "message": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
     "status": "NOT_FOUND"
   }
 }
@@ -23,37 +23,37 @@ HTTP 404 (model "gemini-2.0-flash"): {
 
 ### Steam · newest cozy releases
 
-- [Hidden Gnomes](https://store.steampowered.com/app/4602050/Hidden_Gnomes/)
-- [SCHISM WORLD](https://store.steampowered.com/app/5398790/SCHISM_WORLD/)
-- [Unscrewed](https://store.steampowered.com/app/5455030/Unscrewed/)
-- [Desktop Cat or Potat](https://store.steampowered.com/app/5399150/Desktop_Cat_or_Potat/)
-- [Cat Over Here!](https://store.steampowered.com/app/5031190/Cat_Over_Here/)
-- [The Arcane Archive](https://store.steampowered.com/app/5443280/The_Arcane_Archive/)
-- [BOB LOGISTICS](https://store.steampowered.com/app/5009390/BOB_LOGISTICS/)
-- [Sabado](https://store.steampowered.com/app/4986750/Sabado/)
-- [Little Pagan Land](https://store.steampowered.com/app/5325180/Little_Pagan_Land/)
-- [Cursor Cult](https://store.steampowered.com/app/5432280/Cursor_Cult/)
-- [I Just Tidied Up!](https://store.steampowered.com/app/5435150/I_Just_Tidied_Up/)
-- [Replay Value: Second Hand Games](https://store.steampowered.com/app/3683940/Replay_Value_Second_Hand_Games/)
-- [Only Axolotls](https://store.steampowered.com/app/5205450/Only_Axolotls/)
-- [Meow Time: cozy cat room](https://store.steampowered.com/app/4072400/Meow_Time_cozy_cat_room/)
-- [Goats and Shrubs: Desktop Topiary](https://store.steampowered.com/app/5092480/Goats_and_Shrubs_Desktop_Topiary/)
+- [HO HO HO SOKOBAN](https://store.steampowered.com/app/4862530/HO_HO_HO_SOKOBAN/)
+- [Tidy Up Mall](https://store.steampowered.com/app/3393120/Tidy_Up_Mall/)
+- [Pidgeon Pocket](https://store.steampowered.com/app/4852570/Pidgeon_Pocket/)
+- [Oboro no Ichi](https://store.steampowered.com/app/4559930/Oboro_no_Ichi/)
+- [Abracademia](https://store.steampowered.com/app/4145780/Abracademia/)
+- [Mossmingle](https://store.steampowered.com/app/5495900/Mossmingle/)
+- [Your Suffering Is Important to Us](https://store.steampowered.com/app/5017960/Your_Suffering_Is_Important_to_Us/)
+- [Wild Hive](https://store.steampowered.com/app/4864810/Wild_Hive/)
+- [Flowers to Honey](https://store.steampowered.com/app/4289700/Flowers_to_Honey/)
+- [Pixel Go](https://store.steampowered.com/app/5438830/Pixel_Go/)
+- [Monquest](https://store.steampowered.com/app/5498810/Monquest/)
+- [ART NOIRE: Paris](https://store.steampowered.com/app/5486050/ART_NOIRE_Paris/)
+- [Send by Sunset](https://store.steampowered.com/app/5234930/Send_by_Sunset/)
+- [Travellin Cats Advent Calendar](https://store.steampowered.com/app/2806540/Travellin_Cats_Advent_Calendar/)
+- [喵～该工作啦！ Nya! Back to Work](https://store.steampowered.com/app/5342780/喵该工作啦_Nya_Back_to_Work/)
 
 ### Steam · top-selling cozy games
 
+- [Loftia](https://store.steampowered.com/app/2320980/Loftia/)
 - [Dressmaker](https://store.steampowered.com/app/4019220/Dressmaker/)
+- [Lightyear Frontier](https://store.steampowered.com/app/1677110/Lightyear_Frontier/)
+- [DreamWorks Shrek 2 Remastered](https://store.steampowered.com/app/2523740/DreamWorks_Shrek_2_Remastered/)
 - [Can 'Em All](https://store.steampowered.com/app/5133900/Can_Em_All/)
+- [Cozy Game Restoration](https://store.steampowered.com/app/3581230/Cozy_Game_Restoration/)
 - [ReStory: Chill Electronics Repairs](https://store.steampowered.com/app/3812600/ReStory_Chill_Electronics_Repairs/)
-- [REKA](https://store.steampowered.com/app/1737870/REKA/)
 - [Heartopia](https://store.steampowered.com/app/4025700/Heartopia/)
-- [GIRLS' FRONTLINE 2: EXILIUM](https://store.steampowered.com/app/3347400/GIRLS_FRONTLINE_2_EXILIUM/)
 - [Brick by Brick: Tidy Up the Small Town!](https://store.steampowered.com/app/5228920/Brick_by_Brick_Tidy_Up_the_Small_Town/)
 - [Grounded 2](https://store.steampowered.com/app/2661300/Grounded_2/)
-- [Welcome to Elderfield](https://store.steampowered.com/app/3195440/Welcome_to_Elderfield/)
 - [NTE: Neverness to Everness](https://store.steampowered.com/app/4508340/NTE_Neverness_to_Everness/)
-- [Palia](https://store.steampowered.com/app/2707930/Palia/)
+- [GIRLS' FRONTLINE 2: EXILIUM](https://store.steampowered.com/app/3347400/GIRLS_FRONTLINE_2_EXILIUM/)
 - [Cat Mail Co.](https://store.steampowered.com/app/4380490/Cat_Mail_Co/)
-- [Infinity Nikki](https://store.steampowered.com/app/3164330/Infinity_Nikki/)
 - [Paralives](https://store.steampowered.com/app/1118520/Paralives/)
 - [Leaf it Alone](https://store.steampowered.com/app/3981100/Leaf_it_Alone/)
 
