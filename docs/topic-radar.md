@@ -1,6 +1,6 @@
 # Topic Radar
 
-_Auto-generated 2026-11-16T16:32:40.026Z. Signals + AI suggestions to help pick what to write next._
+_Auto-generated 2026-11-23T18:48:34.599Z. Signals + AI suggestions to help pick what to write next._
 _Review, fact-check, and never auto-publish — this is an assistant, not an autopilot._
 
 ## Part B — AI topic suggestions
@@ -23,39 +23,39 @@ HTTP 404 (model "gemini-2.0-flash"): {
 
 ### Steam · newest cozy releases
 
-- [S.K.R.U.B. Squad](https://store.steampowered.com/app/3900170/SKRUB_Squad/)
-- [Dwarven Outpost Incremental](https://store.steampowered.com/app/5062000/Dwarven_Outpost_Incremental/)
-- [Spirit Crossing](https://store.steampowered.com/app/2321960/Spirit_Crossing/)
-- [Highland Haven](https://store.steampowered.com/app/4390480/Highland_Haven/)
-- [Puzzles Are Better Together](https://store.steampowered.com/app/5125790/Puzzles_Are_Better_Together/)
-- [Gnome Nook](https://store.steampowered.com/app/5421590/Gnome_Nook/)
-- [Ultra Auto Gotchimon](https://store.steampowered.com/app/2763570/Ultra_Auto_Gotchimon/)
-- [Keycap: Tidy Up!](https://store.steampowered.com/app/1459050/Keycap_Tidy_Up/)
-- [Seashell Hoarder: Tidy Up](https://store.steampowered.com/app/5314120/Seashell_Hoarder_Tidy_Up/)
-- [Hint Hop](https://store.steampowered.com/app/4627060/Hint_Hop/)
-- [Rock and Found](https://store.steampowered.com/app/5203560/Rock_and_Found/)
-- [Gacha Chaos Tidy Up Together](https://store.steampowered.com/app/5336080/Gacha_Chaos_Tidy_Up_Together/)
-- [Littlelands](https://store.steampowered.com/app/2083660/Littlelands/)
-- [Tree Simulator](https://store.steampowered.com/app/5307140/Tree_Simulator/)
-- [Tuftwood : Rug Tufting Simulation](https://store.steampowered.com/app/5436730/Tuftwood_Rug_Tufting_Simulation/)
+- [The Final Days of Olin Earl](https://store.steampowered.com/app/4645270/The_Final_Days_of_Olin_Earl/)
+- [Cornerwitch](https://store.steampowered.com/app/4443690/Cornerwitch/)
+- [Armorer: Tidy Up the Armory Before Dawn](https://store.steampowered.com/app/5179660/Armorer_Tidy_Up_the_Armory_Before_Dawn/)
+- [Goblin Island](https://store.steampowered.com/app/5026590/Goblin_Island/)
+- [Hit The Beer](https://store.steampowered.com/app/5173000/Hit_The_Beer/)
+- [Climb, Cube, Climb!](https://store.steampowered.com/app/4999870/Climb_Cube_Climb/)
+- [Christmas Market: Tidy Up Together](https://store.steampowered.com/app/5556800/Christmas_Market_Tidy_Up_Together/)
+- [Internet Cafe 98](https://store.steampowered.com/app/4224490/Internet_Cafe_98/)
+- [Follyvale](https://store.steampowered.com/app/5473930/Follyvale/)
+- [Jaden Industries: Cozy Automation Puzzler](https://store.steampowered.com/app/3656500/Jaden_Industries_Cozy_Automation_Puzzler/)
+- [TreeShapers: Cozy Botany Sim](https://store.steampowered.com/app/5200000/TreeShapers_Cozy_Botany_Sim/)
+- [Shrimp Fright](https://store.steampowered.com/app/5515890/Shrimp_Fright/)
+- [Totally Not Gaming](https://store.steampowered.com/app/5494340/Totally_Not_Gaming/)
+- [Kingdomsweeper](https://store.steampowered.com/app/5555400/Kingdomsweeper/)
+- [Starmoor](https://store.steampowered.com/app/5265830/Starmoor/)
 
 ### Steam · top-selling cozy games
 
-- [Spirit Crossing](https://store.steampowered.com/app/2321960/Spirit_Crossing/)
-- [Dice Hoarder](https://store.steampowered.com/app/3687090/Dice_Hoarder/)
 - [Dressmaker](https://store.steampowered.com/app/4019220/Dressmaker/)
-- [Loftia](https://store.steampowered.com/app/2320980/Loftia/)
+- [Grounded 2](https://store.steampowered.com/app/2661300/Grounded_2/)
 - [Can 'Em All](https://store.steampowered.com/app/5133900/Can_Em_All/)
-- [Lightyear Frontier](https://store.steampowered.com/app/1677110/Lightyear_Frontier/)
-- [Drawquarium](https://store.steampowered.com/app/4045480/Drawquarium/)
-- [Ski-E-O! Ski Resort Tycoon](https://store.steampowered.com/app/4493130/SkiEO_Ski_Resort_Tycoon/)
 - [GIRLS' FRONTLINE 2: EXILIUM](https://store.steampowered.com/app/3347400/GIRLS_FRONTLINE_2_EXILIUM/)
+- [Heartopia](https://store.steampowered.com/app/4025700/Heartopia/)
+- [Oxygen Not Included](https://store.steampowered.com/app/457140/Oxygen_Not_Included/)
+- [Dice Hoarder](https://store.steampowered.com/app/3687090/Dice_Hoarder/)
+- [Ski-E-O! Ski Resort Tycoon](https://store.steampowered.com/app/4493130/SkiEO_Ski_Resort_Tycoon/)
+- [Lightyear Frontier](https://store.steampowered.com/app/1677110/Lightyear_Frontier/)
+- [Infinity Nikki](https://store.steampowered.com/app/3164330/Infinity_Nikki/)
 - [NTE: Neverness to Everness](https://store.steampowered.com/app/4508340/NTE_Neverness_to_Everness/)
 - [Brick by Brick: Tidy Up the Small Town!](https://store.steampowered.com/app/5228920/Brick_by_Brick_Tidy_Up_the_Small_Town/)
-- [Never Sort By Color](https://store.steampowered.com/app/4876650/Never_Sort_By_Color/)
-- [Grounded 2](https://store.steampowered.com/app/2661300/Grounded_2/)
-- [Cozy Game Restoration](https://store.steampowered.com/app/3581230/Cozy_Game_Restoration/)
+- [Loftia](https://store.steampowered.com/app/2320980/Loftia/)
 - [ReStory: Chill Electronics Repairs](https://store.steampowered.com/app/3812600/ReStory_Chill_Electronics_Repairs/)
+- [Cat Mail Co.](https://store.steampowered.com/app/4380490/Cat_Mail_Co/)
 
 ### Hacker News buzz
 
